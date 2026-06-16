@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 
 const navLinks = [
-  { label: 'Work', href: '#work' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Work', href: '/#work' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export function Header() {
@@ -18,7 +18,7 @@ export function Header() {
     >
       <div className="flex flex-col gap-1">
         <a
-          href="#top"
+          href="/"
           className="font-serif text-2xl md:text-[32px] leading-none text-ink"
         >
           Diego Silverio

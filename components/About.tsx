@@ -48,14 +48,15 @@ export function About() {
           className="flex flex-col justify-center"
         >
           <p className="font-serif text-2xl md:text-[28px] leading-[1.5] text-ink">
-            I&apos;m Diego — a Product Designer with 16+ years building software
-            for marketplaces, fintech, and now EdTech. I lead with strategy and
-            ship with craft.
+            My name is Diego — I&apos;m a product designer with over 16 years
+            of experience in software development for marketplaces, fintech,
+            and, currently, EdTech.
           </p>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted">
-            Based between São Paulo and Austin, I&apos;ve helped teams at
-            Itaú, Nuvemshop and SuperSummary turn complex problems into calm,
-            confident product experiences.
+            Based in Brazil, I&apos;ve led teams of various sizes and
+            configurations, working at large companies, small businesses, and
+            startups to transform complex problems into efficient and impactful
+            product experiences.
           </p>
         </motion.div>
       </div>

@@ -1,14 +1,8 @@
-'use client';
-
-import { useState } from 'react';
 import { projects } from '@/lib/projects';
 import { SectionHeader } from './SectionHeader';
 import { ProjectCard } from './ProjectCard';
-import { ProjectLightbox } from './ProjectLightbox';
 
 export function Works() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
   return (
     <section
       id="work"
@@ -22,21 +16,9 @@ export function Works() {
         className="mt-16 grid grid-cols-1 gap-10 md:gap-12 lg:grid-cols-2 lg:gap-10"
       >
         {projects.map((project, index) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            index={index}
-            onOpen={setActiveIndex}
-          />
+          <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
-
-      <ProjectLightbox
-        projects={projects}
-        activeIndex={activeIndex}
-        onClose={() => setActiveIndex(null)}
-        onChange={setActiveIndex}
-      />
     </section>
   );
 }
