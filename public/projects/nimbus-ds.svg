@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 810" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe6"/>
+      <stop offset="100%" stop-color="#e8e1d5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="810" fill="url(#nb-bg)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#e8547a" font-family="monospace" font-size="14" letter-spacing="2">NIMBUS DESIGN SYSTEM · 2021</text>
+    <text x="0" y="80" fill="#111111" font-family="Georgia, serif" font-size="84">A common</text>
+    <text x="0" y="170" fill="#111111" font-family="Georgia, serif" font-size="84">visual language.</text>
+  </g>
+  <g transform="translate(80,400)">
+    <rect x="0" y="0" width="220" height="80" rx="6" fill="#111111"/>
+    <text x="20" y="48" fill="#ffffff" font-family="monospace" font-size="14" letter-spacing="2">PRIMARY · BUTTON</text>
+  </g>
+  <g transform="translate(320,400)">
+    <rect x="0" y="0" width="220" height="80" rx="6" fill="none" stroke="#111111" stroke-width="1.5"/>
+    <text x="20" y="48" fill="#111111" font-family="monospace" font-size="14" letter-spacing="2">SECONDARY</text>
+  </g>
+  <g transform="translate(560,400)">
+    <rect x="0" y="0" width="220" height="80" rx="6" fill="#e8547a"/>
+    <text x="20" y="48" fill="#ffffff" font-family="monospace" font-size="14" letter-spacing="2">ACCENT</text>
+  </g>
+  <g transform="translate(80,520)" fill="#111111" font-family="monospace" font-size="12" opacity="0.6">
+    <text x="0" y="0">— tokens · components · docs · governance —</text>
+  </g>
+  <g transform="translate(820,140)">
+    <rect x="0" y="0" width="40" height="40" rx="4" fill="#111111"/>
+    <rect x="50" y="0" width="40" height="40" rx="4" fill="#6b6b66"/>
+    <rect x="100" y="0" width="40" height="40" rx="4" fill="#e8547a"/>
+    <rect x="0" y="50" width="40" height="40" rx="4" fill="#f8f7f4" stroke="#dcdcdc"/>
+    <rect x="50" y="50" width="40" height="40" rx="4" fill="#ffd9c2"/>
+    <rect x="100" y="50" width="40" height="40" rx="4" fill="#9bbcff"/>
+  </g>
+  <g transform="translate(820,300)" fill="none" stroke="#111111" stroke-opacity="0.5">
+    <rect x="0" y="0" width="160" height="80" rx="6"/>
+    <line x1="0" y1="28" x2="160" y2="28"/>
+    <line x1="0" y1="56" x2="160" y2="56"/>
+    <line x1="80" y1="0" x2="80" y2="80"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 810" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="np-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1f3a"/>
+      <stop offset="100%" stop-color="#1f4ea1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="810" fill="url(#np-bg)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#9bbcff" font-family="monospace" font-size="14" letter-spacing="2">NUVEMSHOP PARTNERS · 2020</text>
+    <text x="0" y="80" fill="#ffffff" font-family="Georgia, serif" font-size="84">A platform</text>
+    <text x="0" y="170" fill="#ffffff" font-family="Georgia, serif" font-size="84">for partners.</text>
+  </g>
+  <g transform="translate(80,420)" fill="none" stroke="#ffffff" stroke-opacity="0.35">
+    <circle cx="0" cy="0" r="40"/>
+    <circle cx="120" cy="-40" r="32"/>
+    <circle cx="220" cy="40" r="48"/>
+    <circle cx="360" cy="-20" r="28"/>
+    <circle cx="480" cy="50" r="36"/>
+    <line x1="0" y1="0" x2="120" y2="-40"/>
+    <line x1="120" y1="-40" x2="220" y2="40"/>
+    <line x1="220" y1="40" x2="360" y2="-20"/>
+    <line x1="360" y1="-20" x2="480" y2="50"/>
+  </g>
+  <g transform="translate(80,620)" fill="#ffffff" font-family="monospace" font-size="13" letter-spacing="2">
+    <text x="0" y="0" opacity="0.7">PARTNERS · 3x GROWTH</text>
+    <text x="280" y="0" opacity="0.7">CONVERSION · +27%</text>
+  </g>
+  <g transform="translate(740,280)" fill="#ffffff" opacity="0.9">
+    <rect x="0" y="0" width="220" height="64" rx="6" fill="#ffffff" opacity="0.08"/>
+    <rect x="0" y="0" width="220" height="64" rx="6" fill="none" stroke="#9bbcff" stroke-opacity="0.6"/>
+    <circle cx="34" cy="32" r="14" fill="#e8547a" opacity="0.8"/>
+    <rect x="60" y="22" width="120" height="8" rx="4" fill="#ffffff" opacity="0.6"/>
+    <rect x="60" y="38" width="80" height="6" rx="3" fill="#ffffff" opacity="0.3"/>
+  </g>
+  <g transform="translate(740,360)">
+    <rect x="0" y="0" width="220" height="64" rx="6" fill="#ffffff" opacity="0.06"/>
+    <rect x="0" y="0" width="220" height="64" rx="6" fill="none" stroke="#9bbcff" stroke-opacity="0.4"/>
+    <circle cx="34" cy="32" r="14" fill="#9bbcff" opacity="0.6"/>
+    <rect x="60" y="22" width="120" height="8" rx="4" fill="#ffffff" opacity="0.45"/>
+    <rect x="60" y="38" width="60" height="6" rx="3" fill="#ffffff" opacity="0.25"/>
+  </g>
+</svg>
