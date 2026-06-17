@@ -13,7 +13,7 @@ interface CaseStudyProps {
 export function CaseStudy({ project, nextProject }: CaseStudyProps) {
   return (
     <article>
-      <section className="container-x pt-12 pb-10 md:pt-16 md:pb-section">
+      <section className="container-x pt-40 pb-10 md:pt-40 md:pb-section">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
