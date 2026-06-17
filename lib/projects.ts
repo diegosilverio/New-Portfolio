@@ -42,9 +42,9 @@ export const projects: Project[] = [
     year: 2023,
     image: '/projects/nuvem-envio.svg',
     description:
-      'Auto-activating the logistics service inside Tiendanube’s free-plan onboarding',
+      'Auto-activating the logistics service inside Tiendanube\'s free-plan onboarding',
     longDescription:
-      'A four-week, cross-functional project to fold Nuvem Envio into the platform’s onboarding so new sellers landed already activated — instead of opting in later.',
+      'A four-week, cross-functional project to fold Nuvem Envio into the platform\'s onboarding so new sellers landed already activated — instead of opting in later.',
     technologies: ['Product Strategy', 'Onboarding', 'Cross-team Design'],
     challenges: [
       'Bundle a previously opt-in product into the free-plan onboarding without a multi-quarter integration',
@@ -54,13 +54,13 @@ export const projects: Project[] = [
       'Adoption rose from 3% to 5% (+2 percentage points)',
       'Average days to first shipment cut from 21 to 17',
     ],
-    role: ‘Design Manager’,
-    company: ‘Tiendanube’,
-    scope: ‘Product Strategy, Onboarding, Cross-team Design’,
+    role: 'Design Manager',
+    company: 'Tiendanube',
+    scope: 'Product Strategy, Onboarding, Cross-team Design',
     tagline:
-      ‘Turning logistics from an opt-in product into part of every seller’s onboarding — in four weeks.’,
+      'Turning logistics from an opt-in product into part of every seller\'s onboarding — in four weeks.',
     overview:
-      ‘Nuvem Envio is the logistics service inside the Tiendanube platform — the tool sellers use to collect and ship products to their customers. As design manager for the Logistics Services BU, I led a cross-functional effort with one product designer, one front-end and three back-end engineers to fold the product into the platform’s free-plan onboarding, so new sellers landed already activated.’,
+      'Nuvem Envio is the logistics service inside the Tiendanube platform — the tool sellers use to collect and ship products to their customers. As design manager for the Logistics Services BU, I led a cross-functional effort with one product designer, one front-end and three back-end engineers to fold the product into the platform\'s free-plan onboarding, so new sellers landed already activated.',
     stats: [
       { value: '4 wks', label: 'Discovery to Production' },
       { value: '+2pp', label: 'Adoption Lift' },
@@ -78,7 +78,7 @@ export const projects: Project[] = [
       {
         title: 'Discovery & Mapping',
         description:
-          'Mapped how the product fit inside the platform’s onboarding to identify the integration points worth fighting for.',
+          'Mapped how the product fit inside the platform\'s onboarding to identify the integration points worth fighting for.',
       },
       {
         title: 'Three-Path Decision',
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     year: 2018,
     image: '/projects/itaucard.svg',
     description:
-      'New home screen and structure guidelines for the credit card app of Latin America’s largest bank',
+      'New home screen and structure guidelines for the credit card app of Latin America\'s largest bank',
     longDescription:
       'A two-week intervention to restructure the Itaucard home screen and produce the guidelines seven squads would use to keep evolving the apps. Led with a Group Product Manager and a PD specialist inside the Retention tribe.',
     technologies: ['Mobile Design', 'Product Strategy', 'Guidelines'],
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     ],
     challengeTitle: 'Important features were hidden in plain sight.',
     challengeBody:
-      'Engagement on the apps was flat and customers kept opening support tickets to ask whether features even existed. The virtual card — a security tool people actively requested — sat at a 6% access rate. Improving the home wasn’t a roadmap priority, so any intervention had to be small, fast, and defensible by data.',
+      'Engagement on the apps was flat and customers kept opening support tickets to ask whether features even existed. The virtual card — a security tool people actively requested — sat at a 6% access rate. Improving the home wasn\'t a roadmap priority, so any intervention had to be small, fast, and defensible by data.',
     process: [
       {
         title: 'Problem & Data',
@@ -169,38 +169,38 @@ export const projects: Project[] = [
     outcomeImage: '/projects/itaucard.svg',
   },
   {
-    id: ‘nuvemshop-partners’,
-    title: ‘Tiendanube Partners’,
+    id: 'nuvemshop-partners',
+    title: 'Tiendanube Partners',
     year: 2021,
-    image: ‘/projects/nuvemshop-partners.svg’,
+    image: '/projects/nuvemshop-partners.svg',
     description:
-      ‘Redesign and migration of Admin for Partners — unmerged from the Tiendanube core’,
+      'Redesign and migration of Admin for Partners — unmerged from the Tiendanube core',
     longDescription:
-      ‘An 8-month redesign and full migration of the partner administrator off the Tiendanube core, paired with a curated set of high-impact improvements partners had been asking for.’,
-    technologies: [‘Platform Design’, ‘Migration’, ‘Research’],
+      'An 8-month redesign and full migration of the partner administrator off the Tiendanube core, paired with a curated set of high-impact improvements partners had been asking for.',
+    technologies: ['Platform Design', 'Migration', 'Research'],
     challenges: [
-      ‘Unmerge a legacy admin fused into the core platform without freezing partner activity’,
-      ‘Bundle real partner-requested improvements into a migration without blowing the scope’,
+      'Unmerge a legacy admin fused into the core platform without freezing partner activity',
+      'Bundle real partner-requested improvements into a migration without blowing the scope',
     ],
     results: [
-      ‘100% of partners migrated to the new platform — no rollback’,
-      ‘4.5 satisfaction score, meeting the parity goal’,
+      '100% of partners migrated to the new platform — no rollback',
+      '4.5 satisfaction score, meeting the parity goal',
     ],
-    role: ‘Design Lead’,
-    company: ‘Tiendanube’,
-    scope: ‘Platform Design, Migration, Research’,
+    role: 'Design Lead',
+    company: 'Tiendanube',
+    scope: 'Platform Design, Migration, Research',
     tagline:
-      ‘Unmerging Tiendanube’s partner admin from the core — and shipping it in 8 months.’,
+      'Unmerging Tiendanube\'s partner admin from the core — and shipping it in 8 months.',
     overview:
-      ‘Admin for Partners is the tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the appstore, tracking referred stores. The legacy version was fused into the Tiendanube core, making every improvement slow and risky. I led the design effort with a team of 4 product designers across the Ecosystem tribe, partnering with 3 front-end and 4 back-end engineers on the rebuild.’,
+      'Admin for Partners is the tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the appstore, tracking referred stores. The legacy version was fused into the Tiendanube core, making every improvement slow and risky. I led the design effort with a team of 4 product designers across the Ecosystem tribe, partnering with 3 front-end and 4 back-end engineers on the rebuild.',
     stats: [
-      { value: ‘8 mo’, label: ‘Full Migration’ },
-      { value: ‘100%’, label: ‘Partners Migrated’ },
-      { value: ‘4.5’, label: ‘Satisfaction Score’ },
+      { value: '8 mo', label: 'Full Migration' },
+      { value: '100%', label: 'Partners Migrated' },
+      { value: '4.5', label: 'Satisfaction Score' },
     ],
-    challengeTitle: ‘A legacy admin fused to the core platform.’,
+    challengeTitle: 'A legacy admin fused to the core platform.',
     challengeBody:
-      ‘The old administrator inherited every dependency of the Tiendanube core, including authentication, which made any improvement a coupled change. Partners were vocal about pain points — especially on mobile — and a tech-only migration would have wasted the moment, so we had to bring real value alongside the rebuild.’,
+      'The old administrator inherited every dependency of the Tiendanube core, including authentication, which made any improvement a coupled change. Partners were vocal about pain points — especially on mobile — and a tech-only migration would have wasted the moment, so we had to bring real value alongside the rebuild.',
     process: [
       {
         title: 'Research',
@@ -235,38 +235,38 @@ export const projects: Project[] = [
     outcomeImage: '/projects/nuvemshop-partners.svg',
   },
   {
-    id: ‘nimbus-design-system’,
-    title: ‘Nimbus Design System’,
+    id: 'nimbus-design-system',
+    title: 'Nimbus Design System',
     year: 2021,
-    image: ‘/projects/nimbus-ds.svg’,
+    image: '/projects/nimbus-ds.svg',
     description:
-      ‘Tiendanube’s product design system — born inside a mobile app redesign’,
+      'Tiendanube\'s product design system — born inside a mobile app redesign',
     longDescription:
-      ‘Nimbus is the design system serving Tiendanube’s internal teams and external partners. I helped kick it off alongside a mobile app redesign so it would have a real customer from day one, then grew it into a measured, dedicated-team product.’,
-    technologies: [‘Design System’, ‘Tokens’, ‘Documentation’],
+      'Nimbus is the design system serving Tiendanube\'s internal teams and external partners. I helped kick it off alongside a mobile app redesign so it would have a real customer from day one, then grew it into a measured, dedicated-team product.',
+    technologies: ['Design System', 'Tokens', 'Documentation'],
     challenges: [
-      ‘Build a design system with no dedicated team and no obvious first customer’,
-      ‘Prove adoption with real metrics, not vanity uptake’,
+      'Build a design system with no dedicated team and no obvious first customer',
+      'Prove adoption with real metrics, not vanity uptake',
     ],
     results: [
-      ‘13 mobile and desktop applications using Nimbus’,
-      ‘40+ atomic, composite, and pattern components shipped’,
+      '13 mobile and desktop applications using Nimbus',
+      '40+ atomic, composite, and pattern components shipped',
     ],
-    role: ‘Design Lead’,
-    company: ‘Tiendanube’,
-    scope: ‘Design System, Tokens, Documentation’,
+    role: 'Design Lead',
+    company: 'Tiendanube',
+    scope: 'Design System, Tokens, Documentation',
     tagline:
-      ‘A design system born inside an app redesign — built to scale across Tiendanube’s product ecosystem.’,
+      'A design system born inside an app redesign — built to scale across Tiendanube\'s product ecosystem.',
     overview:
-      ‘Nimbus is the design system for Tiendanube’s product ecosystem, used by internal teams and external partners building on the platform. I kick-started it alongside the redesign of the native mobile apps so every component would earn its place by shipping in a real product, then grew it into a dedicated-team product with measured adoption.’,
+      'Nimbus is the design system for Tiendanube\'s product ecosystem, used by internal teams and external partners building on the platform. I kick-started it alongside the redesign of the native mobile apps so every component would earn its place by shipping in a real product, then grew it into a dedicated-team product with measured adoption.',
     stats: [
       { value: '13', label: 'Applications Using It' },
       { value: '40+', label: 'Components Shipped' },
       { value: '>90%', label: 'Coverage Goal' },
     ],
-    challengeTitle: 'A design system isn’t a project — it’s a product.',
+    challengeTitle: 'A design system isn\'t a project — it\'s a product.',
     challengeBody:
-      'Nimbus didn’t have a dedicated team or an obvious first customer when I joined. To avoid building in a vacuum, we paired it with the redesign of the native mobile apps — Android and iOS that hadn’t been touched in years, with feature gaps versus desktop and an outdated brand application. Every component had to ship inside that redesign to earn its place.',
+      'Nimbus didn\'t have a dedicated team or an obvious first customer when I joined. To avoid building in a vacuum, we paired it with the redesign of the native mobile apps — Android and iOS that hadn\'t been touched in years, with feature gaps versus desktop and an outdated brand application. Every component had to ship inside that redesign to earn its place.',
     process: [
       {
         title: 'Discovery & Benchmarks',
