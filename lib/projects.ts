@@ -39,192 +39,198 @@ export const projects: Project[] = [
   {
     id: 'nuvem-envio',
     title: 'Nuvem Envio',
-    year: 2021,
+    year: 2023,
     image: '/projects/nuvem-envio.svg',
-    description: 'Shipping & logistics platform redesign',
+    description:
+      'Auto-activating the logistics service inside Tiendanube’s free-plan onboarding',
     longDescription:
-      'A complete redesign of the shipping and logistics platform serving thousands of e-commerce merchants across Latin America. Focused on simplifying complex multi-carrier flows into a single, predictable experience.',
-    technologies: ['UI Design', 'Product Strategy', 'Research'],
+      'A four-week, cross-functional project to fold Nuvem Envio into the platform’s onboarding so new sellers landed already activated — instead of opting in later.',
+    technologies: ['Product Strategy', 'Onboarding', 'Cross-team Design'],
     challenges: [
-      'Reconcile 6+ carrier integrations behind a single mental model',
-      'Make label printing and tracking feel instant on slow connections',
+      'Bundle a previously opt-in product into the free-plan onboarding without a multi-quarter integration',
+      'Scope three viable paths and pick the one that shipped value fastest',
     ],
     results: [
-      '32% drop in support tickets for shipping issues',
-      'Adoption by 80% of active merchants in the first quarter',
+      'Adoption rose from 3% to 5% (+2 percentage points)',
+      'Average days to first shipment cut from 21 to 17',
     ],
-    role: 'Lead Designer',
+    role: 'Design Manager',
     company: 'Nuvemshop',
-    scope: 'Product Strategy, UI Design, Research',
+    scope: 'Product Strategy, Onboarding, Cross-team Design',
     tagline:
-      'Reimagining how thousands of LATAM merchants ship — from chaos to confidence.',
+      'Turning logistics from an opt-in product into part of every seller’s onboarding — in four weeks.',
     overview:
-      'Nuvem Envio is the shipping and logistics product I led at Nuvemshop, reconciling six carrier integrations into a single, predictable flow for thousands of merchants across LATAM. Work spanned discovery, end-to-end UI, and the operational dashboard used by the support team.',
+      'Nuvem Envio is the logistics service inside the Tiendanube platform — the tool sellers use to collect and ship products to their customers. As design manager for the Logistics Services BU, I led a cross-functional effort with one product designer, one front-end and three back-end engineers to fold the product into the platform’s free-plan onboarding, so new sellers landed already activated.',
     stats: [
-      { value: '6+', label: 'Carriers Unified' },
-      { value: '32%', label: 'Fewer Tickets' },
-      { value: '80%', label: 'Merchant Adoption' },
+      { value: '4 wks', label: 'Discovery to Production' },
+      { value: '+2pp', label: 'Adoption Lift' },
+      { value: '−16%', label: 'Days to First Shipment' },
     ],
-    challengeTitle: 'Six carriers, one mental model.',
+    challengeTitle: 'Bundle a paid product into the free plan — without rebuilding both.',
     challengeBody:
-      'Merchants juggled six logistics partners with different rules, formats, and failure modes. The challenge was hiding that complexity without taking power away from the operators who depend on the details.',
+      'The company wanted every free-plan onboarding to seed sellers with a basic logistics package, automatically. Until then, the product was opt-in. We had to thread the activation flow through the existing platform onboarding without dragging the work into a multi-quarter integration.',
     process: [
       {
-        title: 'Discovery',
+        title: 'Initial Alignment',
         description:
-          'Shadowed merchants and support agents to map the real journey from order to delivery.',
+          'Got product, design, and engineering on the same page about technical and business viability before sketching a single screen.',
       },
       {
-        title: 'Flow Architecture',
+        title: 'Discovery & Mapping',
         description:
-          'Designed a unified shipment object that abstracted carrier-specific rules into a single model.',
+          'Mapped how the product fit inside the platform’s onboarding to identify the integration points worth fighting for.',
       },
       {
-        title: 'Interface Build',
+        title: 'Three-Path Decision',
         description:
-          'Prototyped label printing and tracking states that hold up on slow connections.',
+          'Scoped three options — ideal, reduced, and minimum — then chose the simplest path that still delivered real value.',
       },
       {
-        title: 'Rollout',
+        title: 'Build & Hand-off',
         description:
-          'Phased migration with support playbooks and merchant onboarding clinics.',
+          'Designed with the existing design system, prototyped, tested, and handed off to engineering in a single tight cycle.',
       },
     ],
-    outcomeTitle: 'Shipping that finally feels boring.',
+    outcomeTitle: 'Shipped in four weeks, lifted adoption.',
     outcomeBody:
-      'Nuvem Envio turned a fragile, multi-vendor process into a calm operational tool. Merchants stopped fighting the product and could focus on running their stores.',
+      'From kickoff to production in four weeks. Adoption climbed from 3% to 5% and the average time to first shipment dropped from 21 to 17 days — a side effect that hinted at a smoother end-to-end journey, not just a smarter activation step.',
     outcomeBullets: [
-      '32% drop in support tickets related to shipping',
-      'Adopted by 80% of active merchants in the first quarter',
-      'Became the foundation for our cross-border logistics expansion',
+      'Four weeks from discovery to production deploy',
+      'Adoption rose +2 percentage points (3% → 5%)',
+      'Days to first shipment cut from 21 to 17',
+      'Activation flow built almost entirely from the existing design system',
     ],
     outcomeImage: '/projects/nuvem-envio.svg',
   },
   {
     id: 'itaucard',
     title: 'Itaucard',
-    year: 2019,
+    year: 2018,
     image: '/projects/itaucard.svg',
-    description: 'Credit card app interface for one of LATAM’s largest banks',
+    description:
+      'New home screen and structure guidelines for the credit card app of Latin America’s largest bank',
     longDescription:
-      'Redesign of the Itaucard mobile experience — millions of monthly active users — with an emphasis on clarity, trust, and accessible micro-interactions in fintech contexts.',
-    technologies: ['Mobile Design', 'Fintech', 'User Research'],
+      'A two-week intervention to restructure the Itaucard home screen and produce the guidelines seven squads would use to keep evolving the apps. Led with a Group Product Manager and a PD specialist inside the Retention tribe.',
+    technologies: ['Mobile Design', 'Product Strategy', 'Guidelines'],
     challenges: [
-      'Bring a 20-year-old product up to modern banking standards',
-      'Balance regulatory copy with a calm, confident interface',
+      'Surface high-value features buried inside a low-engagement home screen',
+      'Negotiate a 3-month engineering scope down to something shippable in a sprint',
     ],
     results: [
-      'App store rating raised from 3.4 to 4.6',
-      'Reduced first-payment errors by 41%',
+      'Virtual card access rose from 6% to 18% — a 3× lift',
+      '82% of beta survey respondents rated the new experience great or good',
     ],
-    role: 'Senior Product Designer',
-    company: 'Itaú',
-    scope: 'Mobile Design, Fintech, User Research',
+    role: 'Design Manager',
+    company: 'Itaú-Unibanco',
+    scope: 'Mobile Design, Product Strategy, Guidelines',
     tagline:
-      'Modernizing a credit card app used by millions — without breaking trust.',
+      'Restructuring the home screen of a credit card app used by 7M Brazilians — and the guidelines to keep it evolving.',
     overview:
-      'Itaucard is the credit card mobile experience for one of LATAM’s largest banks, serving millions of monthly active users. The redesign focused on clarity, trust, and accessible micro-interactions while honoring strict regulatory and security constraints.',
+      'Itaucard is the credit card app for Itaú-Unibanco, the largest bank in Latin America, with roughly 7M active users on iOS and Android. As Design Manager inside the Retention tribe, I ran a focused two-week effort with a GPM and a PD specialist to restructure the home screen and hand the seven squads in the unit the guidelines they needed to keep evolving it after we left.',
     stats: [
-      { value: '4.6', label: 'App Store Rating' },
-      { value: '41%', label: 'Fewer Payment Errors' },
-      { value: 'M+', label: 'Monthly Users' },
+      { value: '7M', label: 'Active App Users' },
+      { value: '3×', label: 'Virtual Card Access' },
+      { value: '82%', label: 'Positive Feedback' },
     ],
-    challengeTitle: 'Modernizing a product people rely on.',
+    challengeTitle: 'Important features were hidden in plain sight.',
     challengeBody:
-      'A 20-year-old app, calcified UI patterns, and regulatory copy that nobody wanted to touch. The redesign had to feel modern and confident without spooking customers who depend on the product every day.',
+      'Engagement on the apps was flat and customers kept opening support tickets to ask whether features even existed. The virtual card — a security tool people actively requested — sat at a 6% access rate. Improving the home wasn’t a roadmap priority, so any intervention had to be small, fast, and defensible by data.',
     process: [
       {
-        title: 'Audit',
+        title: 'Problem & Data',
         description:
-          'Mapped every flow, regulation, and edge case to find safe places to evolve the experience.',
+          'Mapped feature-access metrics, support tickets, and qualitative research to size the engagement gap and prioritize the features hiding on the home.',
       },
       {
-        title: 'Foundation',
+        title: 'Decision & Goals',
         description:
-          'Established type, color, and motion principles tuned for fintech trust signals.',
+          'Aligned with the GPM on a two-week intervention with three goals: surface key features, make the structure flexible, and generate learnings for the tribe.',
       },
       {
-        title: 'Component System',
+        title: 'Creative Sessions',
         description:
-          'Designed accessible patterns for statements, payments, and disputes.',
+          'Ran open design crits with the broader team to test layouts that kept the card in the spotlight and reused existing design system components.',
       },
       {
-        title: 'Validation',
+        title: 'Guidelines & Hand-off',
         description:
-          'Ran usability sessions with low-vision users and first-time mobile bankers.',
+          'Delivered a home-screen roadmap, a squad responsibility guide, and an evolution map so all seven squads could continue the work.',
       },
     ],
-    outcomeTitle: 'A calmer way to manage credit.',
+    outcomeTitle: 'Visibility, validated by data.',
     outcomeBody:
-      'The redesign restored trust and gave the team a sustainable design foundation to ship on. People started recommending the app instead of tolerating it.',
+      'The new home shipped to a 250-user beta after we negotiated engineering scope from three months down to one. Within weeks the virtual card access tripled, feedback skewed overwhelmingly positive, and the guidelines kept shaping the apps long after the project closed.',
     outcomeBullets: [
-      'App store rating raised from 3.4 to 4.6',
-      'First-payment errors reduced by 41%',
-      'Foundation reused across Itaú’s broader card portfolio',
+      'Virtual card access rose from 6% to 18% — a 3× lift',
+      '82% of survey respondents rated the new home great or good',
+      'Engineering scope cut from 3 months to 1 with a part-time front-end',
+      'Guidelines adopted by 7 squads across the credit card unit',
     ],
     outcomeImage: '/projects/itaucard.svg',
   },
   {
     id: 'nuvemshop-partners',
     title: 'Nuvemshop Partners',
-    year: 2020,
+    year: 2021,
     image: '/projects/nuvemshop-partners.svg',
-    description: 'Partnership platform for the e-commerce ecosystem',
+    description:
+      'Redesign and migration of Admin for Partners — unmerged from the Nuvemshop core',
     longDescription:
-      'B2B platform connecting agencies, freelancers, and integrators with Nuvemshop’s merchant base. Designed the entire dashboard, certification tracks, and lead-sharing flow.',
-    technologies: ['Platform Design', 'B2B', 'Analytics'],
+      'An 8-month redesign and full migration of the partner administrator off the Nuvemshop core, paired with a curated set of high-impact improvements partners had been asking for.',
+    technologies: ['Platform Design', 'Migration', 'Research'],
     challenges: [
-      'Serve three distinct partner archetypes from one platform',
-      'Surface high-signal leads without overwhelming the dashboard',
+      'Unmerge a legacy admin fused into the core platform without freezing partner activity',
+      'Bundle real partner-requested improvements into a migration without blowing the scope',
     ],
     results: [
-      '3x growth in active partners during the first year',
-      'Lead-to-deal conversion improved by 27%',
+      '100% of partners migrated to the new platform — no rollback',
+      '4.5 satisfaction score, meeting the parity goal',
     ],
-    role: 'Lead Designer',
+    role: 'Design Lead',
     company: 'Nuvemshop',
-    scope: 'Platform Design, B2B, Analytics',
+    scope: 'Platform Design, Migration, Research',
     tagline:
-      'A B2B platform that turned a partner network into a real growth channel.',
+      'Unmerging Nuvemshop’s partner admin from the core — and shipping it in 8 months.',
     overview:
-      'Nuvemshop Partners connects agencies, freelancers, and integrators with the platform’s merchant base. I led design for the partner dashboard, certification tracks, and the lead-sharing engine that powers the program.',
+      'Admin for Partners is the tool partners use to manage their relationship with Nuvemshop — withdrawing commissions, publishing apps to the appstore, tracking referred stores. The legacy version was fused into the Nuvemshop core, making every improvement slow and risky. I led the design effort with a team of 4 product designers across the Ecosystem tribe, partnering with 3 front-end and 4 back-end engineers on the rebuild.',
     stats: [
-      { value: '3×', label: 'Partner Growth' },
-      { value: '27%', label: 'Lead Conversion' },
-      { value: '3', label: 'Partner Archetypes' },
+      { value: '8 mo', label: 'Full Migration' },
+      { value: '100%', label: 'Partners Migrated' },
+      { value: '4.5', label: 'Satisfaction Score' },
     ],
-    challengeTitle: 'One platform, three partner archetypes.',
+    challengeTitle: 'A legacy admin fused to the core platform.',
     challengeBody:
-      'Agencies want pipelines, freelancers want jobs, and integrators want APIs. The platform had to serve all three without becoming a Frankenstein of dashboards.',
+      'The old administrator inherited every dependency of the Nuvemshop core, including authentication, which made any improvement a coupled change. Partners were vocal about pain points — especially on mobile — and a tech-only migration would have wasted the moment, so we had to bring real value alongside the rebuild.',
     process: [
       {
-        title: 'Segmentation',
+        title: 'Research',
         description:
-          'Interviewed each partner type to understand the jobs they hire the program to do.',
+          'Ran qualitative interviews with ~30 partners across types to inventory complaints and rank them by impact vs. effort.',
       },
       {
-        title: 'Information Architecture',
+        title: 'Scope Decision',
         description:
-          'Designed a modular dashboard that adapts to each archetype’s priorities.',
+          'Held the line at "baseline + low-hanging fruit" — mobile-friendly, better receivables, cleaner app creation — so the migration would actually finish.',
       },
       {
-        title: 'Lead Engine',
+        title: 'Migration Tracking',
         description:
-          'Built a lead-sharing flow that ranks opportunities by likelihood and fit.',
+          'Built a per-flow migration plan reported weekly to the tribe, giving designers and engineers clear ownership over each piece.',
       },
       {
-        title: 'Certification',
+        title: 'Continuous Hand-off',
         description:
-          'Created learning tracks tied to badges, perks, and lead priority.',
+          'Ran a steady cycle of design, review, and engineering hand-off across every Admin flow until the old platform was empty.',
       },
     ],
-    outcomeTitle: 'A program partners actually grow with.',
+    outcomeTitle: 'Full migration, zero rollback.',
     outcomeBody:
-      'Partners stopped treating the platform as a directory and started treating it as a pipeline. Merchant fit improved and partner retention compounded.',
+      'The entire partner base moved to the new platform in 8 months with no rollback and no parallel maintenance. The new Admin hit a 4.5 satisfaction score, meeting parity with the old experience and freeing the team to ship the next wave of improvements without dragging core dependencies along.',
     outcomeBullets: [
-      '3× growth in active partners during the first year',
-      'Lead-to-deal conversion improved by 27%',
-      'Became a measurable acquisition channel for the merchant business',
+      '100% of functionalities migrated to the new platform',
+      '100% of partners moved without rollback',
+      '4.5 satisfaction score after migration',
+      'Mobile-friendly admin — a long-standing partner request shipped',
     ],
     outcomeImage: '/projects/nuvemshop-partners.svg',
   },
@@ -233,62 +239,64 @@ export const projects: Project[] = [
     title: 'Nimbus Design System',
     year: 2021,
     image: '/projects/nimbus-ds.svg',
-    description: 'Enterprise design system architecture',
+    description:
+      'Nuvemshop’s product design system — born inside a mobile app redesign',
     longDescription:
-      'Nimbus is the design system powering Nuvemshop’s suite of products. I led component architecture, token strategy, and the design-engineering contract.',
-    technologies: ['Design System', 'Components', 'Documentation'],
+      'Nimbus is the design system serving Nuvemshop’s internal teams and external partners. I helped kick it off alongside a mobile app redesign so it would have a real customer from day one, then grew it into a measured, dedicated-team product.',
+    technologies: ['Design System', 'Tokens', 'Documentation'],
     challenges: [
-      'Unify 4 product surfaces with conflicting visual histories',
-      'Ship a token model that survives multi-brand theming',
+      'Build a design system with no dedicated team and no obvious first customer',
+      'Prove adoption with real metrics, not vanity uptake',
     ],
     results: [
-      '60% reduction in time-to-first-screen for new product teams',
-      'Adopted by 7 squads and 40+ contributors',
+      '13 mobile and desktop applications using Nimbus',
+      '40+ atomic, composite, and pattern components shipped',
     ],
-    role: 'Lead Designer',
+    role: 'Design Lead',
     company: 'Nuvemshop',
     scope: 'Design System, Tokens, Documentation',
     tagline:
-      'Building a scalable, token-based design system for Nuvemshop’s product ecosystem.',
+      'A design system born inside an app redesign — built to scale across Nuvemshop’s product ecosystem.',
     overview:
-      'Nimbus is the design system I led at Nuvemshop — a unified component library and token architecture built to scale across multiple product teams in LATAM. The project involved defining foundational tokens, building a component library in Figma, and establishing contribution workflows across design and engineering.',
+      'Nimbus is the design system for Nuvemshop’s product ecosystem, used by internal teams and external partners building on the platform. I kick-started it alongside the redesign of the native mobile apps so every component would earn its place by shipping in a real product, then grew it into a dedicated-team product with measured adoption.',
     stats: [
-      { value: '40+', label: 'Components' },
-      { value: '3', label: 'Product Teams' },
-      { value: '1', label: 'Design Language' },
+      { value: '13', label: 'Applications Using It' },
+      { value: '40+', label: 'Components Shipped' },
+      { value: '>90%', label: 'Coverage Goal' },
     ],
-    challengeTitle: 'Scaling design across fragmented teams.',
+    challengeTitle: 'A design system isn’t a project — it’s a product.',
     challengeBody:
-      'Before Nimbus, each product team maintained their own component library — leading to inconsistent UIs, duplicated work, and slow delivery. The challenge was aligning teams on a single source of truth without slowing them down.',
+      'Nimbus didn’t have a dedicated team or an obvious first customer when I joined. To avoid building in a vacuum, we paired it with the redesign of the native mobile apps — Android and iOS that hadn’t been touched in years, with feature gaps versus desktop and an outdated brand application. Every component had to ship inside that redesign to earn its place.',
     process: [
       {
-        title: 'Audit & Discovery',
+        title: 'Discovery & Benchmarks',
         description:
-          'Evaluating 300+ UI patterns to identify inconsistencies and core functional needs.',
+          'Studied recognized design systems to define structure, token model, and principles aligned with the new brand work.',
       },
       {
-        title: 'Token Architecture',
+        title: 'Foundations',
         description:
-          'Establishing a multi-mode token system for colors, spacing, and typography.',
+          'Established tokens for color, typography, and spacing — and the design-and-engineering contract that would hold them together.',
       },
       {
-        title: 'Component Build',
+        title: 'Component Craft',
         description:
-          'Designing and documenting flexible, accessible components in Figma and React.',
+          'Built atomic, composite, and pattern components in tandem with the app redesign cycles, with design and dev paired on each one.',
       },
       {
-        title: 'Documentation',
+        title: 'Adoption Metrics',
         description:
-          'Creating a central portal for guidelines, code snippets, and design principles.',
+          'Defined Coverage (≥90%) and Overrides (≤10%) metrics to track real adoption and surface where Nimbus was falling short.',
       },
     ],
-    outcomeTitle: 'A system teams actually use.',
+    outcomeTitle: 'A product, not a project.',
     outcomeBody:
-      'Nimbus transformed the way we build product at Nuvemshop. By shifting from a static library to a living system, we enabled teams to focus on solving user problems rather than pixel-pushing.',
+      'Treating Nimbus as a product earned it a dedicated team and a measurable adoption story. As coverage scaled, so did the case for the investment — and the bar for design and code quality across the company.',
     outcomeBullets: [
-      'Reduced design-to-dev handoff time by 40%',
-      'Adopted across 3 core product teams',
-      'Became the foundation for future product expansion',
+      '13 applications adopting Nimbus across mobile and desktop',
+      '40+ atomic, composite, and pattern components shipped',
+      'Dedicated team formed: 2 product designers + 1 specialist front-end',
+      'Coverage and Overrides metrics tracking real adoption',
     ],
     outcomeImage: '/projects/nimbus-ds.svg',
   },

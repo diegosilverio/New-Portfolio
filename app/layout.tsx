@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css';
+import { ProjectsAuthProvider } from '@/components/ProjectsAuthProvider';
 
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
@@ -41,7 +42,9 @@ export default function RootLayout({
       lang="en"
       className={`${dmSerif.variable} ${dmSans.variable} ${geist.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <ProjectsAuthProvider>{children}</ProjectsAuthProvider>
+      </body>
     </html>
   );
 }

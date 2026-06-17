@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { CaseStudy } from '@/components/CaseStudy';
+import { ProjectGate } from '@/components/ProjectGate';
 import { getNextProject, getProjectBySlug, projects } from '@/lib/projects';
 
 interface PageProps {
@@ -37,9 +38,11 @@ export default async function ProjectPage({ params }: PageProps) {
   const nextProject = getNextProject(slug);
 
   return (
-    <main className="min-h-screen bg-bg text-ink">
-      <Header />
-      <CaseStudy project={project} nextProject={nextProject} />
-    </main>
+    <ProjectGate projectTitle={project.title}>
+      <main className="min-h-screen bg-bg text-ink">
+        <Header />
+        <CaseStudy project={project} nextProject={nextProject} />
+      </main>
+    </ProjectGate>
   );
 }
