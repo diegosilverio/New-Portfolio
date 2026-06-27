@@ -427,7 +427,7 @@ export const projects: Project[] = [
     link: 'https://nimbus.nuvemshop.com.br/',
     description:
       'Tiendanube\'s product design system — born inside a mobile app redesign',
-    role: 'Design System Lead',
+    role: 'Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentation',
     tagline:
