@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { SectionHeader } from './SectionHeader';
 
@@ -58,6 +59,18 @@ export function About() {
             startups to transform complex problems into efficient and impactful
             product experiences.
           </p>
+          <Link
+            href="/management"
+            className="group mt-8 inline-flex items-center gap-2 self-start text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
+          >
+            Read about my experience managing design teams
+            <span
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            >
+              →
+            </span>
+          </Link>
         </motion.div>
       </div>
 

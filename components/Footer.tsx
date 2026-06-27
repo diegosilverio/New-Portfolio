@@ -24,10 +24,10 @@ export function Footer() {
         className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4 text-base md:text-lg text-ink"
       >
         <a
-          href="mailto:design@liftventures.com"
+          href="mailto:diegosilverio@gmail.com"
           className="underline underline-offset-[6px] decoration-1 hover:text-accent transition-colors duration-250"
         >
-          design@liftventures.com
+          diegosilverio@gmail.com
         </a>
         <a
           href="https://www.linkedin.com/in/diegosilverio/"
