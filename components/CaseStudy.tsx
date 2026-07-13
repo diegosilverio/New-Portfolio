@@ -214,6 +214,31 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
         </div>
       </section>
 
+      {/* Case Images (optional) */}
+      {project.caseImages && project.caseImages.length > 0 && (
+        <section className="container-x pb-20 md:pb-section">
+          <div className="flex flex-col gap-6">
+            {project.caseImages.map((src, i) => (
+              <motion.div
+                key={src}
+                {...reveal}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
+                className="relative w-full overflow-hidden rounded-card bg-border"
+              >
+                <Image
+                  src={src}
+                  alt={`${project.title} — image ${i + 1}`}
+                  width={1440}
+                  height={900}
+                  sizes="(min-width: 1024px) 1200px, 100vw"
+                  className="w-full h-auto object-cover"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Guidelines (optional) */}
       {project.guidelines && (
         <section className="bg-[#f2f1ed] py-20 md:py-section">

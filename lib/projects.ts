@@ -37,6 +37,7 @@ export interface Project {
   title: string;
   year: string;
   image: string;
+  caseImages?: string[];
   description: string;
   link?: string;
 
@@ -184,7 +185,10 @@ export const projects: Project[] = [
     id: 'itaucard',
     title: 'Itaucard',
     year: '2018',
-    image: '/projects/itaucard.svg',
+    image: '/images/itaucard/itaucard-cover.png',
+    caseImages: [
+      '/images/itaucard/itaucard-old-new.png',
+    ],
     description:
       'New home screen and structure guidelines for the credit card app of Latin America\'s largest bank',
     role: 'Design Manager',
@@ -291,7 +295,7 @@ export const projects: Project[] = [
       'Engineering scope cut from 3 months to 1 with a part-time front-end',
       'Guidelines adopted by 7 squads across the credit card unit',
     ],
-    outcomeImage: '/projects/itaucard.svg',
+    outcomeImage: '/images/itaucard/itaucard-delivery.png',
     learnings: [
       {
         title: 'Guidelines for the routine of designers and PMs.',
