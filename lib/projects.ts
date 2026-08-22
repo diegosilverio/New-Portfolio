@@ -88,7 +88,10 @@ export const projects: Project[] = [
     id: 'nuvem-envio',
     title: 'Nuvem Envio',
     year: '2023',
-    image: '/projects/nuvem-envio.svg',
+    image: '/images/nuvem-envio/nuvem-envio-cover.png',
+    caseImages: [
+      '/images/nuvem-envio/nuvem-envio-flow.png',
+    ],
     description:
       'Auto-activating the logistics service inside Tiendanube\'s free-plan onboarding',
     role: 'Design Manager',
@@ -162,7 +165,7 @@ export const projects: Project[] = [
       'Days to first shipment cut from 21 to 17 (−16%)',
       'Activation flow built almost entirely from the existing design system',
     ],
-    outcomeImage: '/projects/nuvem-envio.svg',
+    outcomeImage: '/images/nuvem-envio/nuvem-envio-delivery.png',
     learnings: [
       {
         title: 'Do more with the data the metrics generate.',
