@@ -336,17 +336,30 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           </ol>
         </div>
 
-        {project.link && (
-          <div className="mt-12 md:ml-[440px]">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
-            >
-              {project.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-              <span aria-hidden="true">↗</span>
-            </a>
+        {(project.caseLink || project.link) && (
+          <div className="mt-12 flex flex-col gap-3 md:ml-[440px]">
+            {project.caseLink && (
+              <a
+                href={project.caseLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
+              >
+                See the full case here
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
+              >
+                {project.link.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </div>
         )}
       </section>

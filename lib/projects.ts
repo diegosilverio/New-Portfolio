@@ -40,6 +40,7 @@ export interface Project {
   caseImages?: string[];
   description: string;
   link?: string;
+  caseLink?: string;
 
   // Meta
   role: string;
@@ -94,6 +95,8 @@ export const projects: Project[] = [
     ],
     description:
       'Auto-activating the logistics service inside Tiendanube\'s free-plan onboarding',
+    caseLink:
+      'https://docs.google.com/presentation/d/142BkEevs0anLP1yLftn_XTJJfN2GilssiZoQBLW1ppU/edit?usp=drive_link',
     role: 'Design Manager',
     company: 'Tiendanube',
     scope: 'Product Strategy, Onboarding, Cross-team Design',
@@ -194,6 +197,8 @@ export const projects: Project[] = [
     ],
     description:
       'New home screen and structure guidelines for the credit card app of Latin America\'s largest bank',
+    caseLink:
+      'https://docs.google.com/presentation/d/1EJsoF9aLp6GBMlCgmkkySii879b2-n9239UHQV7sZdc/edit?usp=drive_link',
     role: 'Design Manager',
     company: 'Itaú-Unibanco',
     scope: 'Mobile Design, Product Strategy, Guidelines',
@@ -324,6 +329,8 @@ export const projects: Project[] = [
     image: '/projects/nuvemshop-partners.svg',
     description:
       'Redesign and migration of Admin for Partners — unmerged from the Tiendanube core',
+    caseLink:
+      'https://docs.google.com/presentation/d/1jD1pF3mECR5wJrkO6ivF10AYDYG-MePcmDquao9Q6gY/edit?usp=drive_link',
     role: 'Design Manager',
     company: 'Tiendanube',
     scope: 'Platform Design, Migration, Research',
@@ -438,6 +445,8 @@ export const projects: Project[] = [
     link: 'https://nimbus.nuvemshop.com.br/',
     description:
       'Tiendanube\'s product design system — born inside a mobile app redesign',
+    caseLink:
+      'https://docs.google.com/presentation/d/1uZk1L5bCSSfrwBkLQuHFXBvPAgX5dsBXbgAROyoHHso/edit?usp=drive_link',
     role: 'Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentation',
