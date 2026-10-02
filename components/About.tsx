@@ -33,7 +33,7 @@ export function About() {
           className="relative h-[294px] w-full overflow-hidden rounded-card border border-border bg-card lg:h-[294px] lg:w-[520px]"
         >
           <Image
-            src="/about/diego.svg"
+            src="/images/profile.png"
             alt="Diego Silverio portrait"
             fill
             sizes="(min-width: 1024px) 520px, 100vw"

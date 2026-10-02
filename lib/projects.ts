@@ -326,7 +326,11 @@ export const projects: Project[] = [
     id: 'nuvemshop-partners',
     title: 'Tiendanube Partners',
     year: '2021',
-    image: '/projects/nuvemshop-partners.svg',
+    image: '/images/tiendanube-partners/tiendanube-partners-cover.png',
+    caseImages: [
+      '/images/tiendanube-partners/tiendanube-partners-1.png',
+      '/images/tiendanube-partners/tiendanube-partners-2.png',
+    ],
     description:
       'Redesign and migration of Admin for Partners — unmerged from the Tiendanube core',
     caseLink:
@@ -414,7 +418,7 @@ export const projects: Project[] = [
       '4.5 satisfaction score after migration',
       'Mobile-friendly admin — a long-standing partner request shipped',
     ],
-    outcomeImage: '/projects/nuvemshop-partners.svg',
+    outcomeImage: '/images/tiendanube-partners/tiendanube-partners-delivery.png',
     learnings: [
       {
         title: 'Break deliveries into smaller parts.',
