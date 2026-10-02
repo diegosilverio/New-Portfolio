@@ -430,7 +430,11 @@ export const projects: Project[] = [
     id: 'nimbus-design-system',
     title: 'Nimbus Design System',
     year: '2021–22',
-    image: '/projects/nimbus-ds.svg',
+    image: '/images/nimbus-design-system/nimbus-ds-cover.png',
+    caseImages: [
+      '/images/nimbus-design-system/nimbus-ds-oldnew-1.png',
+      '/images/nimbus-design-system/nimbus-ds-oldnew-2.png',
+    ],
     link: 'https://nimbus.nuvemshop.com.br/',
     description:
       'Tiendanube\'s product design system — born inside a mobile app redesign',
@@ -506,7 +510,7 @@ export const projects: Project[] = [
       'Dedicated team formed: 2 product designers + 1 specialist front-end',
       'Coverage (≥90%) and Overrides (≤10%) metrics tracking real adoption',
     ],
-    outcomeImage: '/projects/nimbus-ds.svg',
+    outcomeImage: '/images/nimbus-design-system/nimbus-ds-delivery.png',
     learnings: [
       {
         title: 'Dig deeper into what the metrics reveal.',
