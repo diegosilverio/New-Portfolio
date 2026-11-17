@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { useProjectsAuth } from './ProjectsAuthProvider';
 import { PasswordModal } from './PasswordModal';
+import { useLocale } from './LocaleProvider';
 
 interface ProjectGateProps {
   projectTitle: string;
@@ -13,6 +14,7 @@ interface ProjectGateProps {
 export function ProjectGate({ projectTitle, children }: ProjectGateProps) {
   const { isUnlocked, hasHydrated, unlock } = useProjectsAuth();
   const router = useRouter();
+  const { lang, t } = useLocale();
 
   if (!hasHydrated) {
     return <div aria-hidden="true" className="min-h-screen bg-bg" />;
@@ -23,10 +25,10 @@ export function ProjectGate({ projectTitle, children }: ProjectGateProps) {
       <div className="min-h-screen bg-bg">
         <PasswordModal
           open
-          onClose={() => router.push('/')}
+          onClose={() => router.push(`/${lang}`)}
           onSubmit={unlock}
           projectTitle={projectTitle}
-          cancelLabel="Back to home"
+          cancelLabel={t.password.backHome}
         />
       </div>
     );

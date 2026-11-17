@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import type { Project } from '@/lib/projects';
+import { useLocale } from './LocaleProvider';
 
 interface CaseStudyProps {
   project: Project;
@@ -18,6 +19,8 @@ const reveal = {
 } as const;
 
 export function CaseStudy({ project, nextProject }: CaseStudyProps) {
+  const { lang, t } = useLocale();
+
   return (
     <article>
       {/* Hero */}
@@ -28,7 +31,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col gap-6"
         >
-          <span className="label-eyebrow">Case Study</span>
+          <span className="label-eyebrow">{t.caseStudy.eyebrow}</span>
           <h1 className="font-serif text-hero text-ink">{project.title}</h1>
           <p className="max-w-[840px] text-xl md:text-2xl leading-relaxed text-muted">
             {project.tagline}
@@ -36,10 +39,10 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
         </motion.div>
 
         <dl className="mt-12 grid grid-cols-2 gap-x-6 gap-y-8 border-y border-border-soft py-8 md:flex md:items-start md:justify-between">
-          <MetaItem label="Role" value={project.role} />
-          <MetaItem label="Year" value={project.year} />
-          <MetaItem label="Company" value={project.company} />
-          <MetaItem label="Scope" value={project.scope} />
+          <MetaItem label={t.caseStudy.role} value={project.role} />
+          <MetaItem label={t.caseStudy.year} value={project.year} />
+          <MetaItem label={t.caseStudy.company} value={project.company} />
+          <MetaItem label={t.caseStudy.scope} value={project.scope} />
         </dl>
 
         <motion.div
@@ -62,7 +65,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Overview + Highlights + Stats */}
       <section className="container-x py-20 md:py-section">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-          <span className="label-eyebrow">Overview</span>
+          <span className="label-eyebrow">{t.caseStudy.overview}</span>
           <div className="flex max-w-[840px] flex-col gap-12">
             <p className="text-xl md:text-2xl leading-relaxed text-muted">
               {project.overview}
@@ -97,7 +100,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Challenge */}
       <section className="container-x pb-20 md:pb-section">
         <motion.div {...reveal} className="flex flex-col gap-8">
-          <span className="label-eyebrow">Challenge</span>
+          <span className="label-eyebrow">{t.caseStudy.challenge}</span>
           <h2 className="max-w-[1060px] font-serif text-section text-ink">
             {project.challengeTitle}
           </h2>
@@ -111,7 +114,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {project.decision && (
         <section className="container-x pb-20 md:pb-section">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-            <span className="label-eyebrow">Decision Points</span>
+            <span className="label-eyebrow">{t.caseStudy.decision}</span>
             <div className="flex max-w-[840px] flex-col gap-8">
               {project.decision.body && (
                 <p className="text-lg md:text-xl leading-relaxed text-muted">
@@ -136,7 +139,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Goals */}
       <section className="container-x pb-20 md:pb-section">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-          <span className="label-eyebrow">Goals</span>
+          <span className="label-eyebrow">{t.caseStudy.goals}</span>
           <ol className="flex max-w-[840px] flex-col divide-y divide-border-soft border-t border-border-soft">
             {project.goals.map((g, i) => (
               <li key={g} className="flex items-baseline gap-6 py-6">
@@ -156,7 +159,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       <section className="bg-[#f2f1ed] py-20 md:py-section">
         <div className="container-x flex flex-col gap-12 md:gap-16">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[400px_1fr] md:gap-10">
-            <span className="label-eyebrow">Process</span>
+            <span className="label-eyebrow">{t.caseStudy.process}</span>
             <div className="flex max-w-[840px] flex-col gap-6">
               <p className="text-lg md:text-xl leading-relaxed text-muted">
                 {project.processIntro}
@@ -190,7 +193,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Execution */}
       <section className="container-x py-20 md:py-section">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-          <span className="label-eyebrow">Execution</span>
+          <span className="label-eyebrow">{t.caseStudy.execution}</span>
           <div className="flex max-w-[840px] flex-col gap-8">
             <h2 className="font-serif text-section text-ink">
               {project.execution.title}
@@ -227,7 +230,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
               >
                 <Image
                   src={src}
-                  alt={`${project.title} — image ${i + 1}`}
+                  alt={t.caseStudy.imageAlt(project.title, i + 1)}
                   width={1440}
                   height={900}
                   sizes="(min-width: 1024px) 1200px, 100vw"
@@ -243,7 +246,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {project.guidelines && (
         <section className="bg-[#f2f1ed] py-20 md:py-section">
           <div className="container-x grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-            <span className="label-eyebrow">Guidelines</span>
+            <span className="label-eyebrow">{t.caseStudy.guidelines}</span>
             <div className="flex max-w-[840px] flex-col gap-10">
               <h2 className="font-serif text-section text-ink">
                 {project.guidelines.title}
@@ -285,7 +288,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       <section className="container-x py-20 md:py-section">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[510px_1fr] md:gap-10">
           <div className="flex flex-col gap-6">
-            <span className="label-eyebrow">Results</span>
+            <span className="label-eyebrow">{t.caseStudy.results}</span>
             <h2 className="font-serif text-section text-ink">
               {project.outcomeTitle}
             </h2>
@@ -304,7 +307,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card bg-border md:aspect-auto md:h-[540px]">
             <Image
               src={project.outcomeImage ?? project.image}
-              alt={`${project.title} outcome`}
+              alt={t.caseStudy.outcomeAlt(project.title)}
               fill
               sizes="(min-width: 1024px) 730px, 100vw"
               className="object-cover"
@@ -316,7 +319,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Learnings */}
       <section className="container-x pb-20 md:pb-section">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-          <span className="label-eyebrow">Learnings</span>
+          <span className="label-eyebrow">{t.caseStudy.learnings}</span>
           <ol className="flex max-w-[840px] flex-col divide-y divide-border-soft border-t border-border-soft">
             {project.learnings.map((l, i) => (
               <li key={l.title} className="flex flex-col gap-3 py-8 md:flex-row md:gap-8">
@@ -345,7 +348,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
               >
-                Want to see more details about this project? View the full case here
+                {t.caseStudy.caseLink}
                 <span aria-hidden="true">↗</span>
               </a>
             )}
@@ -367,9 +370,9 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
       {/* Next */}
       <section className="container-x pb-20 pt-12 md:pb-24 md:pt-20">
         <div className="flex flex-col gap-6">
-          <span className="label-eyebrow">Next</span>
+          <span className="label-eyebrow">{t.caseStudy.next}</span>
           <Link
-            href={`/work/${nextProject.id}`}
+            href={`/${lang}/work/${nextProject.id}`}
             className="group flex flex-wrap items-center gap-3 font-serif text-footer text-ink"
           >
             <span>{nextProject.title}</span>
@@ -378,10 +381,10 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
             </span>
           </Link>
           <Link
-            href="/#work"
+            href={`/${lang}#work`}
             className="text-base text-muted underline underline-offset-[6px] decoration-1 hover:text-accent transition-colors duration-250"
           >
-            Back to all work
+            {t.caseStudy.backToWork}
           </Link>
         </div>
 

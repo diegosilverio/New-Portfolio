@@ -4,22 +4,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { SectionHeader } from './SectionHeader';
-
-const stats = [
-  { value: '16+', label: 'Years in product design' },
-  { value: '8+', label: 'Years leading teams' },
-  { value: 'LATAM & US', label: 'Markets shipped across' },
-  { value: 'EdTech & AI', label: 'Current focus — SuperSummary' },
-];
+import { useLocale } from './LocaleProvider';
 
 export function About() {
+  const { lang, t } = useLocale();
+
   return (
     <section
       id="about"
       className="container-x py-24 md:py-section"
       aria-labelledby="about-title"
     >
-      <SectionHeader eyebrow="Background" title="About" />
+      <SectionHeader eyebrow={t.about.eyebrow} title={t.about.title} />
 
       <div
         id="about-title"
@@ -34,7 +30,7 @@ export function About() {
         >
           <Image
             src="/images/profile.png"
-            alt="Diego Silverio portrait"
+            alt={t.about.portraitAlt}
             fill
             sizes="(min-width: 1024px) 520px, 100vw"
             className="object-cover"
@@ -49,21 +45,16 @@ export function About() {
           className="flex flex-col justify-center"
         >
           <p className="font-serif text-2xl md:text-[28px] leading-[1.5] text-ink">
-            My name is Diego — I&apos;m a product designer with over 16 years
-            of experience in software development for marketplaces, fintech,
-            and, currently, EdTech.
+            {t.about.lead}
           </p>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted">
-            Based in Brazil, I&apos;ve led teams of various sizes and
-            configurations, working at large companies, small businesses, and
-            startups to transform complex problems into efficient and impactful
-            product experiences.
+            {t.about.body}
           </p>
           <Link
-            href="/management"
+            href={`/${lang}/management`}
             className="group mt-8 inline-flex items-center gap-2 self-start text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
           >
-            Read about my experience managing design teams
+            {t.about.managementLink}
             <span
               aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-1"
@@ -80,6 +71,8 @@ export function About() {
 }
 
 function StatsGrid() {
+  const { t } = useLocale();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -88,7 +81,7 @@ function StatsGrid() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="mt-20 grid grid-cols-1 divide-y divide-border-soft rounded-card border border-border bg-card sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-y-0"
     >
-      {stats.map((stat, idx) => (
+      {t.about.stats.map((stat, idx) => (
         <div
           key={stat.label}
           className={`flex flex-col gap-3 p-8 md:p-10 ${

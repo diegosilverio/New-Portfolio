@@ -1,5 +1,9 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import { defaultLocale, htmlLang, isLocale, type Locale } from '@/lib/i18n/config';
+import { getDictionary } from '@/lib/i18n/dictionaries';
+
 export default function GlobalError({
   error,
   reset,
@@ -7,8 +11,16 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  // Rendered outside the [lang] layout, so the locale comes from the URL
+  const [lang, setLang] = useState<Locale>(defaultLocale);
+  useEffect(() => {
+    const segment = window.location.pathname.split('/')[1];
+    if (isLocale(segment)) setLang(segment);
+  }, []);
+  const t = getDictionary(lang).error;
+
   return (
-    <html lang="en">
+    <html lang={htmlLang[lang]}>
       <body
         style={{
           margin: 0,
@@ -31,10 +43,11 @@ export default function GlobalError({
               lineHeight: 1.05,
             }}
           >
-            Something <span style={{ color: '#e8547a' }}>broke</span>.
+            {t.titleBefore}{' '}
+            <span style={{ color: '#e8547a' }}>{t.titleAccent}</span>.
           </h1>
           <p style={{ color: '#6b6b66', marginTop: 16 }}>
-            An unexpected error occurred. Please try again.
+            {t.body}
           </p>
           <button
             type="button"
@@ -53,7 +66,7 @@ export default function GlobalError({
               textTransform: 'uppercase',
             }}
           >
-            Try again
+            {t.retry}
           </button>
         </div>
       </body>

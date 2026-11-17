@@ -1,15 +1,24 @@
+import { notFound } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Works } from '@/components/Works';
 import { About } from '@/components/About';
 import { Footer } from '@/components/Footer';
+import { isLocale } from '@/lib/i18n/config';
 
-export default function HomePage() {
+interface PageProps {
+  params: Promise<{ lang: string }>;
+}
+
+export default async function HomePage({ params }: PageProps) {
+  const { lang } = await params;
+  if (!isLocale(lang)) notFound();
+
   return (
     <main className="min-h-screen bg-bg text-ink">
       <Header />
       <Hero />
-      <Works />
+      <Works lang={lang} />
       <About />
       <Footer />
     </main>

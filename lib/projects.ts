@@ -1,3 +1,6 @@
+import type { Locale } from './i18n/config';
+import { projectsPt } from './projects.pt';
+
 export interface ProjectStat {
   value: string;
   label: string;
@@ -544,11 +547,26 @@ export const projects: Project[] = [
   },
 ];
 
-export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((p) => p.id === slug);
+// Fields that carry copy; ids, years, images and links are shared across locales
+export type ProjectTranslation = Omit<
+  Project,
+  'id' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
+>;
+
+export function getProjects(lang: Locale): Project[] {
+  if (lang === 'en') return projects;
+  return projects.map((p) => ({ ...p, ...projectsPt[p.id] }));
 }
 
-export function getNextProject(slug: string): Project {
-  const i = projects.findIndex((p) => p.id === slug);
-  return projects[(i + 1) % projects.length];
+export function getProjectBySlug(
+  slug: string,
+  lang: Locale,
+): Project | undefined {
+  return getProjects(lang).find((p) => p.id === slug);
+}
+
+export function getNextProject(slug: string, lang: Locale): Project {
+  const list = getProjects(lang);
+  const i = list.findIndex((p) => p.id === slug);
+  return list[(i + 1) % list.length];
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useLocale } from './LocaleProvider';
 
 interface PasswordModalProps {
   open: boolean;
@@ -16,8 +17,9 @@ export function PasswordModal({
   onClose,
   onSubmit,
   projectTitle,
-  cancelLabel = 'Cancel',
+  cancelLabel,
 }: PasswordModalProps) {
+  const { t } = useLocale();
   const [value, setValue] = useState('');
   const [error, setError] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -70,7 +72,7 @@ export function PasswordModal({
         >
           <button
             type="button"
-            aria-label="Close password prompt"
+            aria-label={t.password.closeAria}
             onClick={onClose}
             className="absolute inset-0 cursor-default bg-ink/55 backdrop-blur-sm"
           />
@@ -82,21 +84,21 @@ export function PasswordModal({
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="relative z-10 w-full max-w-md rounded-card bg-card p-8 shadow-2xl"
           >
-            <span className="label-eyebrow">Protected work</span>
+            <span className="label-eyebrow">{t.password.eyebrow}</span>
             <h2
               id="password-modal-title"
               className="mt-3 font-serif text-2xl md:text-[28px] leading-tight text-ink"
             >
-              Enter the password
+              {t.password.title}
             </h2>
             <p className="mt-3 text-sm text-muted">
               {projectTitle
-                ? `Unlock ${projectTitle} and the other case studies.`
-                : 'Unlock the case studies on this site.'}
+                ? t.password.unlockProject(projectTitle)
+                : t.password.unlockAll}
             </p>
 
             <label htmlFor="projects-password" className="sr-only">
-              Password
+              {t.password.label}
             </label>
             <input
               id="projects-password"
@@ -107,7 +109,7 @@ export function PasswordModal({
                 setValue(e.target.value);
                 if (error) setError(false);
               }}
-              placeholder="Password"
+              placeholder={t.password.label}
               autoComplete="off"
               className={`mt-6 w-full rounded-card border bg-bg px-4 py-3 text-base text-ink outline-none transition-colors ${
                 error
@@ -117,7 +119,7 @@ export function PasswordModal({
             />
             {error && (
               <p className="mt-2 text-sm text-accent">
-                Incorrect password. Try again.
+                {t.password.error}
               </p>
             )}
 
@@ -127,13 +129,13 @@ export function PasswordModal({
                 onClick={onClose}
                 className="rounded-card px-4 py-2 text-sm text-muted transition-colors hover:text-ink"
               >
-                {cancelLabel}
+                {cancelLabel ?? t.password.cancel}
               </button>
               <button
                 type="submit"
                 className="rounded-card bg-ink px-5 py-2 text-sm font-medium text-card transition-opacity hover:opacity-90"
               >
-                Unlock
+                {t.password.submit}
               </button>
             </div>
           </motion.form>

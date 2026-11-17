@@ -57,6 +57,18 @@ public/
   about/diego.svg   # placeholder portrait
 ```
 
+## Languages (EN / PT)
+
+Every page lives under a locale prefix: `/en/...` and `/pt/...`.
+
+- `proxy.ts` redirects un-prefixed URLs (`/`, `/management`, `/work/...`) to the
+  visitor's language, read from the `NEXT_LOCALE` cookie (set by the header
+  switcher) or, failing that, the browser's `Accept-Language` header. Anything
+  other than Portuguese falls back to English.
+- UI strings: `lib/i18n/en.ts` and `lib/i18n/pt.ts`
+- Case studies: `lib/projects.ts` (English + shared fields) and `lib/projects.pt.ts`
+- Management page: `lib/management.en.ts` and `lib/management.pt.ts`
+
 ## Replacing the placeholders
 
 The `/public/projects/*.svg` and `/public/about/diego.svg` files are

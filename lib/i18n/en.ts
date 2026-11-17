@@ -1,0 +1,97 @@
+export const en = {
+  meta: {
+    title: 'Diego Silverio — Lead Product Designer',
+    description:
+      '16+ years across LATAM & US crafting digital experiences people love. Currently leading product design at SuperSummary.',
+    ogDescription:
+      '16+ years across LATAM & US crafting digital experiences people love.',
+    managementTitle: 'Managing Design Teams — Diego Silverio',
+    managementDescription:
+      'My experience leading and growing design teams — the roles, the principles that guide me, how I approach design leadership, and the feedback I’ve received along the way.',
+    managementOgDescription:
+      'My experience leading and growing design teams across edtech, e-commerce, steel, and banking.',
+  },
+  header: {
+    role: 'Lead Product Designer',
+    navLabel: 'Primary',
+    work: 'Work',
+    about: 'About',
+    contact: 'Contact',
+    languageLabel: 'Language',
+    languages: { en: 'English', pt: 'Português' },
+  },
+  hero: {
+    titleBefore: 'Crafting digital',
+    titleAccent: 'experiences',
+    titleAfter: 'people love',
+    body: '16+ years across LATAM & US shipping work for fintechs, marketplaces and platforms. Currently leading product design at SuperSummary — focused on EdTech and AI.',
+    scrollLabel: 'Selected work',
+    scrollAria: 'Jump to selected work',
+  },
+  works: {
+    eyebrow: 'Portfolio',
+    title: 'Selected Works',
+    viewCase: 'View case study',
+    openCase: (title: string) => `Open ${title} case study`,
+  },
+  about: {
+    eyebrow: 'Background',
+    title: 'About',
+    portraitAlt: 'Diego Silverio portrait',
+    lead: 'My name is Diego — I’m a product designer with over 16 years of experience in software development for marketplaces, fintech, and, currently, EdTech.',
+    body: 'Based in Brazil, I’ve led teams of various sizes and configurations, working at large companies, small businesses, and startups to transform complex problems into efficient and impactful product experiences.',
+    managementLink: 'Read about my experience managing design teams',
+    stats: [
+      { value: '16+', label: 'Years in product design' },
+      { value: '8+', label: 'Years leading teams' },
+      { value: 'LATAM & US', label: 'Markets shipped across' },
+      { value: 'EdTech & AI', label: 'Current focus — SuperSummary' },
+    ],
+  },
+  footer: {
+    titleBefore: 'Let’s make something',
+    titleAccent: 'worth',
+    titleAfter: 'using.',
+  },
+  caseStudy: {
+    eyebrow: 'Case Study',
+    role: 'Role',
+    year: 'Year',
+    company: 'Company',
+    scope: 'Scope',
+    overview: 'Overview',
+    challenge: 'Challenge',
+    decision: 'Decision Points',
+    goals: 'Goals',
+    process: 'Process',
+    execution: 'Execution',
+    guidelines: 'Guidelines',
+    results: 'Results',
+    learnings: 'Learnings',
+    next: 'Next',
+    backToWork: 'Back to all work',
+    caseLink:
+      'Want to see more details about this project? View the full case here',
+    imageAlt: (title: string, n: number) => `${title} — image ${n}`,
+    outcomeAlt: (title: string) => `${title} outcome`,
+  },
+  password: {
+    eyebrow: 'Protected work',
+    title: 'Enter the password',
+    unlockProject: (title: string) =>
+      `Unlock ${title} and the other case studies.`,
+    unlockAll: 'Unlock the case studies on this site.',
+    label: 'Password',
+    error: 'Incorrect password. Try again.',
+    cancel: 'Cancel',
+    backHome: 'Back to home',
+    submit: 'Unlock',
+    closeAria: 'Close password prompt',
+  },
+  error: {
+    titleBefore: 'Something',
+    titleAccent: 'broke',
+    body: 'An unexpected error occurred. Please try again.',
+    retry: 'Try again',
+  },
+};

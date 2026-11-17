@@ -1,14 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-const navLinks = [
-  { label: 'Work', href: '/#work' },
-  { label: 'About', href: '/#about' },
-  { label: 'Contact', href: '/#contact' },
-];
+import { useLocale } from './LocaleProvider';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Header() {
+  const { lang, t } = useLocale();
+  const navLinks = [
+    { label: t.header.work, href: `/${lang}#work` },
+    { label: t.header.about, href: `/${lang}#about` },
+    { label: t.header.contact, href: `/${lang}#contact` },
+  ];
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -16 }}
@@ -18,30 +21,33 @@ export function Header() {
     >
       <div className="flex flex-col gap-1">
         <a
-          href="/"
+          href={`/${lang}`}
           className="font-serif text-2xl md:text-[32px] leading-none text-ink"
         >
           Diego Silverio
         </a>
         <span className="label-eyebrow !text-muted">
-          Lead Product Designer
+          {t.header.role}
         </span>
       </div>
 
-      <nav aria-label="Primary" className="hidden md:block">
-        <ul className="flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-[15px] text-ink/80 hover:text-accent transition-colors duration-250"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className="flex items-center gap-8">
+        <nav aria-label={t.header.navLabel} className="hidden md:block">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-[15px] text-ink/80 hover:text-accent transition-colors duration-250"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <LanguageSwitcher />
+      </div>
     </motion.header>
   );
 }

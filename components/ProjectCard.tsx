@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import type { Project } from '@/lib/projects';
 import { useProjectsAuth } from './ProjectsAuthProvider';
 import { PasswordModal } from './PasswordModal';
+import { useLocale } from './LocaleProvider';
 
 interface ProjectCardProps {
   project: Project;
@@ -18,7 +19,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   const { isUnlocked, unlock } = useProjectsAuth();
   const [modalOpen, setModalOpen] = useState(false);
   const router = useRouter();
-  const href = `/work/${project.id}`;
+  const { lang, t } = useLocale();
+  const href = `/${lang}/work/${project.id}`;
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
     if (isUnlocked) return;
@@ -52,7 +54,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           href={href}
           onClick={handleClick}
           className="group flex flex-col gap-5 text-left"
-          aria-label={`Open ${project.title} case study`}
+          aria-label={t.works.openCase(project.title)}
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card bg-border md:aspect-auto md:h-[540px]">
             <Image
@@ -71,7 +73,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               aria-hidden="true"
               className="absolute inset-x-0 bottom-0 flex items-center justify-between p-6 text-card opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
-              <span className="label-eyebrow !text-card">View case study</span>
+              <span className="label-eyebrow !text-card">{t.works.viewCase}</span>
               <svg width="24" height="14" viewBox="0 0 24 14" fill="none" aria-hidden="true">
                 <path
                   d="M0 7H22M22 7L16 1M22 7L16 13"

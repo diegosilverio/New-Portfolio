@@ -1,8 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useLocale } from './LocaleProvider';
 
 export function Footer() {
+  const { t } = useLocale();
+
   return (
     <footer id="contact" className="container-x pb-12 pt-24 md:pt-section">
       <motion.h2
@@ -12,8 +15,9 @@ export function Footer() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="font-serif text-footer max-w-[18ch] leading-[1.05] text-ink"
       >
-        Let&apos;s make something{' '}
-        <span className="text-accent">worth</span> using.
+        {t.footer.titleBefore}{' '}
+        <span className="text-accent">{t.footer.titleAccent}</span>{' '}
+        {t.footer.titleAfter}
       </motion.h2>
 
       <motion.div
