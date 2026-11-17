@@ -4,7 +4,7 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam. Atualmente lidero o design de produto na SuperSummary.',
+      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam. Atualmente lidero o time de design de produto na SuperSummary.',
     ogDescription:
       'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam.',
     managementTitle: 'Gestão de Times de Design — Diego Silverio',
@@ -40,7 +40,7 @@ export const pt: Dictionary = {
     eyebrow: 'Trajetória',
     title: 'Sobre',
     portraitAlt: 'Retrato de Diego Silverio',
-    lead: 'Meu nome é Diego — sou product designer com mais de 16 anos de experiência em desenvolvimento de software para marketplaces, fintechs e, atualmente, EdTech.',
+    lead: 'Meu nome é Diego — sou product designer com mais de 16 anos de experiência em design de experiências para marketplaces, fintechs e, atualmente, EdTech.',
     body: 'Morando no Brasil, liderei times de diversos tamanhos e configurações, atuando em grandes empresas, pequenos negócios e startups para transformar problemas complexos em experiências de produto eficientes e de impacto.',
     managementLink: 'Leia sobre minha experiência na gestão de times de design',
     stats: [
@@ -51,9 +51,9 @@ export const pt: Dictionary = {
     ],
   },
   footer: {
-    titleBefore: 'Vamos criar algo que',
-    titleAccent: 'valha',
-    titleAfter: 'a pena usar.',
+    titleBefore: 'Vamos criar experiências que',
+    titleAccent: 'encantem',
+    titleAfter: 'as pessoas.',
   },
   caseStudy: {
     eyebrow: 'Estudo de Caso',
