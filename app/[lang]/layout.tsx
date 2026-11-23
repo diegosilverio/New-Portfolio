@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 import { GeistMono } from 'geist/font/mono';
 import '../globals.css';
-import { ProjectsAuthProvider } from '@/components/ProjectsAuthProvider';
 import { LocaleProvider } from '@/components/LocaleProvider';
 import {
   htmlLang,
@@ -69,7 +68,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
     >
       <body>
         <LocaleProvider lang={lang}>
-          <ProjectsAuthProvider>{children}</ProjectsAuthProvider>
+          {children}
         </LocaleProvider>
       </body>
     </html>

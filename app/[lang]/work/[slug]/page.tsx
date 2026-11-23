@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { CaseStudy } from '@/components/CaseStudy';
-import { ProjectGate } from '@/components/ProjectGate';
 import { isLocale, localeAlternates, ogLocale } from '@/lib/i18n/config';
 import { getNextProject, getProjectBySlug, projects } from '@/lib/projects';
 
@@ -43,11 +42,9 @@ export default async function ProjectPage({ params }: PageProps) {
   const nextProject = getNextProject(slug, lang);
 
   return (
-    <ProjectGate projectTitle={project.title}>
-      <main className="min-h-screen bg-bg text-ink">
-        <Header />
-        <CaseStudy project={project} nextProject={nextProject} />
-      </main>
-    </ProjectGate>
+    <main className="min-h-screen bg-bg text-ink">
+      <Header />
+      <CaseStudy project={project} nextProject={nextProject} />
+    </main>
   );
 }

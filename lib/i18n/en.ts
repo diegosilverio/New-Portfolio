@@ -75,19 +75,6 @@ export const en = {
     imageAlt: (title: string, n: number) => `${title} — image ${n}`,
     outcomeAlt: (title: string) => `${title} outcome`,
   },
-  password: {
-    eyebrow: 'Protected work',
-    title: 'Enter the password',
-    unlockProject: (title: string) =>
-      `Unlock ${title} and the other case studies.`,
-    unlockAll: 'Unlock the case studies on this site.',
-    label: 'Password',
-    error: 'Incorrect password. Try again.',
-    cancel: 'Cancel',
-    backHome: 'Back to home',
-    submit: 'Unlock',
-    closeAria: 'Close password prompt',
-  },
   error: {
     titleBefore: 'Something',
     titleAccent: 'broke',

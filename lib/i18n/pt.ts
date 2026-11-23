@@ -77,19 +77,6 @@ export const pt: Dictionary = {
     imageAlt: (title: string, n: number) => `${title} — imagem ${n}`,
     outcomeAlt: (title: string) => `Resultado de ${title}`,
   },
-  password: {
-    eyebrow: 'Trabalho protegido',
-    title: 'Digite a senha',
-    unlockProject: (title: string) =>
-      `Desbloqueie ${title} e os outros estudos de caso.`,
-    unlockAll: 'Desbloqueie os estudos de caso deste site.',
-    label: 'Senha',
-    error: 'Senha incorreta. Tente novamente.',
-    cancel: 'Cancelar',
-    backHome: 'Voltar para a home',
-    submit: 'Desbloquear',
-    closeAria: 'Fechar a solicitação de senha',
-  },
   error: {
     titleBefore: 'Algo',
     titleAccent: 'quebrou',
