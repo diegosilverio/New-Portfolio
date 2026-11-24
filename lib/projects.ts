@@ -82,12 +82,353 @@ export interface Project {
   outcomeBody: string;
   outcomeBullets: string[];
   outcomeImage?: string;
+  quote?: { text: string; author: string };
 
   // Learnings
   learnings: Learning[];
 }
 
 export const projects: Project[] = [
+  {
+    id: 'legacy-subscriber-migration',
+    title: 'Legacy Subscriber Migration',
+    year: '2026',
+    image: '/images/legacy-subscriber-migration/legacy-subscriber-migration-cover.svg',
+    caseImages: [
+      '/images/legacy-subscriber-migration/legacy-subscriber-migration-1.svg',
+      '/images/legacy-subscriber-migration/legacy-subscriber-migration-2.svg',
+      '/images/legacy-subscriber-migration/legacy-subscriber-migration-3.svg',
+      '/images/legacy-subscriber-migration/legacy-subscriber-migration-4.svg',
+    ],
+    description:
+      'Moving a loyal legacy base to the new Plus plan with an optional, loyalty-priced upgrade',
+    role: 'Lead Product Designer (sole designer)',
+    company: 'SuperSummary',
+    scope: 'Growth Design, Pricing & Packaging, Experimentation',
+    tagline:
+      'Gated new AI tools behind an optional, loyalty-priced upgrade: 60x the upgrade rate, with cancellations flat.',
+    overview:
+      'SuperSummary is a US edtech platform for literature study guides and reading tools. After it launched a new Plus/Essentials plan structure, a large group of legacy subscribers, mostly students and book club members, kept full Plus access while paying Essentials prices. Almost all of them (97.7%) were long-tenured annual subscribers. I was the only designer on the migration, inside the Growth Experimentation squad, while also leading the design team and the design system. I had worked on both initiatives before it: Pricing & Packaging (Q3 2025) and the Upgrade Flow (Q4 2025).',
+    highlights: [
+      'Growth Experimentation squad',
+      '97.7% of legacy subscribers on long-tenured annual plans',
+      'Team: 1 PM, 2 engineers, 1 data analyst; leadership as key stakeholder',
+      'Discovery Q1 → A/B test Q2 → 100% rollout July 2026',
+    ],
+    stats: [
+      { value: '5.4%', label: 'Upgrade rate (vs. 0.09%)' },
+      { value: '8x+', label: 'Upsell revenue vs. control' },
+      { value: 'Flat', label: 'Cancellations' },
+    ],
+    challengeTitle: 'Charge a loyal base more without a wave of cancellations.',
+    challengeBody:
+      'Legacy subscribers were getting Plus for the price of Essentials. That weakened the new plan structure and left upsell revenue on the table. But this base had chosen us early, and any change carried two risks: a spike in cancellations and damage to how people saw the brand. Leadership had not settled on a direction. The PM and I used business analysis and benchmarks to narrow the options and recommend one path.',
+    decision: {
+      body: 'Trade-offs on the table:',
+      points: [
+        'Free uses before gating: zero, one or three',
+        'Gate every AI tool, or only some',
+        'Discount: 20% off for life, or for the first year only',
+        'Forced migration with a deadline, or an optional upgrade',
+      ],
+    },
+    goals: [
+      'Increase upsell revenue from legacy subscribers moving to Plus.',
+      'Keep cancellations at the same level, despite the new gating.',
+      'Protect brand perception: no spike in complaints, no silent disengagement.',
+      'Out of scope, on purpose: the native app (web only, to cut engineering effort) and every feature users had when they subscribed (PDFs, audio, games).',
+    ],
+    processIntro:
+      'Inputs were behavioral data from Amplitude and Clarity, plus what we learned in the two previous pricing initiatives. A benchmark of Todoist, Buffer and Grammarly set two principles: keep existing tools free and charge only for the new AI tools, and make migration optional, opened by limited free use. Main scope decision: one free use per AI tool, so everyone could try each one before reaching the gate.',
+    processFlow:
+      'Tracking: 6 validation rounds with the squad and leadership, then an A/B test with upsell revenue as the primary metric and cancellation guardrails.',
+    process: [
+      {
+        title: 'Discovery',
+        description:
+          'Mapped legacy behavior and checked with Engineering which retention interventions the cancellation flow could support.',
+      },
+      {
+        title: 'Strategy workshop',
+        description:
+          'Co-led with the PM, turning leadership\'s open questions into testable hypotheses.',
+      },
+      {
+        title: 'Exploration & validation',
+        description:
+          'Generated a wide first round of drafts with Claude and Figma, then ran an unmoderated usability test with 40 people. It confirmed the flow was clear and led to small fixes.',
+      },
+      {
+        title: 'Alignment & hand-off',
+        description:
+          'Led design through cross-functional reviews and owned the engineering hand-off.',
+      },
+    ],
+    execution: {
+      title: 'Make the upgrade feel like a thank-you, not a wall.',
+      body:
+        'The key decision was an optional upgrade, opened by one free use per AI tool. A and B carried the highest risk to cancellations and to the brand. C let people feel the value first, and the messaging framed the discount as thanks for their loyalty: an intro note on first use, limit and gating banners explaining what Plus unlocks, an upgrade modal with 20% off for life, and a last-resort save offer in the cancellation flow.',
+      bullets: [
+        'Option A — Forced migration with a deadline',
+        'Option B — Gate every AI tool at once',
+        'Option C — Optional upgrade with one free use per AI tool (chosen)',
+      ],
+    },
+    outcomeTitle: '60x the upgrade rate, with cancellations flat.',
+    outcomeBody:
+      'In the A/B test (June–July 2026), treatment beat control on revenue without moving cancellations. Leadership approved the rollout to 100% of legacy subscribers in July 2026 with no objections. Only one support message touched the change, and use of the features that stayed free rose about 11%.',
+    outcomeBullets: [
+      'Upgrade rate: 5.4% of exposed users, vs. 0.09% in control',
+      'Upsell revenue: 8x+ control during the test window',
+      'Scheduled cancellations: flat (−2.1%, not significant)',
+      'Save rate in the cancellation flow: 60.6% vs. 52.2% (+8.4 pp)',
+    ],
+    quote: {
+      text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
+      author: 'Growth squad peer',
+    },
+    outcomeImage: '/images/legacy-subscriber-migration/legacy-subscriber-migration-delivery.svg',
+    learnings: [
+      {
+        title: 'Converge earlier.',
+        body:
+          'The project took 6 validation rounds, against an average of 2.4 across other design initiatives, and some of those alignment rounds weren\'t needed. Next time I\'ll set decision criteria and each stakeholder\'s input point at kickoff.',
+      },
+      {
+        title: 'Protect the original promise.',
+        body:
+          'Keeping free what users had when they subscribed is what let us charge more without losing the base. I carry this into any pricing change.',
+      },
+      {
+        title: 'Instrument before launch.',
+        body:
+          'The churn-intent guardrail rose 41% and triggered an automatic rollback recommendation; the analysis showed it was a measurement artifact. One gating event never fired, so per-tool conversion could only be read for some tools. I now define guardrails and events alongside the design.',
+      },
+    ],
+  },
+  {
+    id: 'visual-language',
+    title: 'New Visual Language',
+    year: '2025–26',
+    image: '/images/visual-language/visual-language-cover.svg',
+    caseImages: [
+      '/images/visual-language/visual-language-1.svg',
+      '/images/visual-language/visual-language-2.svg',
+      '/images/visual-language/visual-language-3.svg',
+    ],
+    description:
+      'Turning a new design system into a visual language that grew revenue',
+    role: 'Lead Product Designer',
+    company: 'SuperSummary',
+    scope: 'Visual Language, Experimentation, Design Leadership',
+    tagline:
+      'Led the exploration of SuperSummary\'s new visual language and scaled it into two A/B-tested page redesigns that beat a no-loss revenue target.',
+    overview:
+      'SuperSummary is a subscription platform with ~10,000 expert-written study guides, plus quizzes and AI features such as Ask SuperSummary, an AI chatbot. Its readers are students, teachers, book clubs and lifelong learners. This project covered two public pages: the Homepage, the institutional entry point, and the Subscribe page, the landing page where the conversion funnel starts. I led it as Lead Product Designer, aligning direction with the CEO and Head of Product.',
+    highlights: [
+      'Two public pages: Homepage and Subscribe page',
+      '~10,000 expert-written study guides',
+      'Started with me and two designers, one senior and one junior',
+      'Later split across two squads: Product Innovation and Growth',
+    ],
+    stats: [
+      { value: '~+11%', label: 'Mobile net revenue (Homepage)' },
+      { value: '~+11%', label: 'Gross revenue (Subscribe)' },
+      { value: '~+20%', label: 'Annual plan checkouts' },
+    ],
+    challengeTitle: 'A 2015 visual language under a 2025 product.',
+    challengeBody:
+      'The product had moved forward: new content, AI features, quizzes and an AI chatbot. The visual language had not. It was based on early Material Design (~2015), had been in place for at least five years and didn\'t use our new design system. With the first version of the design system ready, the company needed to see what applying it would look like and where the brand was going visually. The constraint: these pages carried revenue. Leadership wanted something fast to test, engineering said that scope couldn\'t ship that fast, and expectations on net revenue, the main metric, were high.',
+    decision: {
+      body: 'Trade-offs:',
+      points: [
+        'Leadership\'s speed vs. real engineering effort',
+        'High net revenue expectations vs. a simplified first release',
+        'An ambitious new language vs. work split into blocks the squads could ship',
+      ],
+    },
+    goals: [
+      'Define a new visual language on top of the design system.',
+      'Prove it on two pages: one institutional, one for conversion.',
+      'Make the switch without losing net revenue.',
+      'Out of scope, on purpose: the rest of the platform, to be converted later with the design system migration.',
+    ],
+    processIntro:
+      'Inputs were market references, competitors and visual trends. We skipped upfront user research: leadership wanted to move fast, so the A/B tests became our validation with users. The main scope decision was to test the language on two pages with different jobs instead of redesigning the platform. To fit engineering capacity, we simplified the first release and split it into blocks.',
+    processFlow:
+      'Tracking: biweekly design reviews at the start; in the squads, 1:1s with the designers and experiments followed in Amplitude.',
+    process: [
+      {
+        title: 'Explore',
+        description:
+          'Three visual directions, with the senior and junior designers.',
+      },
+      {
+        title: 'Align',
+        description: 'The CEO, Head of Product and I picked one direction.',
+      },
+      {
+        title: 'Apply',
+        description:
+          'Homepage and Subscribe page, then a second alignment with leadership.',
+      },
+      {
+        title: 'Hand off',
+        description:
+          'Product Innovation took the Homepage, Growth took the Subscribe page. The designers executed with my support, closer with the junior on the Subscribe page. PMs owned the revenue target and each rollout decision.',
+      },
+    ],
+    execution: {
+      title: 'Designing with the gestures of reading.',
+      body:
+        'The key decision was anchoring the language in what people do when they read, like highlighting and taking notes. It builds on a familiar practice and made the new language tangible for leadership.',
+      bullets: [
+        'Visual language — three directions explored, one chosen',
+        'Homepage — search moved out of the header, with a search icon on mobile, a Featured Guides section and Trending Titles as the default filter. Shipped in iterations.',
+        'Subscribe page — the first version lost clicks because the flow hid the reader\'s book and the desktop hero card wasn\'t clickable. The next version fixed both.',
+      ],
+    },
+    outcomeTitle: 'A new visual language shipped to both pages, beating a no-loss target.',
+    outcomeBody:
+      'Each metric is measured against the A/B control. On the Homepage, desktop showed no detectable impact; mobile drove the gain. Beyond the numbers, the language became the standard for migrating the rest of the platform, leadership adopted the direction, and the designers gained autonomy through a Visual Language Library in Figma.',
+    outcomeBullets: [
+      '~+11% net revenue on mobile, Homepage (Apr–May 2026)',
+      '~+11% gross revenue, Subscribe page (May–Jun 2026)',
+      '~+20% annual plan checkouts, Subscribe page',
+      'Became the standard for migrating the rest of the platform',
+    ],
+    outcomeImage: '/images/visual-language/visual-language-delivery.svg',
+    learnings: [
+      {
+        title: 'Run perception research before the tests.',
+        body:
+          'We focused on preparing experiments, and the A/B results showed what worked, not why. Gaps in how users perceived the language remained.',
+      },
+      {
+        title: 'A visual language needs defending through engineering trade-offs.',
+        body:
+          'Feasibility discussions kept chipping at it, and since it was the project\'s main asset, design had to hold it until release. Mobile and desktop users also responded differently; I now plan and read experiments by device from the start.',
+      },
+      {
+        title: 'Anchor a visual language in real user behavior.',
+        body:
+          'The gesture of reading made it tangible for leadership and connected the brand to the reader.',
+      },
+    ],
+  },
+  {
+    id: 'plus-plan',
+    title: 'Plus Plan',
+    year: '2025–26',
+    image: '/images/plus-plan/plus-plan-cover.svg',
+    caseImages: [
+      '/images/plus-plan/plus-plan-1.svg',
+      '/images/plus-plan/plus-plan-2.svg',
+      '/images/plus-plan/plus-plan-3.svg',
+    ],
+    description:
+      'Pricing, packaging and upgrade: launching an AI-powered plan through A/B test cycles',
+    role: 'Lead Product Designer',
+    company: 'SuperSummary',
+    scope: 'Growth Design, Pricing & Packaging, Experimentation',
+    tagline:
+      'Co-defined a new plan structure and optimized the upgrade funnel through A/B test cycles, with double-digit net revenue gains.',
+    overview:
+      'SuperSummary offers full study guides to students and book club members. Between July 2025 and March 2026, after the Growth squad\'s senior designer left, I stepped in as its hands-on designer while still leading Design across the company. The squad runs fast A/B test cycles across the conversion and monetization funnel. This case covers three connected pieces of work: Pricing & Packaging (the new Essentials vs Plus structure), the Upgrade Flow and the Upsell Modals.',
+    highlights: [
+      'Growth Experimentation squad',
+      'Students and book club members; most Plus subscribers are book club members',
+      'Team: 1 PM, 2 engineers, 1 data analyst',
+      'Solo until November 2025, then with a junior designer',
+    ],
+    stats: [
+      { value: '~+15%', label: 'Net revenue per user (P&P v1)' },
+      { value: '~+8%', label: 'Revenue (Select Your Plan)' },
+      { value: '~+30%', label: 'Upsell revenue (Modals)' },
+    ],
+    challengeTitle: 'Prove the AI plan was worth a pricing overhaul.',
+    challengeBody:
+      'New AI tools opened room for a higher-tier plan. But every AI call carries a usage cost, and we didn\'t know whether adoption would justify restructuring plans and prices. So we started with a smoke test. Once it showed relevant Plus adoption, the PM and I built the two-plan structure into the platform. The main risk sat in checkout: a new plan choice could make new users hesitate and drop off, costing more Essentials sign-ups than it gained in Plus.',
+    decision: {
+      body: 'Trade-offs:',
+      points: [
+        'Launch Plus without cannibalizing Essentials.',
+        'Add the Select Plan step without increasing checkout drop-off.',
+        'Protect the current base: the change applied to new users only.',
+      ],
+    },
+    goals: [
+      'Validate demand for Plus before building the new plan structure.',
+      'Increase net revenue per exposed user in checkout and upgrade.',
+      'Out of scope, on purpose: migrating existing subscribers, changing Essentials pricing, redesigning the paywall, and bringing Plus to the mobile app in the first wave.',
+    ],
+    processIntro:
+      'The PM brought competitor analysis and pricing studies. I turned those concepts into an experience, mapped which touchpoints had to change and delivered end to end: the conversion funnel (landing page, account creation, checkout), the account screen and the feature gates. Key scope decision: Plus got everything with a per-use cost, such as each AI call, plus PDF download because of its weight in conversion. Essentials kept the full study guides.',
+    processFlow:
+      'Tracking: Amplitude dashboard and CX tickets, with checkout drop-off as the guardrail.',
+    process: [
+      {
+        title: 'Find the leverage',
+        description:
+          'Clarity recordings and Amplitude funnels to spot drop-offs by layout and device.',
+      },
+      {
+        title: 'Frame together',
+        description: 'Workshops with the squad to turn ideas into concepts.',
+      },
+      {
+        title: 'Design lean',
+        description: 'Design system patterns, detailed where it mattered.',
+      },
+      {
+        title: 'Ship and read',
+        description: 'Every release as an A/B test.',
+      },
+    ],
+    execution: {
+      title: 'Make each plan\'s value impossible to miss.',
+      body:
+        'The decision that mattered most: keep each plan\'s value explicit and above the fold. Comparing the same design across screen heights in Clarity showed that, on shorter screens, plan differences and the CTA fell out of sight.',
+      bullets: [
+        'Smoke test — checkout variants comparing a value-prop headline with testimonials',
+        'Select Plan step — Essentials vs Plus for new users',
+        'Select Your Plan — layout and CTA adjusted for shorter screens',
+        'Upgrade Flow — end-to-end redesign, plus the Mobile Sticky Toolbar',
+        'Upsell Modals — discount experiments designed by the junior designer under my direction',
+      ],
+    },
+    outcomeTitle: 'The AI plan won half of new subscribers and raised revenue.',
+    outcomeBody:
+      'Each release shipped as an A/B test, and the gains stacked across the funnel: from the plan structure itself to the upgrade and upsell moments.',
+    outcomeBullets: [
+      '~50% of new subscribers choose Plus (after P&P v1, Sep 2025)',
+      '~+15% net revenue per exposed user vs control (P&P v1)',
+      '~+8% revenue vs control on Select Your Plan (Q4 2025)',
+      '~+30% upsell revenue and ~−12% users starting cancellation (Q1 2026)',
+    ],
+    quote: {
+      text: 'Diego identified opportunities to improve layout and CTA placement for smaller screen heights, which led to one of our most successful A/B tests of the quarter.',
+      author: 'Growth squad peer',
+    },
+    outcomeImage: '/images/plus-plan/plus-plan-delivery.svg',
+    learnings: [
+      {
+        title: 'Define the value proposition with the scope.',
+        body:
+          'We debated what Plus offered more than once. Today I would settle it before designing, and make sure that value stays visible in every scenario, even on a short screen. The biggest lever was a small fix, not a redesign.',
+      },
+      {
+        title: 'Run a pre-mortem on every treatment.',
+        body:
+          'A low win rate taught me to review each proposal\'s risks before it becomes a test.',
+      },
+      {
+        title: 'Delegate without isolating.',
+        body:
+          'Even while owning smaller initiatives, the junior designer needed to stay in the information flow of the whole project. That is what I take to any team I lead.',
+      },
+    ],
+  },
   {
     id: 'nuvem-envio',
     title: 'Nuvem Envio',
@@ -556,11 +897,10 @@ export type ProjectTranslation = Omit<
 // Chronological order, newest first. Ranges like '2021–22' sort by their end year,
 // then by start year; ties keep their order in the array.
 function yearKey(year: string): [number, number] {
-  const [start, end] = year.split(/[–-]/).map((y) => y.trim());
-  const startYear = Number(start);
-  const endYear = end
-    ? Number(end.length === 2 ? start.slice(0, 2) + end : end)
-    : startYear;
+  const parts = year.match(/\d{2,4}/g) ?? ['0'];
+  const startYear = Number(parts[0]);
+  const last = parts[parts.length - 1];
+  const endYear = Number(last.length === 2 ? parts[0].slice(0, 2) + last : last);
   return [endYear, startYear];
 }
 

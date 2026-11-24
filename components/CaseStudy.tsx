@@ -303,6 +303,16 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
                 </li>
               ))}
             </ul>
+            {project.quote && (
+              <blockquote className="mt-4 flex flex-col gap-3 border-l-2 border-accent pl-6">
+                <p className="font-serif text-xl md:text-2xl leading-snug text-ink">
+                  “{project.quote.text}”
+                </p>
+                <cite className="label-eyebrow not-italic !text-muted">
+                  {project.quote.author}
+                </cite>
+              </blockquote>
+            )}
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card bg-border md:aspect-auto md:h-[540px]">
             <Image

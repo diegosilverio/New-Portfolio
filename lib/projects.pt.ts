@@ -1,6 +1,321 @@
 import type { ProjectTranslation } from './projects';
 
 export const projectsPt: Record<string, ProjectTranslation> = {
+  'legacy-subscriber-migration': {
+    title: 'Migração de Assinantes Legacy',
+    description:
+      'Levando uma base legacy fiel para o novo plano Plus com um upgrade opcional e preço de fidelidade',
+    role: 'Lead Product Designer (designer único)',
+    company: 'SuperSummary',
+    scope: 'Growth Design, Pricing & Packaging, Experimentação',
+    tagline:
+      'Bloqueei as novas ferramentas de IA atrás de um upgrade opcional, com preço de fidelidade: taxa de upgrade 60x maior, com cancelamentos estáveis.',
+    overview:
+      'A SuperSummary é uma plataforma de edtech americana de guias de estudo de literatura e ferramentas de leitura. Depois do lançamento da nova estrutura de planos Plus/Essentials, um grande grupo de assinantes legacy, em sua maioria estudantes e membros de book clubs, continuou com acesso completo ao Plus pagando preço de Essentials. Quase todos (97,7%) eram assinantes anuais de longa data. Fui o único designer da migração, dentro da squad de Growth Experimentation, enquanto também liderava o time de design e o design system. Participei das duas iniciativas anteriores: Pricing & Packaging (Q3 2025) e o Upgrade Flow (Q4 2025).',
+    highlights: [
+      'Squad de Growth Experimentation',
+      '97,7% dos legacy em planos anuais de longa data',
+      'Time: 1 PM, 2 engenheiros, 1 analista de dados; liderança como stakeholder principal',
+      'Discovery no Q1 → teste A/B no Q2 → rollout para 100% em julho de 2026',
+    ],
+    stats: [
+      { value: '5,4%', label: 'Taxa de upgrade (vs. 0,09%)' },
+      { value: '8x+', label: 'Receita de upsell vs. controle' },
+      { value: 'Estáveis', label: 'Cancelamentos' },
+    ],
+    challengeTitle: 'Cobrar mais de uma base fiel sem uma onda de cancelamentos.',
+    challengeBody:
+      'Os assinantes legacy recebiam Plus pelo preço do Essentials. Isso enfraquecia a nova estrutura de planos e deixava receita de upsell na mesa. Mas essa base tinha nos escolhido cedo, e qualquer mudança trazia dois riscos: um pico de cancelamentos e um dano à percepção da marca. A liderança não tinha definido um caminho. Eu e o PM usamos análises de negócio e benchmarks para reduzir as opções e recomendar uma direção.',
+    decision: {
+      body: 'Trade-offs em jogo:',
+      points: [
+        'Usos grátis antes do bloqueio: zero, um ou três',
+        'Bloquear todas as ferramentas de IA, ou só algumas',
+        'Desconto: 20% vitalício, ou só no primeiro ano',
+        'Migração forçada com prazo, ou upgrade opcional',
+      ],
+    },
+    goals: [
+      'Aumentar a receita de upsell dos assinantes legacy que migram para o Plus.',
+      'Manter os cancelamentos no mesmo patamar, apesar do novo bloqueio.',
+      'Proteger a percepção da marca: sem pico de reclamações, sem desengajamento silencioso.',
+      'Fora do escopo, de propósito: o app nativo (só web, para reduzir o esforço de engenharia) e tudo o que os usuários já tinham quando assinaram (PDFs, áudio, jogos).',
+    ],
+    processIntro:
+      'Os inputs foram dados de comportamento do Amplitude e do Clarity, mais o aprendizado das duas iniciativas de pricing anteriores. Um benchmark de Todoist, Buffer e Grammarly definiu dois princípios: manter grátis as ferramentas existentes e cobrar só pelas novas ferramentas de IA, e tornar a migração opcional, a partir de um uso gratuito limitado. Decisão principal de escopo: um uso grátis por ferramenta de IA, para que todos pudessem testar cada uma antes do bloqueio.',
+    processFlow:
+      'Acompanhamento: 6 rodadas de validação com a squad e a liderança e, depois, um teste A/B com receita de upsell como métrica principal e guardrails de cancelamento.',
+    process: [
+      {
+        title: 'Discovery',
+        description:
+          'Mapeei o comportamento dos legacy e validei com Engenharia quais intervenções de retenção o fluxo de cancelamento comportava.',
+      },
+      {
+        title: 'Workshop de estratégia',
+        description:
+          'Co-conduzido com o PM, transformando as perguntas abertas da liderança em hipóteses testáveis.',
+      },
+      {
+        title: 'Exploração e validação',
+        description:
+          'Gerei uma primeira rodada ampla de rascunhos com Claude e Figma e depois rodei um teste de usabilidade não moderado com 40 pessoas. Ele confirmou o entendimento do fluxo e trouxe ajustes pontuais.',
+      },
+      {
+        title: 'Alinhamento e hand-off',
+        description:
+          'Liderei o design nas revisões cross-funcionais e fui responsável pelo hand-off para engenharia.',
+      },
+    ],
+    execution: {
+      title: 'Fazer o upgrade parecer um agradecimento, não um muro.',
+      body:
+        'A decisão central foi um upgrade opcional, aberto por um uso grátis por ferramenta de IA. A e B tinham o maior risco para cancelamentos e para a marca. A C deixava as pessoas sentirem o valor primeiro, e a mensagem apresentava o desconto como agradecimento pela fidelidade: uma nota de introdução no primeiro uso, banners de limite e de bloqueio explicando o que o Plus libera, um modal de upgrade com 20% off vitalício e uma oferta de retenção de última hora no fluxo de cancelamento.',
+      bullets: [
+        'Opção A — Migração forçada com prazo',
+        'Opção B — Bloquear todas as ferramentas de IA de uma vez',
+        'Opção C — Upgrade opcional com um uso grátis por ferramenta de IA (escolhida)',
+      ],
+    },
+    outcomeTitle: 'Taxa de upgrade 60x maior, com cancelamentos estáveis.',
+    outcomeBody:
+      'No teste A/B (junho–julho de 2026), o tratamento superou o controle em receita sem mexer nos cancelamentos. A liderança aprovou o rollout para 100% dos assinantes legacy em julho de 2026, sem objeções. Só uma mensagem de suporte mencionou a mudança, e o uso das funcionalidades que continuaram grátis subiu cerca de 11%.',
+    outcomeBullets: [
+      'Taxa de upgrade: 5,4% dos usuários expostos, vs. 0,09% no controle',
+      'Receita de upsell: 8x+ o controle durante a janela do teste',
+      'Cancelamentos agendados: estáveis (−2,1%, não significativo)',
+      'Retenção no fluxo de cancelamento: 60,6% vs. 52,2% (+8,4 p.p.)',
+    ],
+    quote: {
+      text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
+      author: 'Colega da squad de Growth',
+    },
+    learnings: [
+      {
+        title: 'Convergir mais cedo.',
+        body:
+          'O projeto passou por 6 rodadas de validação, contra uma média de 2,4 em outras iniciativas de design, e parte dessas rodadas de alinhamento não era necessária. Da próxima vez, defino no kickoff os critérios de decisão e o momento de input de cada stakeholder.',
+      },
+      {
+        title: 'Proteger a promessa original.',
+        body:
+          'Manter grátis o que os usuários tinham quando assinaram foi o que nos permitiu cobrar mais sem perder a base. Levo isso para qualquer mudança de pricing.',
+      },
+      {
+        title: 'Instrumentar antes de lançar.',
+        body:
+          'O guardrail de churn intent subiu 41% e gerou uma recomendação automática de rollback; a análise mostrou que era um artefato de medição. Um evento de bloqueio nunca disparou, então a conversão por ferramenta só pôde ser lida para algumas delas. Hoje defino guardrails e eventos junto com o design.',
+      },
+    ],
+  },
+  'visual-language': {
+    title: 'Nova Linguagem Visual',
+    description:
+      'Transformando um novo design system em uma linguagem visual que aumentou a receita',
+    role: 'Lead Product Designer',
+    company: 'SuperSummary',
+    scope: 'Linguagem Visual, Experimentação, Liderança de Design',
+    tagline:
+      'Liderei a exploração da nova linguagem visual da SuperSummary e a desdobrei em dois redesigns de página testados em A/B, que superaram a meta de não perder receita.',
+    overview:
+      'A SuperSummary é uma plataforma por assinatura com ~10.000 guias de leitura escritos por especialistas, além de quizzes e recursos de IA como o Ask SuperSummary, um chatbot. Seus leitores são estudantes, professores, clubes do livro e leitores em geral. O projeto cobriu duas páginas públicas: a Homepage, porta de entrada institucional, e a Subscribe page, a landing page onde começa o funil de conversão. Liderei como Lead Product Designer, alinhando a direção com o CEO e o Head de Produto.',
+    highlights: [
+      'Duas páginas públicas: Homepage e Subscribe page',
+      '~10.000 guias escritos por especialistas',
+      'Começou comigo e duas designers, uma sênior e uma júnior',
+      'Depois dividido entre dois squads: Product Innovation e Growth',
+    ],
+    stats: [
+      { value: '~+11%', label: 'Receita líquida mobile (Homepage)' },
+      { value: '~+11%', label: 'Receita bruta (Subscribe)' },
+      { value: '~+20%', label: 'Checkouts do plano anual' },
+    ],
+    challengeTitle: 'Uma linguagem visual de 2015 sobre um produto de 2025.',
+    challengeBody:
+      'O produto tinha avançado: conteúdos novos, recursos de IA, quizzes e um chatbot de IA. A linguagem visual não. Ela era baseada no Material Design inicial (~2015), existia havia pelo menos cinco anos e não usava o nosso novo design system. Com a primeira versão do design system pronta, a empresa precisava ver como ficaria aplicado e para onde a marca ia visualmente. A restrição: essas páginas geravam receita. A liderança queria algo rápido para testar, a engenharia avaliava que aquele escopo não sairia tão rápido, e a expectativa sobre a receita líquida, a métrica principal, era alta.',
+    decision: {
+      body: 'Trade-offs:',
+      points: [
+        'Velocidade pedida pela liderança vs. esforço real de engenharia',
+        'Expectativa alta de receita líquida vs. uma primeira entrega simplificada',
+        'Uma linguagem nova e ambiciosa vs. trabalho quebrado em blocos que os squads conseguissem entregar',
+      ],
+    },
+    goals: [
+      'Definir uma nova linguagem visual sobre o design system.',
+      'Prová-la em duas páginas: uma institucional e uma de conversão.',
+      'Fazer a troca sem perder receita líquida.',
+      'Fora de escopo, de propósito: o restante da plataforma, que seria convertido depois, com a migração do design system.',
+    ],
+    processIntro:
+      'Os inputs foram referências de mercado, concorrentes e tendências visuais. Não fizemos pesquisa com usuários antes: a liderança queria avançar rápido, e os testes A/B viraram a nossa validação com usuários. A principal decisão de escopo foi testar a linguagem em duas páginas com funções diferentes, em vez de redesenhar a plataforma. Para caber na capacidade da engenharia, simplificamos a primeira entrega e a quebramos em blocos.',
+    processFlow:
+      'Acompanhamento: design reviews quinzenais no início; nos squads, 1:1 com as designers e experimentos acompanhados no Amplitude.',
+    process: [
+      {
+        title: 'Explorar',
+        description: 'Três direções visuais, com a designer sênior e a júnior.',
+      },
+      {
+        title: 'Alinhar',
+        description: 'O CEO, o Head de Produto e eu escolhemos uma direção.',
+      },
+      {
+        title: 'Aplicar',
+        description:
+          'Homepage e Subscribe page, com um segundo alinhamento com a liderança.',
+      },
+      {
+        title: 'Passar para os squads',
+        description:
+          'Product Innovation assumiu a Homepage e Growth, a Subscribe page. As designers executaram com o meu apoio, mais próximo da júnior na Subscribe page. Os PMs assumiram a meta de receita e cada decisão de rollout.',
+      },
+    ],
+    execution: {
+      title: 'Desenhando com os gestos da leitura.',
+      body:
+        'A decisão principal foi ancorar a linguagem no que as pessoas fazem quando leem, como marcar com marca-texto e fazer anotações. Ela parte de uma prática familiar e tornou a nova linguagem tangível para a liderança.',
+      bullets: [
+        'Linguagem visual — três direções exploradas, uma escolhida',
+        'Homepage — a busca saiu do header, com um ícone de busca no mobile, uma seção Featured Guides e Trending Titles como filtro padrão. Lançada em iterações.',
+        'Subscribe page — a primeira versão perdeu cliques porque o fluxo escondia o livro do leitor e o card do hero no desktop não era clicável. A versão seguinte corrigiu os dois pontos.',
+      ],
+    },
+    outcomeTitle:
+      'Uma nova linguagem visual nas duas páginas, superando a meta de não perder receita.',
+    outcomeBody:
+      'Cada métrica foi medida contra o controle do A/B. Na Homepage, o desktop não teve impacto detectável; o ganho veio do mobile. Além dos números, a linguagem virou o padrão para a migração do restante da plataforma, a liderança adotou a direção e as designers ganharam autonomia com uma Visual Language Library no Figma.',
+    outcomeBullets: [
+      '~+11% de receita líquida no mobile, Homepage (abr–mai/2026)',
+      '~+11% de receita bruta, Subscribe page (mai–jun/2026)',
+      '~+20% de checkouts do plano anual, Subscribe page',
+      'Virou o padrão para migrar o restante da plataforma',
+    ],
+    learnings: [
+      {
+        title: 'Pesquisa de percepção antes dos testes.',
+        body:
+          'Focamos em preparar os experimentos, e o A/B mostrou o que funcionava, não o porquê. Ficaram lacunas sobre como os usuários percebiam a linguagem.',
+      },
+      {
+        title: 'Uma linguagem visual precisa ser defendida nos trade-offs de engenharia.',
+        body:
+          'As discussões de viabilidade iam desgastando a linguagem, e como ela era o principal ativo do projeto, o design precisou sustentá-la até o lançamento. Usuários de mobile e desktop também reagiram de forma diferente; hoje planejo e leio experimentos por dispositivo desde o início.',
+      },
+      {
+        title: 'Ancorar uma linguagem visual num comportamento real do usuário.',
+        body:
+          'O gesto de ler a tornou tangível para a liderança e conectou a marca ao leitor.',
+      },
+    ],
+  },
+  'plus-plan': {
+    title: 'Plano Plus',
+    description:
+      'Preços, planos e upgrade: lançando um plano com IA em ciclos de A/B test',
+    role: 'Lead Product Designer',
+    company: 'SuperSummary',
+    scope: 'Growth Design, Pricing & Packaging, Experimentação',
+    tagline:
+      'Co-defini uma nova estrutura de planos e otimizei o funil de upgrade em ciclos de A/B test, com ganhos de receita líquida de dois dígitos.',
+    overview:
+      'A SuperSummary oferece guias de estudo completos para estudantes e membros de clubes do livro. Entre julho de 2025 e março de 2026, depois da saída do designer sênior do squad de Growth, assumi como designer hands-on do squad sem deixar de liderar Design na empresa. O squad roda ciclos rápidos de A/B test no funil de conversão e monetização. Este case cobre três frentes conectadas: Pricing & Packaging (a nova estrutura Essentials vs Plus), o Upgrade Flow e os Upsell Modals.',
+    highlights: [
+      'Squad de Growth Experimentation',
+      'Estudantes e membros de clubes do livro; a maioria dos assinantes do Plus é de clubes do livro',
+      'Time: 1 PM, 2 engenheiros, 1 analista de dados',
+      'Sozinho até novembro de 2025; depois, com uma designer júnior',
+    ],
+    stats: [
+      { value: '~+15%', label: 'Receita líquida por usuário (P&P v1)' },
+      { value: '~+8%', label: 'Receita (Select Your Plan)' },
+      { value: '~+30%', label: 'Receita de upsell (Modals)' },
+    ],
+    challengeTitle:
+      'Provar que o plano de IA justificava mudar toda a estrutura de preços.',
+    challengeBody:
+      'As novas ferramentas de IA abriam espaço para um plano superior. Mas cada chamada de IA tem um custo de uso, e não sabíamos se a adesão justificaria reestruturar planos e preços. Por isso começamos com um smoke test. Quando ele mostrou adesão relevante ao Plus, eu e o PM construímos a estrutura de dois planos na plataforma. O maior risco estava no checkout: uma escolha de plano a mais podia fazer o usuário novo hesitar e desistir, custando mais assinaturas do Essentials do que o Plus traria.',
+    decision: {
+      body: 'Trade-offs:',
+      points: [
+        'Lançar o Plus sem canibalizar o Essentials.',
+        'Adicionar o passo Select Plan sem aumentar a desistência no checkout.',
+        'Preservar a base atual: a mudança valeu só para novos usuários.',
+      ],
+    },
+    goals: [
+      'Validar a demanda pelo Plus antes de construir a nova estrutura de planos.',
+      'Aumentar a receita líquida por usuário exposto no checkout e no upgrade.',
+      'Fora do escopo, de propósito: migrar a base atual, mudar o preço do Essentials, redesenhar o paywall e levar o Plus para o app mobile na primeira leva.',
+    ],
+    processIntro:
+      'O PM trouxe a análise de concorrentes e os estudos de preço. Eu transformei esses conceitos em experiência, mapeei quais touchpoints precisavam mudar e entreguei de ponta a ponta: o funil de conversão (landing page, criação de conta, checkout), a tela de conta e os gates das features. Decisão principal de escopo: o Plus ficou com tudo que tem custo por uso, como cada chamada de IA, e com o download de PDF, pelo peso na conversão. O Essentials manteve os guias de estudo completos.',
+    processFlow:
+      'Acompanhamento: dashboard no Amplitude e tickets de CX, com a desistência no checkout como guardrail.',
+    process: [
+      {
+        title: 'Encontrar a alavanca',
+        description:
+          'Gravações do Clarity e funis do Amplitude para achar desistências por layout e dispositivo.',
+      },
+      {
+        title: 'Enquadrar em conjunto',
+        description:
+          'Workshops com o squad para transformar ideias em conceitos.',
+      },
+      {
+        title: 'Desenhar enxuto',
+        description: 'Padrões do design system, com detalhe onde importava.',
+      },
+      {
+        title: 'Lançar e ler',
+        description: 'Toda entrega como A/B test.',
+      },
+    ],
+    execution: {
+      title: 'Deixar o valor de cada plano impossível de ignorar.',
+      body:
+        'A decisão que mais pesou: deixar o valor de cada plano explícito e above the fold. Comparando o mesmo design em diferentes alturas de tela no Clarity, ficou claro que, nas telas mais baixas, a diferença entre os planos e o CTA saíam de vista.',
+      bullets: [
+        'Smoke test — variantes do checkout comparando uma headline de proposta de valor com depoimentos',
+        'Passo Select Plan — Essentials vs Plus para novos usuários',
+        'Select Your Plan — layout e CTA ajustados para telas mais baixas',
+        'Upgrade Flow — redesenho de ponta a ponta, mais a Mobile Sticky Toolbar',
+        'Upsell Modals — experimentos com desconto desenhados pela designer júnior sob minha direção',
+      ],
+    },
+    outcomeTitle:
+      'O plano de IA conquistou metade dos novos assinantes e aumentou a receita.',
+    outcomeBody:
+      'Cada entrega saiu como A/B test, e os ganhos se somaram ao longo do funil: da própria estrutura de planos aos momentos de upgrade e upsell.',
+    outcomeBullets: [
+      '~50% dos novos assinantes escolhem o Plus (após o P&P v1, set/2025)',
+      '~+15% de receita líquida por usuário exposto vs controle (P&P v1)',
+      '~+8% de receita vs controle no Select Your Plan (Q4 2025)',
+      '~+30% de receita de upsell e ~−12% de usuários iniciando o cancelamento (Q1 2026)',
+    ],
+    quote: {
+      text: 'O Diego identificou oportunidades de melhorar o layout e a posição do CTA em telas mais baixas, o que gerou um dos A/B tests mais bem-sucedidos do trimestre.',
+      author: 'Colega do squad de Growth',
+    },
+    learnings: [
+      {
+        title: 'Definir a proposta de valor junto com o escopo.',
+        body:
+          'Discutimos várias vezes o que o Plus oferecia. Hoje eu fecharia isso antes de desenhar e garantiria que esse valor ficasse visível em todos os cenários, até numa tela baixa. A maior alavanca foi uma correção pequena, não um redesign.',
+      },
+      {
+        title: 'Rodar um pre-mortem em cada tratamento.',
+        body:
+          'Uma taxa baixa de vitórias me ensinou a revisar os riscos de cada proposta antes de ela virar teste.',
+      },
+      {
+        title: 'Delegar sem isolar.',
+        body:
+          'Mesmo cuidando de iniciativas pontuais, a designer júnior precisava estar no fluxo de informação do projeto inteiro. É isso que levo para qualquer time que eu lidere.',
+      },
+    ],
+  },
   'nuvem-envio': {
     title: 'Nuvem Envio',
     description:
