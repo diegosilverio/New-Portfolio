@@ -553,9 +553,26 @@ export type ProjectTranslation = Omit<
   'id' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
 >;
 
+// Chronological order, newest first. Ranges like '2021–22' sort by their end year,
+// then by start year; ties keep their order in the array.
+function yearKey(year: string): [number, number] {
+  const [start, end] = year.split(/[–-]/).map((y) => y.trim());
+  const startYear = Number(start);
+  const endYear = end
+    ? Number(end.length === 2 ? start.slice(0, 2) + end : end)
+    : startYear;
+  return [endYear, startYear];
+}
+
+const sortedProjects = [...projects].sort((a, b) => {
+  const [aEnd, aStart] = yearKey(a.year);
+  const [bEnd, bStart] = yearKey(b.year);
+  return bEnd - aEnd || bStart - aStart;
+});
+
 export function getProjects(lang: Locale): Project[] {
-  if (lang === 'en') return projects;
-  return projects.map((p) => ({ ...p, ...projectsPt[p.id] }));
+  if (lang === 'en') return sortedProjects;
+  return sortedProjects.map((p) => ({ ...p, ...projectsPt[p.id] }));
 }
 
 export function getProjectBySlug(
