@@ -37,6 +37,9 @@ export interface Guidelines {
 
 export interface Project {
   id: string;
+  // Hidden cases stay out of the homepage and the next-case navigation,
+  // but their page still works by direct link
+  hidden?: boolean;
   title: string;
   year: string;
   image: string;
@@ -431,6 +434,7 @@ export const projects: Project[] = [
   },
   {
     id: 'nuvem-envio',
+    hidden: true,
     title: 'Nuvem Envio',
     year: '2023',
     image: '/images/nuvem-envio/nuvem-envio-cover.png',
@@ -891,7 +895,7 @@ export const projects: Project[] = [
 // Fields that carry copy; ids, years, images and links are shared across locales
 export type ProjectTranslation = Omit<
   Project,
-  'id' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
+  'id' | 'hidden' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
 >;
 
 // Chronological order, newest first. Ranges like '2021–22' sort by their end year,
@@ -910,16 +914,21 @@ const sortedProjects = [...projects].sort((a, b) => {
   return bEnd - aEnd || bStart - aStart;
 });
 
+function localize(p: Project, lang: Locale): Project {
+  return lang === 'en' ? p : { ...p, ...projectsPt[p.id] };
+}
+
+// Visible cases, newest first
 export function getProjects(lang: Locale): Project[] {
-  if (lang === 'en') return sortedProjects;
-  return sortedProjects.map((p) => ({ ...p, ...projectsPt[p.id] }));
+  return sortedProjects.filter((p) => !p.hidden).map((p) => localize(p, lang));
 }
 
 export function getProjectBySlug(
   slug: string,
   lang: Locale,
 ): Project | undefined {
-  return getProjects(lang).find((p) => p.id === slug);
+  const project = projects.find((p) => p.id === slug);
+  return project && localize(project, lang);
 }
 
 export function getNextProject(slug: string, lang: Locale): Project {
