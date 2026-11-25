@@ -157,7 +157,7 @@ export function ManagementExperience({
                   {'caseIds' in role && role.caseIds && (
                     <div className="mt-4 flex flex-col gap-4">
                       <span className="label-eyebrow">{caseLabels.cases}</span>
-                      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      <ul className="grid grid-cols-1 gap-4 lg:grid-cols-3">
                         {role.caseIds.map((id) => {
                           const c = cases.find((x) => x.id === id);
                           if (!c) return null;

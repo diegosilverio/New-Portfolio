@@ -390,4 +390,175 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id' | 'cove
       ],
     },
   },
+  'customer-brain': {
+    title: 'User Discovery & Customer Brain',
+    tagline:
+      'Consolidei cinco anos de pesquisa dispersa numa base de conhecimento com IA que qualquer time consulta em minutos.',
+    company: 'SuperSummary',
+    meta: [
+      { label: 'Papel', value: 'Lead Product Designer' },
+      {
+        label: 'Período',
+        value: 'Fase principal de 3 meses em 2025; a base segue em expansão',
+      },
+      { label: 'Empresa', value: 'SuperSummary: edtech americana, assinatura B2C' },
+      {
+        label: 'Time',
+        value:
+          'Eu na pesquisa, no método e na construção; liderança de produto apoiando a avaliação e a adoção',
+      },
+      {
+        label: 'Escopo',
+        value: 'Product Discovery · Síntese de Pesquisa · Sistemas de Conhecimento com IA',
+      },
+    ],
+    stats: [
+      { value: '177', label: 'Transcrições de entrevistas (2021–2026) numa base só' },
+      { value: '30', label: 'Surveys auditadas com regras de leitura' },
+      { value: 'Dias → minutos', label: 'Tempo de síntese de pesquisa' },
+    ],
+    overview: {
+      title: 'Cinco anos de conhecimento sobre usuários, espalhados.',
+      paragraphs: [
+        'A empresa viu que precisava colocar o usuário no centro das decisões e, por isso, buscou uma forma de concentrar o conhecimento que já tinha. O que sabíamos sobre os book readers estava espalhado em cinco anos de entrevistas, 30 surveys e na memória das pessoas.',
+        'Conduzi o discovery e construí sozinho o Customer Brain: uma base de conhecimento com IA usada hoje por cerca de 10 pessoas, do CEO e do Head de Produto a PMs, designers e engenheiros.',
+      ],
+    },
+    challenge: {
+      title: 'Anos de pesquisa com usuários, nenhum jeito de chegar até ela.',
+      paragraphs: [
+        'A empresa tinha anos de entrevistas e surveys sobre seus usuários, mas nenhuma forma de acesso concentrado e democrático. As decisões eram tomadas sem evidência, e a pesquisa muitas vezes era refeita mesmo quando a resposta já existia dentro da empresa.',
+        'Começar uma rodada de pesquisa do zero levaria meses. O gap real era de acesso: transformar os dados que já tínhamos em conhecimento que qualquer pessoa pudesse consultar, com respostas sólidas o bastante para embasar uma decisão.',
+      ],
+      tradeoff:
+        'Construir vs. comprar: repositórios de pesquisa do mercado traziam custo, limite de seats, limite de consumo de dados e uma interface feita para pesquisadores. O time precisava de linguagem natural.',
+    },
+    mandate: {
+      title: 'Uma fonte, evidência rastreável, resultado acionável.',
+      asked:
+        'Consolidar toda a pesquisa qualitativa e as surveys existentes sobre book readers numa fonte única.',
+      pursued:
+        'Garantir que toda resposta tenha evidência rastreável e transformar achados em oportunidades de negócio e próximos passos.',
+      notDone:
+        'Incluir analytics e tickets de suporte. Ficaram fora de propósito, pela complexidade e pelo volume.',
+    },
+    approach: {
+      title: 'Infraestrutura primeiro, conclusões depois.',
+      diagnosis:
+        'Os inputs foram 177 transcrições únicas de entrevistas (2021–2026) e 30 relatórios de survey. Em vez de rodar uma nova pesquisa, construí primeiro a infraestrutura, para que personas, comparações de mercado e recomendações saíssem da mesma base.',
+      steps: [
+        {
+          title: 'Auditar e consolidar',
+          body: 'Reuni entrevistas e surveys num dataset estruturado e escrevi regras de leitura para exports de survey cujos totais e percentuais enganavam.',
+        },
+        {
+          title: 'Construir o método',
+          body: 'Defini o papel do Brain, regras rígidas, padrões de qualidade e um filtro de verificação de citações.',
+        },
+        {
+          title: 'Testar e iterar',
+          body: 'Fiz consultas e conferi cada fonte citada contra o dado bruto. O feedback do time de que as respostas eram longas demais gerou três formatos de resposta.',
+        },
+        {
+          title: 'Extrair achados',
+          body: 'Personas, gaps de mercado e um relatório final. Acompanhei o progresso em checkpoints com a liderança de produto sobre o funcionamento e a adoção do Brain.',
+        },
+      ],
+      notes: [
+        {
+          title: 'Profundidade sob demanda',
+          body: 'Um único formato de resposta não atendia uma dúvida rápida e uma decisão executiva.',
+        },
+        {
+          title: 'Rigor acima da velocidade',
+          body: 'Uma resposta de IA sem evidência seria lida como verdade.',
+        },
+      ],
+    },
+    practices: {
+      title: 'O rigor é o produto.',
+      intro:
+        'A decisão principal: quando falta evidência, o Brain diz isso em vez de improvisar. As respostas embasam decisões, então precisam resistir a questionamento.',
+      groups: [
+        {
+          title: 'Entregas',
+          items: [
+            {
+              title: 'Customer Brain',
+              body: 'Base consultável com três formatos de resposta: Simple, Intermediate e Detailed.',
+            },
+            {
+              title: 'Camada de método',
+              body: 'Regras rígidas, padrões de qualidade e verificação de citações contra as transcrições brutas.',
+            },
+            {
+              title: 'Auditoria das surveys',
+              body: 'Regras de leitura e um registro do que os dados não respondem.',
+            },
+            {
+              title: 'Personas e gaps de mercado',
+              body: 'Quatro personas e um público pouco atendido, leitores mais jovens (18–34).',
+            },
+            {
+              title: 'Relatório e NPS',
+              body: 'Áreas conhecidas e desconhecidas, oportunidades, próximos passos e uma nova pesquisa de NPS.',
+            },
+          ],
+        },
+      ],
+      images: [
+        {
+          src: img('customer-brain', 'personas'),
+          caption:
+            'Quatro personas extraídas do Brain, cada uma com dados demográficos, comportamento e necessidades',
+        },
+        {
+          src: img('customer-brain', 'query'),
+          caption: 'Uma consulta real ao Customer Brain',
+        },
+      ],
+    },
+    outcomes: {
+      title: 'Uma semana de síntese, agora dois minutos.',
+      changes: [
+        { area: 'Tempo de síntese', before: '5–7 dias', after: '~2 minutos por consulta' },
+        { area: 'Adoção', after: '~10 pessoas em 5 funções' },
+        { area: 'Base viva', after: '+26 transcrições adicionadas em ago/2026, depois do lançamento' },
+        { area: 'Discovery', after: 'Ciclos de entrevistas retomados em 2026' },
+      ],
+      people: [
+        'Cerca de 10 pessoas consultam o Brain, do CEO e do Head de Produto a PMs, designers e engenheiros.',
+      ],
+      perception: [
+        'O Customer Brain virou a referência da empresa sobre como os book readers percebem e usam o produto.',
+        'A pesquisa deixou de ser um projeto agendado e virou um input sob demanda para decisões.',
+        'A liderança trata o Brain como padrão para ativos de pesquisa duráveis.',
+      ],
+      quote: {
+        text: 'Diego has been a true champion of the [book reader] audience... his mechanism for collating and presenting these insights, pulled from UX research, was to leverage AI in experimental, creative, and effective new ways.',
+        author: 'Liderança de produto',
+      },
+      image: {
+        src: img('customer-brain', 'outcome'),
+        caption: 'Resultado do Customer Brain',
+      },
+    },
+    learnings: {
+      title: 'Medir desde o primeiro dia, ajustar a profundidade à pergunta.',
+      items: [
+        {
+          title: 'Medir uso e qualidade desde o início.',
+          body: 'Eu criaria um ciclo de feedback com quem usa o Brain para acompanhar o uso e a qualidade das respostas. Hoje o impacto aparece nas decisões, mas não é contado.',
+        },
+        {
+          title: 'Ajustar a profundidade, não o padrão de evidência.',
+          body: 'Nem toda consulta precisa de uma resposta profunda, ou espera uma. Uma resposta curta continua citando a fonte; só cobre menos.',
+        },
+        {
+          title: 'Conhecimento aberto, respostas verificadas.',
+          body: 'O que levo adiante: uma fonte de informação aberta a todos, com respostas verificadas no nível que quem pergunta precisa. Quando as respostas embasam decisões, é essa verificação que as torna utilizáveis.',
+        },
+      ],
+    },
+  },
 };

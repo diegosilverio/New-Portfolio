@@ -436,6 +436,178 @@ export const managementCases: ManagementCase[] = [
       ],
     },
   },
+  {
+    id: 'customer-brain',
+    title: 'User Discovery & Customer Brain',
+    tagline:
+      'Consolidated five years of scattered user research into an AI knowledge base any team can query in minutes.',
+    company: 'SuperSummary',
+    cover: img('customer-brain', 'cover'),
+    meta: [
+      { label: 'Role', value: 'Lead Product Designer' },
+      {
+        label: 'Period',
+        value: '3-month main phase in 2025; the base keeps expanding',
+      },
+      { label: 'Company', value: 'SuperSummary: US edtech, B2C subscription' },
+      {
+        label: 'Team',
+        value:
+          'Me on research, method and build; product leadership supporting evaluation and adoption',
+      },
+      {
+        label: 'Scope',
+        value: 'Product Discovery · Research Synthesis · AI Knowledge Systems',
+      },
+    ],
+    stats: [
+      { value: '177', label: 'Interview transcripts (2021–2026) in one base' },
+      { value: '30', label: 'Surveys audited with reading rules' },
+      { value: 'Days → minutes', label: 'Time to synthesize research' },
+    ],
+    overview: {
+      title: 'Five years of user knowledge, scattered.',
+      paragraphs: [
+        'The company saw it needed to put users at the center of its decisions, and set out to concentrate the knowledge it already had. What we knew about book readers was spread across five years of interviews, 30 surveys and people’s memories.',
+        'I led the discovery and built the Customer Brain on my own: an AI knowledge base now used by around 10 people, from the CEO and Head of Product to PMs, designers and engineers.',
+      ],
+    },
+    challenge: {
+      title: 'Years of user research, no way to reach it.',
+      paragraphs: [
+        'The company had years of interviews and surveys about its users, but no concentrated, democratic way to access them. Decisions were made without evidence, and research was often redone even when the answer already existed inside the company.',
+        'Starting a new research round from zero would have taken months. The real gap was access: turning the data we had into knowledge anyone could query, with answers solid enough to support a decision.',
+      ],
+      tradeoff:
+        'Build vs. buy: market research repositories meant cost, seat limits, caps on data consumption and an interface made for researchers. The team needed plain language.',
+    },
+    mandate: {
+      title: 'One source, traceable evidence, actionable output.',
+      asked:
+        'Consolidate all existing qualitative research and surveys on book readers in a single source.',
+      pursued:
+        'Ensure every answer carries traceable evidence, and turn findings into business opportunities and next steps.',
+      notDone:
+        'Include analytics and support tickets. Left out on purpose, due to their complexity and volume.',
+    },
+    approach: {
+      title: 'Infrastructure first, conclusions second.',
+      diagnosis:
+        'The inputs were 177 unique interview transcripts (2021–2026) and 30 survey reports. Instead of running a new research round, I built the infrastructure first, so personas, market comparisons and recommendations would all come from the same base.',
+      steps: [
+        {
+          title: 'Audit & consolidate',
+          body: 'Gathered interviews and surveys into one structured dataset, and wrote reading rules for survey exports whose headline totals and percentages were misleading.',
+        },
+        {
+          title: 'Build the method',
+          body: 'Defined the Brain’s role, hard rules, quality standards and a quote-verification gate.',
+        },
+        {
+          title: 'Test & iterate',
+          body: 'Ran queries and checked every cited source against the raw data. Team feedback that answers were too long led to three response formats.',
+        },
+        {
+          title: 'Extract findings',
+          body: 'Personas, market gaps and a final report. Progress was tracked through checkpoints with product leadership on how the Brain worked and how it was being adopted.',
+        },
+      ],
+      notes: [
+        {
+          title: 'Depth on demand',
+          body: 'One answer format couldn’t serve a quick question and an executive decision.',
+        },
+        {
+          title: 'Rigor over speed',
+          body: 'An AI answer without evidence would be read as truth.',
+        },
+      ],
+    },
+    practices: {
+      title: 'Rigor is the product.',
+      intro:
+        'The key decision: when evidence is missing, the Brain says so instead of improvising. Answers feed decisions, so they have to survive scrutiny.',
+      groups: [
+        {
+          title: 'Deliverables',
+          items: [
+            {
+              title: 'Customer Brain',
+              body: 'A queryable base with three response formats: Simple, Intermediate, Detailed.',
+            },
+            {
+              title: 'Method layer',
+              body: 'Hard rules, quality standards, quote verification against raw transcripts.',
+            },
+            {
+              title: 'Survey audit',
+              body: 'Reading rules and a register of what the data can’t answer.',
+            },
+            {
+              title: 'Personas & market gaps',
+              body: 'Four personas and an underserved audience, younger readers (18–34).',
+            },
+            {
+              title: 'Report & NPS',
+              body: 'Known and unknown areas, opportunities, next steps, and a new NPS survey.',
+            },
+          ],
+        },
+      ],
+      images: [
+        {
+          src: img('customer-brain', 'personas'),
+          caption: 'Four personas extracted from the Brain, each with demographics, behavior and needs',
+        },
+        {
+          src: img('customer-brain', 'query'),
+          caption: 'A real query to the Customer Brain',
+        },
+      ],
+    },
+    outcomes: {
+      title: 'A week of synthesis, now two minutes.',
+      changes: [
+        { area: 'Synthesis time', before: '5–7 days', after: '~2 minutes per query' },
+        { area: 'Adoption', after: '~10 people across 5 functions' },
+        { area: 'Living base', after: '+26 transcripts added in Aug 2026, after launch' },
+        { area: 'Discovery', after: 'Interview cycles restarted in 2026' },
+      ],
+      people: [
+        'Around 10 people query the Brain, from the CEO and Head of Product to PMs, designers and engineers.',
+      ],
+      perception: [
+        'The Customer Brain became the company’s reference for how book readers perceive and use the product.',
+        'Research turned from a scheduled project into an on-demand input to decisions.',
+        'Leadership treats the Brain as the standard for research assets that last.',
+      ],
+      quote: {
+        text: 'Diego has been a true champion of the [book reader] audience... his mechanism for collating and presenting these insights, pulled from UX research, was to leverage AI in experimental, creative, and effective new ways.',
+        author: 'Product leadership',
+      },
+      image: {
+        src: img('customer-brain', 'outcome'),
+        caption: 'Customer Brain outcome',
+      },
+    },
+    learnings: {
+      title: 'Measure from day one, match depth to the question.',
+      items: [
+        {
+          title: 'Measure use and quality from the start.',
+          body: 'I’d build a feedback loop with the people using the Brain to track usage and answer quality. Today the impact shows up in decisions, but it isn’t counted.',
+        },
+        {
+          title: 'Adjust depth, not the evidence standard.',
+          body: 'Not every query needs or expects a deep answer. A short answer still cites its source; it just covers less ground.',
+        },
+        {
+          title: 'Open knowledge, verified answers.',
+          body: 'What I carry forward: a source of information open to everyone, with answers verified to the level the person asking needs. Once answers feed decisions, that verification is what makes them usable.',
+        },
+      ],
+    },
+  },
 ];
 
 export function getManagementCases(lang: Locale): ManagementCase[] {
