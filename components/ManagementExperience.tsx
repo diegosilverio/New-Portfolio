@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import type { ManagementContent } from '@/lib/management';
+import type { ManagementCase, ManagementCaseLabels } from '@/lib/management-cases';
 import { useLocale } from './LocaleProvider';
 
 const reveal = {
@@ -14,9 +15,15 @@ const reveal = {
 
 interface ManagementExperienceProps {
   content: ManagementContent;
+  cases: ManagementCase[];
+  caseLabels: ManagementCaseLabels;
 }
 
-export function ManagementExperience({ content }: ManagementExperienceProps) {
+export function ManagementExperience({
+  content,
+  cases,
+  caseLabels,
+}: ManagementExperienceProps) {
   const { lang } = useLocale();
   const {
     labels,
@@ -147,6 +154,43 @@ export function ManagementExperience({ content }: ManagementExperienceProps) {
                       </div>
                     ))}
                   </div>
+                  {'caseIds' in role && role.caseIds && (
+                    <div className="mt-4 flex flex-col gap-4">
+                      <span className="label-eyebrow">{caseLabels.cases}</span>
+                      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        {role.caseIds.map((id) => {
+                          const c = cases.find((x) => x.id === id);
+                          if (!c) return null;
+                          return (
+                            <li key={id}>
+                              <Link
+                                href={`/${lang}/management/${id}`}
+                                className="group flex h-full flex-col justify-between gap-6 rounded-card border border-border bg-card p-6 transition-colors duration-250 hover:border-accent"
+                              >
+                                <div className="flex flex-col gap-3">
+                                  <h4 className="font-serif text-xl md:text-2xl leading-snug text-ink">
+                                    {c.title}
+                                  </h4>
+                                  <p className="text-sm leading-relaxed text-muted">
+                                    {c.tagline}
+                                  </p>
+                                </div>
+                                <span className="flex items-center gap-2 text-sm text-accent">
+                                  {caseLabels.readCase}
+                                  <span
+                                    aria-hidden="true"
+                                    className="transition-transform duration-300 group-hover:translate-x-1"
+                                  >
+                                    →
+                                  </span>
+                                </span>
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

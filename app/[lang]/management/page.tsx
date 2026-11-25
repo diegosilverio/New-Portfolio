@@ -5,6 +5,7 @@ import { ManagementExperience } from '@/components/ManagementExperience';
 import { isLocale, localeAlternates, ogLocale } from '@/lib/i18n/config';
 import { getDictionary } from '@/lib/i18n/dictionaries';
 import { getManagementContent } from '@/lib/management';
+import { getManagementCaseLabels, getManagementCases } from '@/lib/management-cases';
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -36,7 +37,11 @@ export default async function ManagementPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-bg text-ink">
       <Header />
-      <ManagementExperience content={getManagementContent(lang)} />
+      <ManagementExperience
+        content={getManagementContent(lang)}
+        cases={getManagementCases(lang)}
+        caseLabels={getManagementCaseLabels(lang)}
+      />
     </main>
   );
 }

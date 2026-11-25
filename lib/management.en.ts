@@ -64,6 +64,7 @@ export const managementEn = {
         'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across the product, marketing, and innovation squads.',
         "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",
       ],
+      caseIds: ['design-ops', 'research-ops'],
       stats: [
         { value: '+150k', label: 'Brands applied to products' },
         { value: '4', label: 'Squads focused on B2C digital products' },

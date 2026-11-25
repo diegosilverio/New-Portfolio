@@ -65,6 +65,7 @@ export const managementPt: ManagementContent = {
         'Atuo como Lead Product Designer na SuperSummary, uma startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, marketing e inovação.',
         'Também sou responsável pela operação de pesquisa, gerenciando todos os processos, do recrutamento e planejamento à orientação para a execução nos squads. Reporto diretamente ao CEO e lidero as definições estratégicas de design da empresa.',
       ],
+      caseIds: ['design-ops', 'research-ops'],
       stats: [
         { value: '+150 mil', label: 'Marcas aplicadas aos produtos' },
         { value: '4', label: 'Squads focados em produtos digitais B2C' },
