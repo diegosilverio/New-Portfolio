@@ -96,12 +96,10 @@ export const projects: Project[] = [
     id: 'legacy-subscriber-migration',
     title: 'Legacy Subscriber Migration',
     year: '2026',
-    image: '/images/legacy-subscriber-migration/legacy-subscriber-migration-cover.svg',
+    image: '/images/legacy-subscriber-migration/legacy-cover.png',
     caseImages: [
-      '/images/legacy-subscriber-migration/legacy-subscriber-migration-1.svg',
-      '/images/legacy-subscriber-migration/legacy-subscriber-migration-2.svg',
-      '/images/legacy-subscriber-migration/legacy-subscriber-migration-3.svg',
-      '/images/legacy-subscriber-migration/legacy-subscriber-migration-4.svg',
+      '/images/legacy-subscriber-migration/legacy-image-1.png',
+      '/images/legacy-subscriber-migration/legacy-image-2.png',
     ],
     description:
       'Moving a loyal legacy base to the new Plus plan with an optional, loyalty-priced upgrade',
@@ -190,7 +188,7 @@ export const projects: Project[] = [
       text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
       author: 'Growth squad peer',
     },
-    outcomeImage: '/images/legacy-subscriber-migration/legacy-subscriber-migration-delivery.svg',
+    outcomeImage: '/images/legacy-subscriber-migration/legacy-delivery.png',
     learnings: [
       {
         title: 'Converge earlier.',
