@@ -321,11 +321,10 @@ export const projects: Project[] = [
     id: 'plus-plan',
     title: 'Plus Plan',
     year: '2025–26',
-    image: '/images/plus-plan/plus-plan-cover.svg',
+    image: '/images/plus-plan/plus-cover.png',
     caseImages: [
-      '/images/plus-plan/plus-plan-1.svg',
-      '/images/plus-plan/plus-plan-2.svg',
-      '/images/plus-plan/plus-plan-3.svg',
+      '/images/plus-plan/plus-image-1.png',
+      '/images/plus-plan/plus-image-2.png',
     ],
     description:
       'Pricing, packaging and upgrade: launching an AI-powered plan through A/B test cycles',
@@ -411,7 +410,7 @@ export const projects: Project[] = [
       text: 'Diego identified opportunities to improve layout and CTA placement for smaller screen heights, which led to one of our most successful A/B tests of the quarter.',
       author: 'Growth squad peer',
     },
-    outcomeImage: '/images/plus-plan/plus-plan-delivery.svg',
+    outcomeImage: '/images/plus-plan/plus-delivery.png',
     learnings: [
       {
         title: 'Define the value proposition with the scope.',
