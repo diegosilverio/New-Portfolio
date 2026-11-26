@@ -211,11 +211,11 @@ export const projects: Project[] = [
     id: 'visual-language',
     title: 'New Visual Language',
     year: '2025–26',
-    image: '/images/visual-language/visual-language-cover.svg',
+    image: '/images/visual-language/visual-language-cover.png',
     caseImages: [
-      '/images/visual-language/visual-language-1.svg',
-      '/images/visual-language/visual-language-2.svg',
-      '/images/visual-language/visual-language-3.svg',
+      '/images/visual-language/visual-language-image-1.png',
+      '/images/visual-language/visual-language-image-2.png',
+      '/images/visual-language/visual-language-image-3.png',
     ],
     description:
       'Turning a new design system into a visual language that grew revenue',
@@ -298,7 +298,7 @@ export const projects: Project[] = [
       '~+20% annual plan checkouts, Subscribe page',
       'Became the standard for migrating the rest of the platform',
     ],
-    outcomeImage: '/images/visual-language/visual-language-delivery.svg',
+    outcomeImage: '/images/visual-language/visual-language-delivery.png',
     learnings: [
       {
         title: 'Run perception research before the tests.',
