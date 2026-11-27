@@ -4,7 +4,7 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer com mais de 16 anos entre a América Latina e os EUA, construindo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam times a entregar produtos de alta qualidade, mais rápido.',
+      'Product designer com mais de 16 anos entre a América Latina e os EUA, construindo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam eu e meu time a entregar experiências de alta qualidade, mais rápido.',
     ogDescription:
       'Criando produtos, e as ferramentas de IA que os fazem escalar.',
     managementTitle: 'Liderança em Design — Diego Silverio',
@@ -44,7 +44,7 @@ export const pt: Dictionary = {
     eyebrow: 'Trajetória',
     title: 'Sobre',
     portraitAlt: 'Retrato de Diego Silverio',
-    body: 'Sou product designer e trabalho com problemas que chegam sem enquadramento: pricing e packaging, design systems e as ferramentas que permitem a um time pequeno entregar no ritmo de um time maior. Fiz isso em banco, em SaaS de e-commerce e, agora, numa edtech de assinatura, onde desenho com a mão na massa, cuido do design system e da operação de pesquisa e reporto ao CEO. Avalio meu trabalho pelo que mudou: receita sem mais churn, entregas sem atraso, decisões apoiadas em evidência em vez de opinião. Quando nenhuma ferramenta serve, eu crio uma, incluindo os assistentes de IA que meu time usa para desenhar e revisar no Figma. Moro no Brasil e trabalho entre a América Latina e os EUA.',
+    body: 'Sou designer de produto e trabalho com problemas que surgem sem um contexto definido. Já atuei no setor bancário, em SaaS, e-commerce e, atualmente, em uma empresa edtech, onde atuo criando experiências e também ferramentas de IA para o fluxo de trabalho de design. Sou responsável pelo sistema de design e pelas operações de pesquisa, e me reporto à alta liderança. Avalio meu trabalho com base no que mudou: decisões suportadas por evidências em vez de opiniões. Resido no Brasil e trabalho na América Latina e nos Estados Unidos.',
     managementLink: 'Veja como construo sistemas e ferramentas de IA para times de design',
     stats: [
       { value: '16+', label: 'Anos em design de produto' },

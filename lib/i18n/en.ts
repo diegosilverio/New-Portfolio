@@ -21,10 +21,10 @@ export const en = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Crafting products, and the',
-    titleAccent: 'AI tools',
-    titleAfter: 'that scale them',
-    body: '16+ years designing products across LATAM and the US. Today at SuperSummary, I build the design system, research pipeline and AI tools that help my team ship high-quality products, faster.',
+    titleBefore: 'Crafting products,\nand the',
+    titleAccent: 'AI Tools',
+    titleAfter: '\nthat scale them',
+    body: '16+ years designing products across LATAM and the US. Today at SuperSummary, I build the design system, research pipeline and AI tools that help me ship high-quality products, faster.',
     scrollLabel: 'Selected work',
     scrollAria: 'Jump to selected work',
   },
@@ -42,7 +42,7 @@ export const en = {
     eyebrow: 'Background',
     title: 'About',
     portraitAlt: 'Diego Silverio portrait',
-    body: 'I’m a product designer who works on problems that arrive unframed: pricing and packaging, design systems, and the tooling that lets a small team ship at a bigger team’s pace. I’ve done it in banking, e-commerce SaaS and, now, a subscription edtech company, where I design hands-on, own the design system and the research operation, and report to the CEO. I judge my work by what changed: revenue without more churn, delivery without delays, decisions backed by evidence instead of opinion. When no tool fits, I build one, including the AI assistants my team uses to design and review in Figma. Based in Brazil, working across LATAM and the US.',
+    body: 'I’m a product designer who works on problems that arrive unframed. I’ve done it in banking, e-commerce SaaS and, now, a subscription edtech company, where I design hands-on, create AI tooling for design workflow, own the design system and the research operation, and report to the senior leadership. I judge my work by what changed: revenue without more churn, delivery without delays, decisions backed by evidence instead of opinion. Based in Brazil, working across LATAM and the US.',
     managementLink: 'See how I build systems and AI tools for design teams',
     stats: [
       { value: '16+', label: 'Years in product design' },
