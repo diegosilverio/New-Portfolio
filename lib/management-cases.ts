@@ -552,10 +552,6 @@ export const managementCases: ManagementCase[] = [
       ],
       images: [
         {
-          src: img('customer-brain', 'personas'),
-          caption: 'Four personas extracted from the Brain, each with demographics, behavior and needs',
-        },
-        {
           src: '/images/management/customer-brain/customer-brain-query.png',
           caption: 'A real query to the Customer Brain',
         },
@@ -580,10 +576,6 @@ export const managementCases: ManagementCase[] = [
       quote: {
         text: 'Diego has been a true champion of the [book reader] audience... his mechanism for collating and presenting these insights, pulled from UX research, was to leverage AI in experimental, creative, and effective new ways.',
         author: 'Product leadership',
-      },
-      image: {
-        src: img('customer-brain', 'outcome'),
-        caption: 'Customer Brain outcome',
       },
     },
     learnings: {

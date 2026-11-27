@@ -508,11 +508,6 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       ],
       images: [
         {
-          src: img('customer-brain', 'personas'),
-          caption:
-            'Quatro personas extraídas do Brain, cada uma com dados demográficos, comportamento e necessidades',
-        },
-        {
           src: '/images/management/customer-brain/customer-brain-query.png',
           caption: 'Uma consulta real ao Customer Brain',
         },
@@ -537,10 +532,6 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       quote: {
         text: 'Diego has been a true champion of the [book reader] audience... his mechanism for collating and presenting these insights, pulled from UX research, was to leverage AI in experimental, creative, and effective new ways.',
         author: 'Liderança de produto',
-      },
-      image: {
-        src: img('customer-brain', 'outcome'),
-        caption: 'Resultado do Customer Brain',
       },
     },
     learnings: {
