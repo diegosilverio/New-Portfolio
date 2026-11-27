@@ -443,13 +443,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Itaucard',
     description:
       'Nova home e diretrizes de estrutura para o app de cartão de crédito do maior banco da América Latina',
-    role: 'Design Manager',
+    role: 'UX Design Manager',
     company: 'Itaú-Unibanco',
     scope: 'Design Mobile, Estratégia de Produto, Diretrizes',
     tagline:
       'Reestruturando a home de um app de cartão de crédito usado por 7 milhões de brasileiros — e as diretrizes para mantê-lo evoluindo.',
     overview:
-      'O Itaucard é o app de cartão de crédito do Itaú-Unibanco, o maior banco da América Latina, com uma base de ~10 milhões de cartões e cerca de 7 milhões de usuários ativos em iOS e Android. A unidade operava com quatro tribos ao longo de toda a jornada do cartão. Como Design Manager na tribo de Retenção — a principal responsável pelos apps e pelo fluxo da home — liderei um esforço focado, com um Group Product Manager e um especialista em product design, para reestruturar a home e entregar aos sete squads as diretrizes de que precisariam para continuar evoluindo-a depois da nossa saída.',
+      'O Itaucard é o app de cartão de crédito do Itaú-Unibanco, o maior banco da América Latina, com uma base de ~10 milhões de cartões e cerca de 7 milhões de usuários ativos em iOS e Android. A unidade operava com quatro tribos ao longo de toda a jornada do cartão. Como UX Design Manager na tribo de Retenção — a principal responsável pelos apps e pelo fluxo da home — liderei um esforço focado, com um Group Product Manager e um especialista em product design, para reestruturar a home e entregar aos sete squads as diretrizes de que precisariam para continuar evoluindo-a depois da nossa saída.',
     highlights: [
       'Unidade de cartões de crédito do Itaú, o maior banco da América Latina',
       'Apps nativos para Android e iOS',
@@ -459,7 +459,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     ],
     stats: [
       { value: '7 mi', label: 'Usuários Ativos no App' },
-      { value: '3×', label: 'Acesso ao Cartão Virtual' },
+      { value: '3×', label: 'Acesso ao Cartão Virtual (beta com 250 usuários)' },
       { value: '82%', label: 'Feedback Positivo' },
     ],
     challengeTitle:
@@ -544,10 +544,10 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     outcomeBody:
       'A nova home foi liberada para o beta de 250 usuários. O acesso ao cartão virtual saltou de 6% para 18% — cerca de 6% pela área de serviços e 12% pelo novo botão da home, triplicando a taxa original. Do grupo beta, 53% responderam à pesquisa de feedback, e 82% deles avaliaram a experiência como "ótima" ou "boa".',
     outcomeBullets: [
-      'Acesso ao cartão virtual subiu de 6% para 18% — um aumento de 3×',
+      'Num beta com 250 usuários, o acesso ao cartão virtual subiu de 6% para 18%, um aumento de 3×',
       '82% dos respondentes avaliaram a nova home como ótima ou boa',
       'Escopo de engenharia reduzido de 3 meses para 1, com um front-end em meio período',
-      'Diretrizes adotadas por 7 squads da unidade de cartões de crédito',
+      'Diretrizes entregues a 7 squads da unidade de cartões de crédito',
     ],
     learnings: [
       {

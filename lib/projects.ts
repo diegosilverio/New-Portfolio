@@ -597,13 +597,13 @@ export const projects: Project[] = [
       'New home screen and structure guidelines for the credit card app of Latin America\'s largest bank',
     caseLink:
       'https://docs.google.com/presentation/d/1EJsoF9aLp6GBMlCgmkkySii879b2-n9239UHQV7sZdc/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'UX Design Manager',
     company: 'Itaú-Unibanco',
     scope: 'Mobile Design, Product Strategy, Guidelines',
     tagline:
       'Restructuring the home screen of a credit card app used by 7M Brazilians — and the guidelines to keep it evolving.',
     overview:
-      'Itaucard is the credit card app for Itaú-Unibanco, the largest bank in Latin America, with a ~10M card base and roughly 7M active on iOS and Android. The unit ran four tribes across the end-to-end card journey. As Design Manager inside the Retention tribe — the one most responsible for the apps and the home flow — I led a focused effort with a Group Product Manager and a PD specialist to restructure the home screen and hand the seven squads the guidelines they\'d need to keep evolving it after we left.',
+      'Itaucard is the credit card app for Itaú-Unibanco, the largest bank in Latin America, with a ~10M card base and roughly 7M active on iOS and Android. The unit ran four tribes across the end-to-end card journey. As UX Design Manager inside the Retention tribe — the one most responsible for the apps and the home flow — I led a focused effort with a Group Product Manager and a PD specialist to restructure the home screen and hand the seven squads the guidelines they\'d need to keep evolving it after we left.',
     highlights: [
       'Credit card unit of Itaú, Latin America\'s largest bank',
       'Native Android and iOS apps',
@@ -613,7 +613,7 @@ export const projects: Project[] = [
     ],
     stats: [
       { value: '7M', label: 'Active App Users' },
-      { value: '3×', label: 'Virtual Card Access' },
+      { value: '3×', label: 'Virtual Card Access (250-user beta)' },
       { value: '82%', label: 'Positive Feedback' },
     ],
     challengeTitle: 'Important features were hidden in plain sight.',
@@ -696,10 +696,10 @@ export const projects: Project[] = [
     outcomeBody:
       'The new home shipped to the 250-user beta. Virtual card access jumped from 6% to 18% — about 6% via the services area and 12% via the new home button, tripling the original rate. Of the beta group, 53% answered the feedback survey, and 82% of them rated the experience "great" or "good."',
     outcomeBullets: [
-      'Virtual card access rose from 6% to 18% — a 3× lift',
+      'In a 250-user beta, virtual card access rose from 6% to 18%, a 3× lift',
       '82% of survey respondents rated the new home great or good',
       'Engineering scope cut from 3 months to 1 with a part-time front-end',
-      'Guidelines adopted by 7 squads across the credit card unit',
+      'Guidelines handed over to 7 squads across the credit card unit',
     ],
     outcomeImage: '/images/itaucard/itaucard-delivery.png',
     learnings: [
