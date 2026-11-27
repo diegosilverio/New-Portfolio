@@ -5,7 +5,7 @@ export const en = {
       'Product designer who builds AI tools to craft better experiences, faster, working on monetization, design systems and AI-assisted workflows for subscription and fintech products.',
     ogDescription:
       'Product designer who builds AI tools to craft better experiences, faster.',
-    managementTitle: 'Managing Design Teams — Diego Silverio',
+    managementTitle: 'Design Leadership — Diego Silverio',
     managementDescription:
       'My experience leading and growing design teams — the roles, the principles that guide me, how I approach design leadership, and the feedback I’ve received along the way.',
     managementOgDescription:

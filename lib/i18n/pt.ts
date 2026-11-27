@@ -7,7 +7,7 @@ export const pt: Dictionary = {
       'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido, trabalhando com monetização, design systems e fluxos com IA para produtos de assinatura e fintech.',
     ogDescription:
       'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido.',
-    managementTitle: 'Gestão de Times de Design — Diego Silverio',
+    managementTitle: 'Liderança em Design — Diego Silverio',
     managementDescription:
       'Minha experiência liderando e desenvolvendo times de design — os cargos, os princípios que me guiam, como encaro a liderança em design e os feedbacks que recebi pelo caminho.',
     managementOgDescription:

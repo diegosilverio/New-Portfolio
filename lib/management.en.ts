@@ -1,9 +1,9 @@
 export const managementEn = {
   labels: {
     eyebrow: 'Design Leadership',
-    title: 'Managing Design Teams',
+    title: 'Design Leadership',
     intro:
-      'A page dedicated to my experience leading and growing design teams — the roles, the principles that guide me, how I approach design leadership, and the feedback I’ve received along the way.',
+      'How I build the systems, tools and routines that let a small design team ship at a bigger team’s pace.',
     yearsDesign: 'Years of experience in design',
     yearsManager: 'Years as a people manager',
     career: 'Career',
@@ -29,7 +29,7 @@ export const managementEn = {
     {
       role: 'Lead Product Designer',
       company: 'SuperSummary',
-      period: 'May/24 – Today',
+      period: 'Sep/24 – Today',
       description:
         'Edtech startup focused on the American education market. I lead a team of 3 designers across the product, marketing, and innovation squads.',
     },
@@ -59,12 +59,11 @@ export const managementEn = {
   roles: [
     {
       title: 'Lead Product Designer @ SuperSummary',
-      period: 'May/24 to Today',
+      period: 'Sep/24 to Today',
       paragraphs: [
         'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across the product, marketing, and innovation squads.',
         "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",
       ],
-      caseIds: ['design-ops', 'research-ops', 'customer-brain'],
       stats: [] as { value: string; label: string }[],
     },
     {
