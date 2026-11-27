@@ -24,7 +24,7 @@ export const en = {
     titleBefore: 'Product designer who builds',
     titleAccent: 'AI tools',
     titleAfter: 'to craft better experiences, faster.',
-    body: 'I work on monetization, design systems and AI-assisted workflows for subscription and fintech products. Currently at SuperSummary, hands-on across growth experiments, the design system and the AI tools my team designs with.',
+    body: 'Product designer focused on craft, systems and AI-assisted ways of working. Currently at SuperSummary, hands-on across the design system, research and the tooling my team uses to design and ship.',
     scrollLabel: 'Selected work',
     scrollAria: 'Jump to selected work',
   },

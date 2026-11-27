@@ -29,7 +29,7 @@ export function About() {
           className="relative h-[294px] w-full overflow-hidden rounded-card border border-border bg-card lg:h-[294px] lg:w-[520px]"
         >
           <Image
-            src="/images/profile.png"
+            src="/images/profile.jpg"
             alt={t.about.portraitAlt}
             fill
             sizes="(min-width: 1024px) 520px, 100vw"

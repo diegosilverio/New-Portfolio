@@ -26,7 +26,7 @@ export const pt: Dictionary = {
     titleBefore: 'Product designer que constrói',
     titleAccent: 'ferramentas de IA',
     titleAfter: 'para criar experiências melhores, mais rápido.',
-    body: 'Trabalho com monetização, design systems e fluxos de trabalho com IA para produtos de assinatura e fintech. Hoje estou na SuperSummary, com a mão na massa em experimentos de growth, no design system e nas ferramentas de IA com que meu time desenha.',
+    body: 'Product designer focado em craft, sistemas e formas de trabalhar apoiadas por IA. Hoje estou na SuperSummary, com a mão na massa no design system, na pesquisa e nas ferramentas que meu time usa para desenhar e entregar.',
     scrollLabel: 'Trabalhos selecionados',
     scrollAria: 'Ir para os trabalhos selecionados',
   },
