@@ -571,13 +571,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Tiendanube Partners',
     description:
       'Redesign e migração do Admin para Parceiros, retirado do core da Tiendanube',
-    role: 'Design Manager',
-    company: 'Tiendanube',
+    role: 'Product Design Manager',
+    company: 'Tiendanube · plataforma SaaS de e-commerce na América Latina',
     scope: 'Design de Plataforma, Migração, Pesquisa',
     tagline:
-      'Desacoplando o admin de parceiros da Tiendanube do core — e entregando em 8 meses.',
+      'Tirando o admin de parceiros da Tiendanube da plataforma core e entregando em 8 meses.',
     overview:
-      'O Admin para Parceiros é a principal ferramenta que os parceiros usam para gerenciar sua relação com a Tiendanube — sacar comissões, publicar aplicativos na loja de apps e acompanhar as lojas criadas por meio de suas indicações. A base de parceiros é ampla, de software houses a afiliados. Como Design Manager na unidade de negócio de Ecossistema, liderei um time de quatro product designers, em parceria com três engenheiros front-end e quatro back-end; dada a demanda, também atuei com a mão na massa na execução junto ao squad do Admin para Parceiros.',
+      'O Admin para Parceiros é a principal ferramenta que os parceiros usam para gerenciar sua relação com a Tiendanube — sacar comissões, publicar aplicativos na loja de apps e acompanhar as lojas criadas por meio de suas indicações. A base de parceiros é ampla, de software houses a afiliados. Como Product Design Manager na unidade de negócio de Ecossistema, liderei um time de quatro product designers, em parceria com três engenheiros front-end e quatro back-end; dada a demanda, também atuei com a mão na massa na execução junto ao squad do Admin para Parceiros.',
     highlights: [
       'Ecossistema — uma unidade de negócio da empresa',
       'O Admin para Parceiros é o sistema principal',
@@ -587,7 +587,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     stats: [
       { value: '8 meses', label: 'Migração Completa' },
       { value: '100%', label: 'Parceiros Migrados' },
-      { value: '4,5', label: 'Nota de Satisfação' },
+      { value: '4,5 / 5', label: 'Nota de Satisfação' },
     ],
     challengeTitle: 'Um admin legado fundido à plataforma core.',
     challengeBody:
@@ -597,7 +597,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
         'Os parceiros e a nossa própria operação nos diziam que o admin tinha muitos problemas que atrapalhavam as rotinas e geravam reclamações. Para entregar muitas melhorias rapidamente, primeiro precisávamos mover o sistema para uma nova tecnologia, desacoplada do core.',
       points: [
         'Muitas reclamações dos parceiros sobre o admin legado.',
-        'Desacoplar do core para ganhar velocidade e eliminar dependências.',
+        'Tirá-lo do core para ganhar velocidade e eliminar dependências.',
         'Adicionar apenas alguns ganhos de alto impacto — como a versão mobile-friendly — para terminar rápido.',
         'Conduzimos uma pesquisa qualitativa com ~30 parceiros para priorizar o que cabia na migração.',
       ],
@@ -651,7 +651,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     outcomeBullets: [
       '100% das funcionalidades migradas para a nova plataforma',
       '100% dos parceiros migrados sem rollback',
-      'Nota de satisfação 4,5 após a migração',
+      'Nota de satisfação 4,5 de 5 após a migração, cumprindo a meta de igualar ou superar a experiência anterior',
       'Admin mobile-friendly — um pedido antigo dos parceiros, entregue',
     ],
     learnings: [

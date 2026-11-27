@@ -733,13 +733,13 @@ export const projects: Project[] = [
       'Redesign and migration of Admin for Partners, moved off the Tiendanube core',
     caseLink:
       'https://docs.google.com/presentation/d/1jD1pF3mECR5wJrkO6ivF10AYDYG-MePcmDquao9Q6gY/edit?usp=drive_link',
-    role: 'Design Manager',
-    company: 'Tiendanube',
+    role: 'Product Design Manager',
+    company: 'Tiendanube · e-commerce SaaS platform in Latin America',
     scope: 'Platform Design, Migration, Research',
     tagline:
-      'Unmerging Tiendanube\'s partner admin from the core — and shipping it in 8 months.',
+      'Moving Tiendanube\'s partner admin off the core platform, and shipping it in 8 months.',
     overview:
-      'Admin for Partners is the main tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the app store, and tracking the stores created through their referrals. The partner base is wide, from software houses to affiliates. As Design Manager in the Ecosystem BU I led a team of four product designers, partnering with three front-end and four back-end engineers; given the demand, I also worked hands-on in execution alongside the Admin for Partners squad.',
+      'Admin for Partners is the main tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the app store, and tracking the stores created through their referrals. The partner base is wide, from software houses to affiliates. As Product Design Manager in the Ecosystem BU I led a team of four product designers, partnering with three front-end and four back-end engineers; given the demand, I also worked hands-on in execution alongside the Admin for Partners squad.',
     highlights: [
       'Ecosystem — a business unit of the company',
       'Admin for Partners is the main system',
@@ -749,17 +749,17 @@ export const projects: Project[] = [
     stats: [
       { value: '8 mo', label: 'Full Migration' },
       { value: '100%', label: 'Partners Migrated' },
-      { value: '4.5', label: 'Satisfaction Score' },
+      { value: '4.5 / 5', label: 'Satisfaction Score' },
     ],
     challengeTitle: 'A legacy admin fused to the core platform.',
     challengeBody:
       'The old administrator was built inside the Tiendanube core and inherited all of its dependencies — authentication among them — so every change was coupled and risky. That coupling created barriers to delivering more value to partners. In short: the legacy system was too old, merged into the core, and restricting any further improvement.',
     decision: {
       body:
-        'Partners and our own operation told us the admin had many problems that disrupted routines and generated complaints. To ship a lot of improvements quickly, we first had to move the system onto new technology, unmerged from the core.',
+        'Partners and our own operation told us the admin had many problems that disrupted routines and generated complaints. To ship a lot of improvements quickly, we first had to move the system onto new technology, off the core.',
       points: [
         'Many complaints from partners about the legacy admin.',
-        'Unmerge from the core to gain speed and shed dependencies.',
+        'Move it off the core to gain speed and shed dependencies.',
         'Add only a few high-impact wins — like mobile-friendly — to finish fast.',
         'Ran qualitative research with ~30 partners to prioritise what fit the migration.',
       ],
@@ -813,7 +813,7 @@ export const projects: Project[] = [
     outcomeBullets: [
       '100% of functionalities migrated to the new platform',
       '100% of partners moved without rollback',
-      '4.5 satisfaction score after migration',
+      '4.5 out of 5 satisfaction score after migration, meeting the goal of matching or beating the previous experience',
       'Mobile-friendly admin — a long-standing partner request shipped',
     ],
     outcomeImage: '/images/tiendanube-partners/tiendanube-partners-delivery.png',
