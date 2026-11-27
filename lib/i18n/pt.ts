@@ -40,7 +40,6 @@ export const pt: Dictionary = {
     title: 'Trabalhos anteriores',
   },
   systems: {
-    eyebrow: 'Cases de liderança',
     title: 'Sistemas e IA',
   },
   about: {

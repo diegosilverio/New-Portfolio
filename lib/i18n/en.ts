@@ -38,7 +38,6 @@ export const en = {
     title: 'Earlier work',
   },
   systems: {
-    eyebrow: 'Leadership cases',
     title: 'Systems & AI',
   },
   about: {

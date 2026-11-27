@@ -15,7 +15,7 @@ export function SystemsAI({ lang }: { lang: Locale }) {
       className="container-x pb-24 md:pb-section"
       aria-label={systems.title}
     >
-      <SectionHeader eyebrow={systems.eyebrow} title={systems.title} />
+      <SectionHeader title={systems.title} />
 
       <ul className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-3">
         {getManagementCases(lang).map((item) => (
