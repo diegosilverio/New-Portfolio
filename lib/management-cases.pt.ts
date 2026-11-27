@@ -29,7 +29,7 @@ export const managementCaseLabelsPt: ManagementCaseLabels = {
 
 const img = (id: string, name: string) => `/images/management/${id}/${id}-${name}.svg`;
 
-export const managementCasesPt: Record<string, Omit<ManagementCase, 'id' | 'cover'>> = {
+export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
   'design-ops': {
     title: 'Escalando um time de design com IA, não com headcount',
     tagline:

@@ -10,7 +10,6 @@ export interface ManagementCase {
   title: string;
   tagline: string;
   company: string;
-  cover: string;
   meta: { label: string; value: string }[];
   stats: { value: string; label: string }[];
   overview: { title: string; paragraphs: string[] };
@@ -78,7 +77,6 @@ export const managementCases: ManagementCase[] = [
     tagline:
       'Rebuilt the team and its operations, then used AI to scale capacity on a fixed budget.',
     company: 'SuperSummary',
-    cover: img('design-ops', 'cover'),
     meta: [
       {
         label: 'Role',
@@ -272,7 +270,6 @@ export const managementCases: ManagementCase[] = [
     tagline:
       'Restarting user research and automating its operation, so interviews became part of how the company works instead of a task owned by design.',
     company: 'SuperSummary',
-    cover: img('research-ops', 'cover'),
     meta: [
       { label: 'Role', value: 'Lead Product Designer' },
       { label: 'Period', value: 'Oct 2024 – present' },
@@ -442,7 +439,6 @@ export const managementCases: ManagementCase[] = [
     tagline:
       'Consolidated five years of scattered user research into an AI knowledge base any team can query in minutes.',
     company: 'SuperSummary',
-    cover: img('customer-brain', 'cover'),
     meta: [
       { label: 'Role', value: 'Lead Product Designer' },
       {

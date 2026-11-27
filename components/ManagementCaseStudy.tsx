@@ -63,22 +63,6 @@ export function ManagementCaseStudy({ item, next, labels }: Props) {
             </div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-          className="relative mt-12 aspect-[16/10] w-full overflow-hidden rounded-card bg-border md:aspect-auto md:h-[640px]"
-        >
-          <Image
-            src={item.cover}
-            alt={item.title}
-            fill
-            sizes="(min-width: 1024px) 1200px, 100vw"
-            className="object-cover"
-            priority
-          />
-        </motion.div>
       </section>
 
       {/* Context */}
