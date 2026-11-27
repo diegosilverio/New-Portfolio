@@ -5,7 +5,7 @@ export const managementEn = {
     intro:
       'How I build the systems, tools and routines that let a small design team ship at a bigger team’s pace.',
     yearsDesign: 'Years of experience in design',
-    yearsManager: 'Years as a people manager',
+    yearsManager: 'Years leading teams',
     career: 'Career',
     careerIntro:
       'A snapshot of my management journey across edtech, e-commerce, steel, and banking.',
@@ -31,7 +31,7 @@ export const managementEn = {
       company: 'SuperSummary',
       period: 'Sep/24 – Today',
       description:
-        'Edtech startup focused on the American education market. I lead a team of 3 designers across the product, marketing, and innovation squads.',
+        'Edtech startup focused on the American education market. I lead a team of 3 designers across the product, growth, marketing, and innovation squads.',
     },
     {
       role: 'Product Design Manager',
@@ -61,7 +61,7 @@ export const managementEn = {
       title: 'Lead Product Designer @ SuperSummary',
       period: 'Sep/24 to Today',
       paragraphs: [
-        'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across the product, marketing, and innovation squads.',
+        'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across product, growth, marketing, and innovation squads.',
         "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",
       ],
       stats: [] as { value: string; label: string }[],

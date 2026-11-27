@@ -22,7 +22,7 @@ const dmSerif = DM_Serif_Display({
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: ['300', '400', '500', '700'],
   variable: '--font-dm-sans',
   display: 'swap',
 });

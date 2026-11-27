@@ -169,30 +169,11 @@ export function ManagementExperience({
 
         {/* Principles */}
         <Collapsible title={labels.principles}>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
-            <h3 className="font-serif text-3xl md:text-[40px] leading-tight text-ink">
+          <div className="flex flex-col gap-8">
+            <h3 className="max-w-[840px] font-serif text-xl md:text-2xl leading-snug text-muted">
               {labels.principlesTitle}
             </h3>
-            <ol className="flex max-w-[840px] flex-col divide-y divide-border-soft border-t border-border-soft">
-              {principles.map((p, i) => (
-                <li
-                  key={p.title}
-                  className="flex flex-col gap-3 py-8 md:flex-row md:gap-8"
-                >
-                  <span className="font-serif text-2xl text-accent md:w-12 md:shrink-0">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <div className="flex flex-col gap-2">
-                    <h4 className="text-lg md:text-xl font-semibold text-ink">
-                      {p.title}
-                    </h4>
-                    <p className="text-base md:text-lg leading-relaxed text-muted">
-                      {p.body}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
+            <NumberedGrid items={principles} />
           </div>
         </Collapsible>
 
@@ -208,8 +189,8 @@ export function ManagementExperience({
 
         {/* Feedback */}
         <Collapsible title={labels.feedback}>
-          <div className="flex flex-col gap-12">
-            <h3 className="max-w-[840px] font-serif text-3xl md:text-[40px] leading-tight text-ink md:ml-[440px]">
+          <div className="flex flex-col gap-8">
+            <h3 className="max-w-[840px] font-serif text-xl md:text-2xl leading-snug text-muted">
               {labels.feedbackTitle}
             </h3>
             <div className="columns-1 gap-8 md:columns-2 [&>*]:mb-8 [&>*]:break-inside-avoid">
@@ -218,7 +199,7 @@ export function ManagementExperience({
                   key={i}
                   className="flex flex-col gap-5 rounded-card border border-border bg-card p-8 md:p-10"
                 >
-                  <blockquote className="font-serif text-xl md:text-2xl leading-[1.5] text-ink">
+                  <blockquote className="font-display font-light text-lg md:text-xl leading-[1.6] text-ink">
                     &ldquo;{item.quote}&rdquo;
                   </blockquote>
                   <figcaption className="label-eyebrow !text-muted">
