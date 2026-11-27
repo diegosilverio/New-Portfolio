@@ -22,7 +22,7 @@ export const managementCaseLabelsPt: ManagementCaseLabels = {
   limitation: 'Limitação',
   learnings: 'Aprendizados',
   next: 'Próximo case de liderança',
-  back: 'Voltar para Gestão de Times de Design',
+  back: 'Voltar para Liderança em Design',
   cases: 'Cases de liderança',
   readCase: 'Ler o case',
 };

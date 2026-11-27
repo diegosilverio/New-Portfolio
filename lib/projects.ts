@@ -35,6 +35,23 @@ export interface Guidelines {
   closingBody?: string;
 }
 
+// A strip that states what the designer personally made, as opposed to what they led
+export interface OwnWork {
+  position: 'afterOverview' | 'beforeExecution';
+  label: string;
+  body?: string;
+  items?: { title: string; body?: string }[];
+  image?: { src: string; caption: string };
+}
+
+// Short pointer to earlier, related work, with a link to that case
+export interface Background {
+  title: string;
+  body: string;
+  linkSlug: string;
+  linkLabel: string;
+}
+
 export interface Project {
   id: string;
   // Hidden cases stay out of the homepage and the next-case navigation,
@@ -86,6 +103,14 @@ export interface Project {
   outcomeBullets: string[];
   outcomeImage?: string;
   quote?: { text: string; author: string };
+  // 'top' shows the quote as a pull quote under the meta band instead of in Results
+  quotePosition?: 'top';
+
+  // What the designer made personally (optional)
+  ownWork?: OwnWork;
+
+  // Earlier related work, shown before Learnings (optional)
+  background?: Background;
 
   // Learnings
   learnings: Learning[];
@@ -98,16 +123,15 @@ export const projects: Project[] = [
     year: '2026',
     image: '/images/legacy-subscriber-migration/legacy-cover.png',
     caseImages: [
-      '/images/legacy-subscriber-migration/legacy-image-1.png',
       '/images/legacy-subscriber-migration/legacy-image-2.png',
     ],
     description:
       'Moving a loyal legacy base to the new Plus plan with an optional, loyalty-priced upgrade',
-    role: 'Lead Product Designer (sole designer)',
+    role: 'Lead Product Designer (sole designer on the migration; also leading Design and the design system)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentation',
     tagline:
-      'Gated new AI tools behind an optional, loyalty-priced upgrade: 60x the upgrade rate, with cancellations flat.',
+      'An optional, loyalty-priced upgrade lifted upsell revenue 8x+ over control with cancellations flat.',
     overview:
       'SuperSummary is a US edtech platform for literature study guides and reading tools. After it launched a new Plus/Essentials plan structure, a large group of legacy subscribers, mostly students and book club members, kept full Plus access while paying Essentials prices. Almost all of them (97.7%) were long-tenured annual subscribers. I was the only designer on the migration, inside the Growth Experimentation squad, while also leading the design team and the design system. I had worked on both initiatives before it: Pricing & Packaging (Q3 2025) and the Upgrade Flow (Q4 2025).',
     highlights: [
@@ -175,11 +199,11 @@ export const projects: Project[] = [
         'Option C — Optional upgrade with one free use per AI tool (chosen)',
       ],
     },
-    outcomeTitle: '60x the upgrade rate, with cancellations flat.',
+    outcomeTitle: '8x+ upsell revenue, with cancellations flat.',
     outcomeBody:
       'In the A/B test (June–July 2026), treatment beat control on revenue without moving cancellations. Leadership approved the rollout to 100% of legacy subscribers in July 2026 with no objections. Only one support message touched the change, and use of the features that stayed free rose about 11%.',
     outcomeBullets: [
-      'Upgrade rate: 5.4% of exposed users, vs. 0.09% in control',
+      'Upgrade rate: 5.4% of exposed users, vs. 0.09% in control (60x)',
       'Upsell revenue: 8x+ control during the test window',
       'Scheduled cancellations: flat (−2.1%, not significant)',
       'Save rate in the cancellation flow: 60.6% vs. 52.2% (+8.4 pp)',
@@ -187,6 +211,27 @@ export const projects: Project[] = [
     quote: {
       text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
       author: 'Growth squad peer',
+    },
+    quotePosition: 'top',
+    ownWork: {
+      position: 'beforeExecution',
+      label: 'What I designed',
+      items: [
+        { title: 'Intro note', body: 'Shown on first use.' },
+        { title: 'Limit and gating banners', body: 'Explaining what Plus unlocks.' },
+        { title: 'Upgrade modal', body: '20% off for life.' },
+        { title: 'Save offer', body: 'A last-resort offer in the cancellation flow.' },
+      ],
+      image: {
+        src: '/images/legacy-subscriber-migration/legacy-image-1.png',
+        caption: 'Upgrade flow: limit banner, upgrade modal, confirmation and welcome.',
+      },
+    },
+    background: {
+      title: 'Background: Pricing & Packaging',
+      body: 'Before the migration, I worked on the plan structure and the upgrade funnel: Pricing & Packaging (Q3 2025), the Upgrade Flow and the Upsell Modals (Q4 2025 to Q1 2026). In those tests, about half of new subscribers chose Plus, net revenue per exposed user rose about 15% in the first release, and upsell revenue rose about 30%.',
+      linkSlug: 'plus-plan',
+      linkLabel: 'See the Plus Plan case',
     },
     outcomeImage: '/images/legacy-subscriber-migration/legacy-delivery.png',
     learnings: [
@@ -213,12 +258,11 @@ export const projects: Project[] = [
     year: '2025–26',
     image: '/images/visual-language/visual-language-cover.png',
     caseImages: [
-      '/images/visual-language/visual-language-image-1.png',
       '/images/visual-language/visual-language-image-2.png',
       '/images/visual-language/visual-language-image-3.png',
     ],
     description:
-      'Turning a new design system into a visual language that grew revenue',
+      'A new visual language that beat a no-loss revenue target on two pages',
     role: 'Lead Product Designer',
     company: 'SuperSummary',
     scope: 'Visual Language, Experimentation, Design Leadership',
@@ -276,7 +320,7 @@ export const projects: Project[] = [
       {
         title: 'Hand off',
         description:
-          'Product Innovation took the Homepage, Growth took the Subscribe page. The designers executed with my support, closer with the junior on the Subscribe page. PMs owned the revenue target and each rollout decision.',
+          'Product Innovation took the Homepage and Growth took the Subscribe page. The squad designers executed the page redesigns with my support, closer with the junior designer on the Subscribe page. PMs owned the revenue target and each rollout decision.',
       },
     ],
     execution: {
@@ -298,6 +342,15 @@ export const projects: Project[] = [
       '~+20% annual plan checkouts, Subscribe page',
       'Became the standard for migrating the rest of the platform',
     ],
+    ownWork: {
+      position: 'afterOverview',
+      label: 'What I drew',
+      body: 'I drew the concept explorations and defined the language. Squad designers executed the page redesigns, with my support.',
+      image: {
+        src: '/images/visual-language/visual-language-image-1.png',
+        caption: 'Concept explorations: the three visual directions I drew.',
+      },
+    },
     outcomeImage: '/images/visual-language/visual-language-delivery.png',
     learnings: [
       {
@@ -328,11 +381,11 @@ export const projects: Project[] = [
     ],
     description:
       'Pricing, packaging and upgrade: launching an AI-powered plan through A/B test cycles',
-    role: 'Lead Product Designer',
+    role: 'Lead Product Designer (hands-on designer of the Growth squad)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentation',
     tagline:
-      'Co-defined a new plan structure and optimized the upgrade funnel through A/B test cycles, with double-digit net revenue gains.',
+      'Co-defined the Essentials vs Plus structure and kept each plan\'s value visible in checkout and upgrade; about half of new subscribers chose Plus.',
     overview:
       'SuperSummary offers full study guides to students and book club members. Between July 2025 and March 2026, after the Growth squad\'s senior designer left, I stepped in as its hands-on designer while still leading Design across the company. The squad runs fast A/B test cycles across the conversion and monetization funnel. This case covers three connected pieces of work: Pricing & Packaging (the new Essentials vs Plus structure), the Upgrade Flow and the Upsell Modals.',
     highlights: [
@@ -442,13 +495,13 @@ export const projects: Project[] = [
       'Auto-activating the logistics service inside Tiendanube\'s free-plan onboarding',
     caseLink:
       'https://docs.google.com/presentation/d/142BkEevs0anLP1yLftn_XTJJfN2GilssiZoQBLW1ppU/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Product Strategy, Onboarding, Cross-team Design',
     tagline:
       'Turning logistics from an opt-in product into part of every seller\'s onboarding — in four weeks.',
     overview:
-      'Nuvem Envio is the logistics tool inside the Tiendanube platform — what sellers use to collect and ship products to their customers. Because it lives inside the platform, only existing sellers can reach it. As design manager for the Logistics Services BU, I set the guidelines for the experience while guiding the senior product designer on the tribe, working hand in hand with product and engineering.',
+      'Nuvem Envio is the logistics tool inside the Tiendanube platform — what sellers use to collect and ship products to their customers. Because it lives inside the platform, only existing sellers can reach it. As Product Design Manager for the Logistics Services BU, I set the guidelines for the experience while guiding the senior product designer on the tribe, working hand in hand with product and engineering.',
     highlights: [
       'Logistics Services — a business unit of the company',
       'A product embedded inside the main platform',
@@ -544,13 +597,13 @@ export const projects: Project[] = [
       'New home screen and structure guidelines for the credit card app of Latin America\'s largest bank',
     caseLink:
       'https://docs.google.com/presentation/d/1EJsoF9aLp6GBMlCgmkkySii879b2-n9239UHQV7sZdc/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'UX Design Manager',
     company: 'Itaú-Unibanco',
     scope: 'Mobile Design, Product Strategy, Guidelines',
     tagline:
       'Restructuring the home screen of a credit card app used by 7M Brazilians — and the guidelines to keep it evolving.',
     overview:
-      'Itaucard is the credit card app for Itaú-Unibanco, the largest bank in Latin America, with a ~10M card base and roughly 7M active on iOS and Android. The unit ran four tribes across the end-to-end card journey. As Design Manager inside the Retention tribe — the one most responsible for the apps and the home flow — I led a focused effort with a Group Product Manager and a PD specialist to restructure the home screen and hand the seven squads the guidelines they\'d need to keep evolving it after we left.',
+      'Itaucard is the credit card app for Itaú-Unibanco, the largest bank in Latin America, with a ~10M card base and roughly 7M active on iOS and Android. The unit ran four tribes across the end-to-end card journey. As UX Design Manager inside the Retention tribe — the one most responsible for the apps and the home flow — I led a focused effort with a Group Product Manager and a PD specialist to restructure the home screen and hand the seven squads the guidelines they\'d need to keep evolving it after we left.',
     highlights: [
       'Credit card unit of Itaú, Latin America\'s largest bank',
       'Native Android and iOS apps',
@@ -560,7 +613,7 @@ export const projects: Project[] = [
     ],
     stats: [
       { value: '7M', label: 'Active App Users' },
-      { value: '3×', label: 'Virtual Card Access' },
+      { value: '3×', label: 'Virtual Card Access (250-user beta)' },
       { value: '82%', label: 'Positive Feedback' },
     ],
     challengeTitle: 'Important features were hidden in plain sight.',
@@ -643,10 +696,10 @@ export const projects: Project[] = [
     outcomeBody:
       'The new home shipped to the 250-user beta. Virtual card access jumped from 6% to 18% — about 6% via the services area and 12% via the new home button, tripling the original rate. Of the beta group, 53% answered the feedback survey, and 82% of them rated the experience "great" or "good."',
     outcomeBullets: [
-      'Virtual card access rose from 6% to 18% — a 3× lift',
+      'In a 250-user beta, virtual card access rose from 6% to 18%, a 3× lift',
       '82% of survey respondents rated the new home great or good',
       'Engineering scope cut from 3 months to 1 with a part-time front-end',
-      'Guidelines adopted by 7 squads across the credit card unit',
+      'Guidelines handed over to 7 squads across the credit card unit',
     ],
     outcomeImage: '/images/itaucard/itaucard-delivery.png',
     learnings: [
@@ -677,16 +730,16 @@ export const projects: Project[] = [
       '/images/tiendanube-partners/tiendanube-partners-2.png',
     ],
     description:
-      'Redesign and migration of Admin for Partners — unmerged from the Tiendanube core',
+      'Redesign and migration of Admin for Partners, moved off the Tiendanube core',
     caseLink:
       'https://docs.google.com/presentation/d/1jD1pF3mECR5wJrkO6ivF10AYDYG-MePcmDquao9Q6gY/edit?usp=drive_link',
-    role: 'Design Manager',
-    company: 'Tiendanube',
+    role: 'Product Design Manager',
+    company: 'Tiendanube · e-commerce SaaS platform in Latin America',
     scope: 'Platform Design, Migration, Research',
     tagline:
-      'Unmerging Tiendanube\'s partner admin from the core — and shipping it in 8 months.',
+      'Moving Tiendanube\'s partner admin off the core platform, and shipping it in 8 months.',
     overview:
-      'Admin for Partners is the main tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the app store, and tracking the stores created through their referrals. The partner base is wide, from software houses to affiliates. As Design Manager in the Ecosystem BU I led a team of four product designers, partnering with three front-end and four back-end engineers; given the demand, I also worked hands-on in execution alongside the Admin for Partners squad.',
+      'Admin for Partners is the main tool partners use to manage their relationship with Tiendanube — withdrawing commissions, publishing apps to the app store, and tracking the stores created through their referrals. The partner base is wide, from software houses to affiliates. As Product Design Manager in the Ecosystem BU I led a team of four product designers, partnering with three front-end and four back-end engineers; given the demand, I also worked hands-on in execution alongside the Admin for Partners squad.',
     highlights: [
       'Ecosystem — a business unit of the company',
       'Admin for Partners is the main system',
@@ -696,17 +749,17 @@ export const projects: Project[] = [
     stats: [
       { value: '8 mo', label: 'Full Migration' },
       { value: '100%', label: 'Partners Migrated' },
-      { value: '4.5', label: 'Satisfaction Score' },
+      { value: '4.5 / 5', label: 'Satisfaction Score' },
     ],
     challengeTitle: 'A legacy admin fused to the core platform.',
     challengeBody:
       'The old administrator was built inside the Tiendanube core and inherited all of its dependencies — authentication among them — so every change was coupled and risky. That coupling created barriers to delivering more value to partners. In short: the legacy system was too old, merged into the core, and restricting any further improvement.',
     decision: {
       body:
-        'Partners and our own operation told us the admin had many problems that disrupted routines and generated complaints. To ship a lot of improvements quickly, we first had to move the system onto new technology, unmerged from the core.',
+        'Partners and our own operation told us the admin had many problems that disrupted routines and generated complaints. To ship a lot of improvements quickly, we first had to move the system onto new technology, off the core.',
       points: [
         'Many complaints from partners about the legacy admin.',
-        'Unmerge from the core to gain speed and shed dependencies.',
+        'Move it off the core to gain speed and shed dependencies.',
         'Add only a few high-impact wins — like mobile-friendly — to finish fast.',
         'Ran qualitative research with ~30 partners to prioritise what fit the migration.',
       ],
@@ -760,7 +813,7 @@ export const projects: Project[] = [
     outcomeBullets: [
       '100% of functionalities migrated to the new platform',
       '100% of partners moved without rollback',
-      '4.5 satisfaction score after migration',
+      '4.5 out of 5 satisfaction score after migration, meeting the goal of matching or beating the previous experience',
       'Mobile-friendly admin — a long-standing partner request shipped',
     ],
     outcomeImage: '/images/tiendanube-partners/tiendanube-partners-delivery.png',
@@ -796,13 +849,13 @@ export const projects: Project[] = [
       'Tiendanube\'s product design system — born inside a mobile app redesign',
     caseLink:
       'https://docs.google.com/presentation/d/1uZk1L5bCSSfrwBkLQuHFXBvPAgX5dsBXbgAROyoHHso/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentation',
     tagline:
       'A design system born inside an app redesign — built to scale across Tiendanube\'s product ecosystem.',
     overview:
-      'Nimbus is Tiendanube\'s product design system, built primarily for internal teams and for external partners integrating into the ecosystem. I\'m responsible for it alongside an engineering manager, with two senior product designers and a front-end developer specialised in design systems. We treat Nimbus as a product in its own right — knowing who our users are, what they need, what to prioritise, and which metrics measure our impact.',
+      'Nimbus is Tiendanube\'s product design system, built primarily for internal teams and for external partners integrating into the ecosystem. I was responsible for Nimbus alongside an engineering manager, with two senior product designers and a front-end developer specialised in design systems. We treated Nimbus as a product in its own right: knowing who our users were, what they needed, what to prioritise, and which metrics measured our impact.',
     highlights: [
       'Desktop and mobile applications using the design system',
       'Focused on internal teams and partners',
@@ -812,7 +865,8 @@ export const projects: Project[] = [
     stats: [
       { value: '13', label: 'Applications Using It' },
       { value: '40+', label: 'Components Shipped' },
-      { value: '>90%', label: 'Coverage Goal' },
+      { value: '93.4%', label: 'Coverage (goal ≥90%)' },
+      { value: '20.2%', label: 'Overrides (goal ≤10%)' },
     ],
     challengeTitle: 'A design system isn\'t a project — it\'s a product.',
     challengeBody:
@@ -823,7 +877,7 @@ export const projects: Project[] = [
       'Create a design and dev basis for other applications and products.',
     ],
     processIntro:
-      'We split the work into two tracks — one for the app redesign, one for the design system. With no dedicated DS team at the start, the same people handled both design and dev; after discovery, the redesign was broken into smaller parts built in cycles. As it was our first design system, we did thorough research into market practices, common structures, and the most-used technologies, benchmarking recognised design systems to define what a world-class DS would require.',
+      'We split the work into two tracks — one for the app redesign, one for the design system. With no dedicated DS team at the start, the same people handled both design and dev; after discovery, the redesign was broken into smaller parts built in cycles. As it was our first design system, we did thorough research into market practices, common structures, and the most-used technologies, benchmarking recognised design systems to define what our DS required.',
     processFlow:
       'App redesign: Problem → Discovery → Creative sessions → Design → Prototype → Hand off  ·  DS: Discovery → Exploration → Component craft → Release',
     process: [
@@ -861,29 +915,29 @@ export const projects: Project[] = [
     },
     outcomeTitle: 'A product, not a project.',
     outcomeBody:
-      'The redesign isn\'t finished, but we\'ve already shipped 40+ atomic, composite, and pattern components, and 13 mobile and desktop applications are using Nimbus — four teams adopting it without trouble. As usage scaled, we justified a dedicated team of two designers and a front-end dev, crucial for focus and pace. Coverage and Overrides metrics now give us an accurate read on adoption and where to improve.',
+      'At the time of this case, the redesign was not finished, but we had shipped 40+ atomic, composite, and pattern components, and 13 mobile and desktop applications were using Nimbus — four teams adopted it without trouble. As usage scaled, we justified a dedicated team of two designers and a front-end dev, crucial for focus and pace. Coverage and Overrides metrics gave us an accurate read on adoption and where to improve.',
     outcomeBullets: [
       '13 applications adopting Nimbus across mobile and desktop',
       '40+ atomic, composite, and pattern components shipped',
       'Dedicated team formed: 2 product designers + 1 specialist front-end',
-      'Coverage (≥90%) and Overrides (≤10%) metrics tracking real adoption',
+      'Coverage 93.4% (goal ≥90%); Overrides 20.2% (goal ≤10%)',
     ],
     outcomeImage: '/images/nimbus-design-system/nimbus-ds-delivery.png',
     learnings: [
       {
         title: 'Dig deeper into what the metrics reveal.',
         body:
-          'The data is rich — it shows which use cases the DS isn\'t meeting and where to improve to increase Nimbus adoption.',
+          'The data was rich — it showed which use cases the DS wasn\'t meeting and where to improve to increase Nimbus adoption. Overrides ended at 20.2%, twice the goal. Coverage showed adoption; overrides showed where the system did not fit real use cases.',
       },
       {
         title: 'Understand Nimbus\'s impact on end users.',
         body:
-          'We\'re collecting feedback from teams on how end users receive the new interfaces — important input for prioritising improvements.',
+          'We were collecting feedback from teams on how end users received the new interfaces — important input for prioritising improvements.',
       },
       {
         title: 'Raise the quality bar from the start.',
         body:
-          'We\'re revisiting early components as we learn, applying more flexible, easier-to-use ways of building them.',
+          'We were revisiting early components as we learned, applying more flexible, easier-to-use ways of building them.',
       },
     ],
   },
@@ -892,7 +946,15 @@ export const projects: Project[] = [
 // Fields that carry copy; ids, years, images and links are shared across locales
 export type ProjectTranslation = Omit<
   Project,
-  'id' | 'hidden' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
+  | 'id'
+  | 'hidden'
+  | 'year'
+  | 'image'
+  | 'caseImages'
+  | 'link'
+  | 'caseLink'
+  | 'outcomeImage'
+  | 'quotePosition'
 >;
 
 // Chronological order, newest first. Ranges like '2021–22' sort by their end year,

@@ -4,10 +4,10 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam. Atualmente lidero o time de design de produto na SuperSummary.',
+      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido, trabalhando com monetização, design systems e fluxos com IA para produtos de assinatura e fintech.',
     ogDescription:
-      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam.',
-    managementTitle: 'Gestão de Times de Design — Diego Silverio',
+      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido.',
+    managementTitle: 'Liderança em Design — Diego Silverio',
     managementDescription:
       'Minha experiência liderando e desenvolvendo times de design — os cargos, os princípios que me guiam, como encaro a liderança em design e os feedbacks que recebi pelo caminho.',
     managementOgDescription:
@@ -23,10 +23,10 @@ export const pt: Dictionary = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Criando',
-    titleAccent: 'experiências',
-    titleAfter: 'digitais que as pessoas amam',
-    body: 'Mais de 16 anos entre América Latina e EUA entregando trabalhos para fintechs, marketplaces e plataformas. Atualmente lidero o design de produto na SuperSummary — com foco em EdTech e IA.',
+    titleBefore: 'Product designer que constrói',
+    titleAccent: 'ferramentas de IA',
+    titleAfter: 'para criar experiências melhores, mais rápido.',
+    body: 'Product designer focado em craft, sistemas e formas de trabalhar apoiadas por IA. Hoje estou na SuperSummary, com a mão na massa no design system, na pesquisa e nas ferramentas que meu time usa para desenhar e entregar.',
     scrollLabel: 'Trabalhos selecionados',
     scrollAria: 'Ir para os trabalhos selecionados',
   },
@@ -36,16 +36,19 @@ export const pt: Dictionary = {
     viewCase: 'Ver estudo de caso',
     openCase: (title: string) => `Abrir o estudo de caso ${title}`,
   },
+  systems: {
+    eyebrow: 'Cases de liderança',
+    title: 'Sistemas e IA',
+  },
   about: {
     eyebrow: 'Trajetória',
     title: 'Sobre',
     portraitAlt: 'Retrato de Diego Silverio',
-    lead: 'Meu nome é Diego — sou product designer com mais de 16 anos de experiência em design de experiências para marketplaces, fintechs e, atualmente, EdTech.',
-    body: 'Morando no Brasil, liderei times de diversos tamanhos e configurações, atuando em grandes empresas, pequenos negócios e startups para transformar problemas complexos em experiências de produto eficientes e de impacto.',
-    managementLink: 'Leia sobre minha experiência na gestão de times de design',
+    body: 'Sou product designer e trabalho com problemas que chegam sem enquadramento: pricing e packaging, design systems e as ferramentas que permitem a um time pequeno entregar no ritmo de um time maior. Fiz isso em banco, em SaaS de e-commerce e, agora, numa edtech de assinatura, onde desenho com a mão na massa, cuido do design system e da operação de pesquisa e reporto ao CEO. Avalio meu trabalho pelo que mudou: receita sem mais churn, entregas sem atraso, decisões apoiadas em evidência em vez de opinião. Quando nenhuma ferramenta serve, eu crio uma, incluindo os assistentes de IA que meu time usa para desenhar e revisar no Figma. Moro no Brasil e trabalho entre a América Latina e os EUA.',
+    managementLink: 'Veja como construo sistemas e ferramentas de IA para times de design',
     stats: [
       { value: '16+', label: 'Anos em design de produto' },
-      { value: '8+', label: 'Anos liderando times' },
+      { value: 'Hands-on', label: 'Growth, design systems, ferramentas de IA' },
       { value: 'LATAM e EUA', label: 'Mercados em que atuei' },
       { value: 'EdTech e IA', label: 'Foco atual — SuperSummary' },
     ],

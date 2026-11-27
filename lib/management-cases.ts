@@ -61,7 +61,7 @@ export const managementCaseLabelsEn = {
   limitation: 'Limitation',
   learnings: 'Learnings',
   next: 'Next leadership case',
-  back: 'Back to Managing Design Teams',
+  back: 'Back to Design Leadership',
   cases: 'Leadership cases',
   readCase: 'Read the case',
 };

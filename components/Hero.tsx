@@ -15,7 +15,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-        className="font-serif text-hero max-w-[14ch] text-ink"
+        className="font-serif text-[clamp(44px,7vw,96px)] leading-[1] tracking-[-0.02em] max-w-[20ch] text-ink"
       >
         {t.hero.titleBefore}{' '}
         <span className="text-accent">{t.hero.titleAccent}</span>{' '}

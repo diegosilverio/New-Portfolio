@@ -3,9 +3,9 @@ import type { ManagementContent } from './management.en';
 export const managementPt: ManagementContent = {
   labels: {
     eyebrow: 'Liderança em Design',
-    title: 'Gestão de Times de Design',
+    title: 'Liderança em Design',
     intro:
-      'Uma página dedicada à minha experiência liderando e desenvolvendo times de design — os cargos, os princípios que me guiam, como encaro a liderança em design e os feedbacks que recebi pelo caminho.',
+      'Como construo os sistemas, as ferramentas e as rotinas que permitem a um time pequeno de design entregar no ritmo de um time maior.',
     yearsDesign: 'Anos de experiência em design',
     yearsManager: 'Anos como gestor de pessoas',
     career: 'Carreira',
@@ -31,7 +31,7 @@ export const managementPt: ManagementContent = {
     {
       role: 'Lead Product Designer',
       company: 'SuperSummary',
-      period: 'Mai/24 – Hoje',
+      period: 'Set/24 – Hoje',
       description:
         'Startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, marketing e inovação.',
     },
@@ -60,12 +60,11 @@ export const managementPt: ManagementContent = {
   roles: [
     {
       title: 'Lead Product Designer @ SuperSummary',
-      period: 'Mai/24 até Hoje',
+      period: 'Set/24 até Hoje',
       paragraphs: [
         'Atuo como Lead Product Designer na SuperSummary, uma startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, marketing e inovação.',
         'Também sou responsável pela operação de pesquisa, gerenciando todos os processos, do recrutamento e planejamento à orientação para a execução nos squads. Reporto diretamente ao CEO e lidero as definições estratégicas de design da empresa.',
       ],
-      caseIds: ['design-ops', 'research-ops', 'customer-brain'],
       stats: [],
     },
     {

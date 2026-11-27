@@ -5,11 +5,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Migração de Assinantes Legacy',
     description:
       'Levando uma base legacy fiel para o novo plano Plus com um upgrade opcional e preço de fidelidade',
-    role: 'Lead Product Designer (designer único)',
+    role: 'Lead Product Designer (designer único da migração; também liderando Design e o design system)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentação',
     tagline:
-      'Bloqueei as novas ferramentas de IA atrás de um upgrade opcional, com preço de fidelidade: taxa de upgrade 60x maior, com cancelamentos estáveis.',
+      'Um upgrade opcional, com preço de fidelidade, gerou mais de 8x a receita de upsell do controle, com cancelamentos estáveis.',
     overview:
       'A SuperSummary é uma plataforma de edtech americana de guias de estudo de literatura e ferramentas de leitura. Depois do lançamento da nova estrutura de planos Plus/Essentials, um grande grupo de assinantes legacy, em sua maioria estudantes e membros de book clubs, continuou com acesso completo ao Plus pagando preço de Essentials. Quase todos (97,7%) eram assinantes anuais de longa data. Fui o único designer da migração, dentro da squad de Growth Experimentation, enquanto também liderava o time de design e o design system. Participei das duas iniciativas anteriores: Pricing & Packaging (Q3 2025) e o Upgrade Flow (Q4 2025).',
     highlights: [
@@ -77,11 +77,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
         'Opção C — Upgrade opcional com um uso grátis por ferramenta de IA (escolhida)',
       ],
     },
-    outcomeTitle: 'Taxa de upgrade 60x maior, com cancelamentos estáveis.',
+    outcomeTitle: '8x+ de receita de upsell, com cancelamentos estáveis.',
     outcomeBody:
       'No teste A/B (junho–julho de 2026), o tratamento superou o controle em receita sem mexer nos cancelamentos. A liderança aprovou o rollout para 100% dos assinantes legacy em julho de 2026, sem objeções. Só uma mensagem de suporte mencionou a mudança, e o uso das funcionalidades que continuaram grátis subiu cerca de 11%.',
     outcomeBullets: [
-      'Taxa de upgrade: 5,4% dos usuários expostos, vs. 0,09% no controle',
+      'Taxa de upgrade: 5,4% dos usuários expostos, vs. 0,09% no controle (60x)',
       'Receita de upsell: 8x+ o controle durante a janela do teste',
       'Cancelamentos agendados: estáveis (−2,1%, não significativo)',
       'Retenção no fluxo de cancelamento: 60,6% vs. 52,2% (+8,4 p.p.)',
@@ -89,6 +89,26 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     quote: {
       text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
       author: 'Colega da squad de Growth',
+    },
+    ownWork: {
+      position: 'beforeExecution',
+      label: 'O que desenhei',
+      items: [
+        { title: 'Nota de introdução', body: 'Exibida no primeiro uso.' },
+        { title: 'Banners de limite e de bloqueio', body: 'Explicando o que o Plus libera.' },
+        { title: 'Modal de upgrade', body: '20% off vitalício.' },
+        { title: 'Oferta de retenção', body: 'Uma oferta de última hora no fluxo de cancelamento.' },
+      ],
+      image: {
+        src: '/images/legacy-subscriber-migration/legacy-image-1.png',
+        caption: 'Fluxo de upgrade: banner de limite, modal de upgrade, confirmação e boas-vindas.',
+      },
+    },
+    background: {
+      title: 'Contexto: Pricing & Packaging',
+      body: 'Antes da migração, trabalhei na estrutura de planos e no funil de upgrade: Pricing & Packaging (Q3 2025), o Upgrade Flow e os Upsell Modals (do Q4 2025 ao Q1 2026). Nesses testes, cerca de metade dos novos assinantes escolheu o Plus, a receita líquida por usuário exposto subiu cerca de 15% na primeira entrega e a receita de upsell subiu cerca de 30%.',
+      linkSlug: 'plus-plan',
+      linkLabel: 'Ver o case do Plano Plus',
     },
     learnings: [
       {
@@ -111,7 +131,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
   'visual-language': {
     title: 'Nova Linguagem Visual',
     description:
-      'Transformando um novo design system em uma linguagem visual que aumentou a receita',
+      'Uma nova linguagem visual que superou a meta de não perder receita em duas páginas',
     role: 'Lead Product Designer',
     company: 'SuperSummary',
     scope: 'Linguagem Visual, Experimentação, Liderança de Design',
@@ -168,7 +188,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       {
         title: 'Passar para os squads',
         description:
-          'Product Innovation assumiu a Homepage e Growth, a Subscribe page. As designers executaram com o meu apoio, mais próximo da júnior na Subscribe page. Os PMs assumiram a meta de receita e cada decisão de rollout.',
+          'Product Innovation assumiu a Homepage e Growth, a Subscribe page. As designers dos squads executaram os redesigns das páginas com o meu apoio, mais próximo da designer júnior na Subscribe page. Os PMs assumiram a meta de receita e cada decisão de rollout.',
       },
     ],
     execution: {
@@ -191,6 +211,15 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       '~+20% de checkouts do plano anual, Subscribe page',
       'Virou o padrão para migrar o restante da plataforma',
     ],
+    ownWork: {
+      position: 'afterOverview',
+      label: 'O que desenhei',
+      body: 'Desenhei as explorações de conceito e defini a linguagem. As designers dos squads executaram os redesigns das páginas, com o meu apoio.',
+      image: {
+        src: '/images/visual-language/visual-language-image-1.png',
+        caption: 'Explorações de conceito: as três direções visuais que desenhei.',
+      },
+    },
     learnings: [
       {
         title: 'Pesquisa de percepção antes dos testes.',
@@ -213,11 +242,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Plano Plus',
     description:
       'Preços, planos e upgrade: lançando um plano com IA em ciclos de A/B test',
-    role: 'Lead Product Designer',
+    role: 'Lead Product Designer (designer hands-on do squad de Growth)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentação',
     tagline:
-      'Co-defini uma nova estrutura de planos e otimizei o funil de upgrade em ciclos de A/B test, com ganhos de receita líquida de dois dígitos.',
+      'Co-defini a estrutura Essentials vs Plus e mantive o valor de cada plano visível no checkout e no upgrade; cerca de metade dos novos assinantes escolheu o Plus.',
     overview:
       'A SuperSummary oferece guias de estudo completos para estudantes e membros de clubes do livro. Entre julho de 2025 e março de 2026, depois da saída do designer sênior do squad de Growth, assumi como designer hands-on do squad sem deixar de liderar Design na empresa. O squad roda ciclos rápidos de A/B test no funil de conversão e monetização. Este case cobre três frentes conectadas: Pricing & Packaging (a nova estrutura Essentials vs Plus), o Upgrade Flow e os Upsell Modals.',
     highlights: [
@@ -320,13 +349,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Nuvem Envio',
     description:
       'Ativação automática do serviço de logística no onboarding do plano gratuito da Tiendanube',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Estratégia de Produto, Onboarding, Design entre Times',
     tagline:
       'Transformando a logística de um produto opcional em parte do onboarding de todo lojista — em quatro semanas.',
     overview:
-      'O Nuvem Envio é a ferramenta de logística dentro da plataforma Tiendanube — é o que os lojistas usam para coletar e enviar produtos aos seus clientes. Por viver dentro da plataforma, só lojistas existentes conseguem acessá-lo. Como design manager da unidade de negócio de Serviços Logísticos, defini as diretrizes da experiência enquanto orientava o product designer sênior da tribo, trabalhando lado a lado com produto e engenharia.',
+      'O Nuvem Envio é a ferramenta de logística dentro da plataforma Tiendanube — é o que os lojistas usam para coletar e enviar produtos aos seus clientes. Por viver dentro da plataforma, só lojistas existentes conseguem acessá-lo. Como Product Design Manager da unidade de negócio de Serviços Logísticos, defini as diretrizes da experiência enquanto orientava o product designer sênior da tribo, trabalhando lado a lado com produto e engenharia.',
     highlights: [
       'Serviços Logísticos — uma unidade de negócio da empresa',
       'Um produto embutido na plataforma principal',
@@ -414,13 +443,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Itaucard',
     description:
       'Nova home e diretrizes de estrutura para o app de cartão de crédito do maior banco da América Latina',
-    role: 'Design Manager',
+    role: 'UX Design Manager',
     company: 'Itaú-Unibanco',
     scope: 'Design Mobile, Estratégia de Produto, Diretrizes',
     tagline:
       'Reestruturando a home de um app de cartão de crédito usado por 7 milhões de brasileiros — e as diretrizes para mantê-lo evoluindo.',
     overview:
-      'O Itaucard é o app de cartão de crédito do Itaú-Unibanco, o maior banco da América Latina, com uma base de ~10 milhões de cartões e cerca de 7 milhões de usuários ativos em iOS e Android. A unidade operava com quatro tribos ao longo de toda a jornada do cartão. Como Design Manager na tribo de Retenção — a principal responsável pelos apps e pelo fluxo da home — liderei um esforço focado, com um Group Product Manager e um especialista em product design, para reestruturar a home e entregar aos sete squads as diretrizes de que precisariam para continuar evoluindo-a depois da nossa saída.',
+      'O Itaucard é o app de cartão de crédito do Itaú-Unibanco, o maior banco da América Latina, com uma base de ~10 milhões de cartões e cerca de 7 milhões de usuários ativos em iOS e Android. A unidade operava com quatro tribos ao longo de toda a jornada do cartão. Como UX Design Manager na tribo de Retenção — a principal responsável pelos apps e pelo fluxo da home — liderei um esforço focado, com um Group Product Manager e um especialista em product design, para reestruturar a home e entregar aos sete squads as diretrizes de que precisariam para continuar evoluindo-a depois da nossa saída.',
     highlights: [
       'Unidade de cartões de crédito do Itaú, o maior banco da América Latina',
       'Apps nativos para Android e iOS',
@@ -430,7 +459,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     ],
     stats: [
       { value: '7 mi', label: 'Usuários Ativos no App' },
-      { value: '3×', label: 'Acesso ao Cartão Virtual' },
+      { value: '3×', label: 'Acesso ao Cartão Virtual (beta com 250 usuários)' },
       { value: '82%', label: 'Feedback Positivo' },
     ],
     challengeTitle:
@@ -515,10 +544,10 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     outcomeBody:
       'A nova home foi liberada para o beta de 250 usuários. O acesso ao cartão virtual saltou de 6% para 18% — cerca de 6% pela área de serviços e 12% pelo novo botão da home, triplicando a taxa original. Do grupo beta, 53% responderam à pesquisa de feedback, e 82% deles avaliaram a experiência como "ótima" ou "boa".',
     outcomeBullets: [
-      'Acesso ao cartão virtual subiu de 6% para 18% — um aumento de 3×',
+      'Num beta com 250 usuários, o acesso ao cartão virtual subiu de 6% para 18%, um aumento de 3×',
       '82% dos respondentes avaliaram a nova home como ótima ou boa',
       'Escopo de engenharia reduzido de 3 meses para 1, com um front-end em meio período',
-      'Diretrizes adotadas por 7 squads da unidade de cartões de crédito',
+      'Diretrizes entregues a 7 squads da unidade de cartões de crédito',
     ],
     learnings: [
       {
@@ -541,14 +570,14 @@ export const projectsPt: Record<string, ProjectTranslation> = {
   'nuvemshop-partners': {
     title: 'Tiendanube Partners',
     description:
-      'Redesign e migração do Admin para Parceiros — desacoplado do core da Tiendanube',
-    role: 'Design Manager',
-    company: 'Tiendanube',
+      'Redesign e migração do Admin para Parceiros, retirado do core da Tiendanube',
+    role: 'Product Design Manager',
+    company: 'Tiendanube · plataforma SaaS de e-commerce na América Latina',
     scope: 'Design de Plataforma, Migração, Pesquisa',
     tagline:
-      'Desacoplando o admin de parceiros da Tiendanube do core — e entregando em 8 meses.',
+      'Tirando o admin de parceiros da Tiendanube da plataforma core e entregando em 8 meses.',
     overview:
-      'O Admin para Parceiros é a principal ferramenta que os parceiros usam para gerenciar sua relação com a Tiendanube — sacar comissões, publicar aplicativos na loja de apps e acompanhar as lojas criadas por meio de suas indicações. A base de parceiros é ampla, de software houses a afiliados. Como Design Manager na unidade de negócio de Ecossistema, liderei um time de quatro product designers, em parceria com três engenheiros front-end e quatro back-end; dada a demanda, também atuei com a mão na massa na execução junto ao squad do Admin para Parceiros.',
+      'O Admin para Parceiros é a principal ferramenta que os parceiros usam para gerenciar sua relação com a Tiendanube — sacar comissões, publicar aplicativos na loja de apps e acompanhar as lojas criadas por meio de suas indicações. A base de parceiros é ampla, de software houses a afiliados. Como Product Design Manager na unidade de negócio de Ecossistema, liderei um time de quatro product designers, em parceria com três engenheiros front-end e quatro back-end; dada a demanda, também atuei com a mão na massa na execução junto ao squad do Admin para Parceiros.',
     highlights: [
       'Ecossistema — uma unidade de negócio da empresa',
       'O Admin para Parceiros é o sistema principal',
@@ -558,7 +587,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     stats: [
       { value: '8 meses', label: 'Migração Completa' },
       { value: '100%', label: 'Parceiros Migrados' },
-      { value: '4,5', label: 'Nota de Satisfação' },
+      { value: '4,5 / 5', label: 'Nota de Satisfação' },
     ],
     challengeTitle: 'Um admin legado fundido à plataforma core.',
     challengeBody:
@@ -568,7 +597,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
         'Os parceiros e a nossa própria operação nos diziam que o admin tinha muitos problemas que atrapalhavam as rotinas e geravam reclamações. Para entregar muitas melhorias rapidamente, primeiro precisávamos mover o sistema para uma nova tecnologia, desacoplada do core.',
       points: [
         'Muitas reclamações dos parceiros sobre o admin legado.',
-        'Desacoplar do core para ganhar velocidade e eliminar dependências.',
+        'Tirá-lo do core para ganhar velocidade e eliminar dependências.',
         'Adicionar apenas alguns ganhos de alto impacto — como a versão mobile-friendly — para terminar rápido.',
         'Conduzimos uma pesquisa qualitativa com ~30 parceiros para priorizar o que cabia na migração.',
       ],
@@ -622,7 +651,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     outcomeBullets: [
       '100% das funcionalidades migradas para a nova plataforma',
       '100% dos parceiros migrados sem rollback',
-      'Nota de satisfação 4,5 após a migração',
+      'Nota de satisfação 4,5 de 5 após a migração, cumprindo a meta de igualar ou superar a experiência anterior',
       'Admin mobile-friendly — um pedido antigo dos parceiros, entregue',
     ],
     learnings: [
@@ -647,13 +676,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Nimbus Design System',
     description:
       'O design system de produto da Tiendanube — nascido dentro do redesign de um app mobile',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentação',
     tagline:
       'Um design system nascido dentro do redesign de um app — construído para escalar por todo o ecossistema de produtos da Tiendanube.',
     overview:
-      'O Nimbus é o design system de produto da Tiendanube, construído principalmente para os times internos e para parceiros externos que se integram ao ecossistema. Sou responsável por ele ao lado de um engineering manager, com dois product designers sêniores e um desenvolvedor front-end especializado em design systems. Tratamos o Nimbus como um produto de fato — sabendo quem são nossos usuários, do que precisam, o que priorizar e quais métricas medem nosso impacto.',
+      'O Nimbus é o design system de produto da Tiendanube, construído principalmente para os times internos e para parceiros externos que se integram ao ecossistema. Fui responsável pelo Nimbus ao lado de um engineering manager, com dois product designers sêniores e um desenvolvedor front-end especializado em design systems. Tratávamos o Nimbus como um produto de fato: sabendo quem eram nossos usuários, do que precisavam, o que priorizar e quais métricas mediam nosso impacto.',
     highlights: [
       'Aplicações desktop e mobile usando o design system',
       'Foco em times internos e parceiros',
@@ -663,7 +692,8 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     stats: [
       { value: '13', label: 'Aplicações em Uso' },
       { value: '40+', label: 'Componentes Entregues' },
-      { value: '>90%', label: 'Meta de Cobertura' },
+      { value: '93,4%', label: 'Cobertura (meta ≥90%)' },
+      { value: '20,2%', label: 'Overrides (meta ≤10%)' },
     ],
     challengeTitle: 'Um design system não é um projeto — é um produto.',
     challengeBody:
@@ -674,7 +704,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       'Criar uma base de design e desenvolvimento para outras aplicações e produtos.',
     ],
     processIntro:
-      'Dividimos o trabalho em duas frentes — uma para o redesign do app, outra para o design system. Sem um time dedicado de DS no início, as mesmas pessoas cuidavam de design e desenvolvimento; depois do discovery, o redesign foi quebrado em partes menores, construídas em ciclos. Por ser nosso primeiro design system, fizemos uma pesquisa aprofundada sobre práticas de mercado, estruturas comuns e as tecnologias mais usadas, fazendo benchmark de design systems reconhecidos para definir o que um DS de classe mundial exigiria.',
+      'Dividimos o trabalho em duas frentes — uma para o redesign do app, outra para o design system. Sem um time dedicado de DS no início, as mesmas pessoas cuidavam de design e desenvolvimento; depois do discovery, o redesign foi quebrado em partes menores, construídas em ciclos. Por ser nosso primeiro design system, fizemos uma pesquisa aprofundada sobre práticas de mercado, estruturas comuns e as tecnologias mais usadas, fazendo benchmark de design systems reconhecidos para definir o que o nosso DS exigia.',
     processFlow:
       'Redesign do app: Problema → Discovery → Sessões criativas → Design → Protótipo → Hand-off  ·  DS: Discovery → Exploração → Criação de componentes → Release',
     process: [
@@ -712,28 +742,28 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     },
     outcomeTitle: 'Um produto, não um projeto.',
     outcomeBody:
-      'O redesign não terminou, mas já entregamos mais de 40 componentes atômicos, compostos e de padrões, e 13 aplicações mobile e desktop estão usando o Nimbus — com quatro times adotando-o sem dificuldades. Conforme o uso escalou, justificamos um time dedicado de dois designers e um dev front-end, crucial para o foco e o ritmo. As métricas de Cobertura e Overrides agora nos dão uma leitura precisa da adoção e de onde melhorar.',
+      'Na época deste case, o redesign ainda não tinha terminado, mas já tínhamos entregado mais de 40 componentes atômicos, compostos e de padrões, e 13 aplicações mobile e desktop usavam o Nimbus — com quatro times adotando-o sem dificuldades. Conforme o uso escalou, justificamos um time dedicado de dois designers e um dev front-end, crucial para o foco e o ritmo. As métricas de Cobertura e Overrides nos davam uma leitura precisa da adoção e de onde melhorar.',
     outcomeBullets: [
       '13 aplicações adotando o Nimbus em mobile e desktop',
       '40+ componentes atômicos, compostos e de padrões entregues',
       'Time dedicado formado: 2 product designers + 1 front-end especialista',
-      'Métricas de Cobertura (≥90%) e Overrides (≤10%) acompanhando a adoção real',
+      'Cobertura de 93,4% (meta ≥90%); Overrides de 20,2% (meta ≤10%)',
     ],
     learnings: [
       {
         title: 'Ir mais fundo no que as métricas revelam.',
         body:
-          'Os dados são ricos — mostram quais casos de uso o DS não está atendendo e onde melhorar para aumentar a adoção do Nimbus.',
+          'Os dados eram ricos — mostravam quais casos de uso o DS não atendia e onde melhorar para aumentar a adoção do Nimbus. Os overrides terminaram em 20,2%, o dobro da meta. A cobertura mostrava a adoção; os overrides mostravam onde o sistema não servia aos casos de uso reais.',
       },
       {
         title: 'Entender o impacto do Nimbus nos usuários finais.',
         body:
-          'Estamos coletando feedback dos times sobre como os usuários finais recebem as novas interfaces — um insumo importante para priorizar melhorias.',
+          'Estávamos coletando feedback dos times sobre como os usuários finais recebiam as novas interfaces — um insumo importante para priorizar melhorias.',
       },
       {
         title: 'Elevar a régua de qualidade desde o início.',
         body:
-          'Estamos revisitando os primeiros componentes à medida que aprendemos, aplicando formas mais flexíveis e fáceis de usar para construí-los.',
+          'Estávamos revisitando os primeiros componentes à medida que aprendíamos, aplicando formas mais flexíveis e fáceis de usar para construí-los.',
       },
     ],
   },

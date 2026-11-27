@@ -29,7 +29,7 @@ export function About() {
           className="relative h-[294px] w-full overflow-hidden rounded-card border border-border bg-card lg:h-[294px] lg:w-[520px]"
         >
           <Image
-            src="/images/profile.png"
+            src="/images/profile.jpg"
             alt={t.about.portraitAlt}
             fill
             sizes="(min-width: 1024px) 520px, 100vw"
@@ -44,10 +44,7 @@ export function About() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           className="flex flex-col justify-center"
         >
-          <p className="font-serif text-2xl md:text-[28px] leading-[1.5] text-ink">
-            {t.about.lead}
-          </p>
-          <p className="mt-6 text-base md:text-lg leading-relaxed text-muted">
+          <p className="text-lg md:text-xl leading-relaxed text-ink">
             {t.about.body}
           </p>
           <Link
