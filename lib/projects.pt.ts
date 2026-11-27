@@ -233,11 +233,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Plano Plus',
     description:
       'Preços, planos e upgrade: lançando um plano com IA em ciclos de A/B test',
-    role: 'Lead Product Designer',
+    role: 'Lead Product Designer (designer hands-on do squad de Growth)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentação',
     tagline:
-      'Co-defini uma nova estrutura de planos e otimizei o funil de upgrade em ciclos de A/B test, com ganhos de receita líquida de dois dígitos.',
+      'Co-defini a estrutura Essentials vs Plus e mantive o valor de cada plano visível no checkout e no upgrade; cerca de metade dos novos assinantes escolheu o Plus.',
     overview:
       'A SuperSummary oferece guias de estudo completos para estudantes e membros de clubes do livro. Entre julho de 2025 e março de 2026, depois da saída do designer sênior do squad de Growth, assumi como designer hands-on do squad sem deixar de liderar Design na empresa. O squad roda ciclos rápidos de A/B test no funil de conversão e monetização. Este case cobre três frentes conectadas: Pricing & Packaging (a nova estrutura Essentials vs Plus), o Upgrade Flow e os Upsell Modals.',
     highlights: [

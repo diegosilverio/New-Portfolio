@@ -373,11 +373,11 @@ export const projects: Project[] = [
     ],
     description:
       'Pricing, packaging and upgrade: launching an AI-powered plan through A/B test cycles',
-    role: 'Lead Product Designer',
+    role: 'Lead Product Designer (hands-on designer of the Growth squad)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentation',
     tagline:
-      'Co-defined a new plan structure and optimized the upgrade funnel through A/B test cycles, with double-digit net revenue gains.',
+      'Co-defined the Essentials vs Plus structure and kept each plan\'s value visible in checkout and upgrade; about half of new subscribers chose Plus.',
     overview:
       'SuperSummary offers full study guides to students and book club members. Between July 2025 and March 2026, after the Growth squad\'s senior designer left, I stepped in as its hands-on designer while still leading Design across the company. The squad runs fast A/B test cycles across the conversion and monetization funnel. This case covers three connected pieces of work: Pricing & Packaging (the new Essentials vs Plus structure), the Upgrade Flow and the Upsell Modals.',
     highlights: [
