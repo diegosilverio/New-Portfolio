@@ -65,10 +65,7 @@ export const managementEn = {
         "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",
       ],
       caseIds: ['design-ops', 'research-ops', 'customer-brain'],
-      stats: [
-        { value: '+150k', label: 'Brands applied to products' },
-        { value: '4', label: 'Squads focused on B2C digital products' },
-      ],
+      stats: [] as { value: string; label: string }[],
     },
     {
       title: 'Product Design Manager @ Tiendanube',

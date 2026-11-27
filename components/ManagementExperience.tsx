@@ -142,18 +142,20 @@ export function ManagementExperience({
                       {p}
                     </p>
                   ))}
-                  <div className="mt-2 flex flex-wrap gap-10 border-t border-border-soft pt-8 md:gap-16">
-                    {role.stats.map((s) => (
-                      <div key={s.label} className="flex flex-col gap-2">
-                        <span className="font-serif text-[32px] md:text-[40px] leading-none text-accent">
-                          {s.value}
-                        </span>
-                        <span className="label-eyebrow !text-muted max-w-[180px]">
-                          {s.label}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                  {role.stats.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-10 border-t border-border-soft pt-8 md:gap-16">
+                      {role.stats.map((s) => (
+                        <div key={s.label} className="flex flex-col gap-2">
+                          <span className="font-serif text-[32px] md:text-[40px] leading-none text-accent">
+                            {s.value}
+                          </span>
+                          <span className="label-eyebrow !text-muted max-w-[180px]">
+                            {s.label}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   {'caseIds' in role && role.caseIds && (
                     <div className="mt-4 flex flex-col gap-4">
                       <span className="label-eyebrow">{caseLabels.cases}</span>
