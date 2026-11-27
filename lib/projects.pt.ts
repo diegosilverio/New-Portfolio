@@ -349,13 +349,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Nuvem Envio',
     description:
       'Ativação automática do serviço de logística no onboarding do plano gratuito da Tiendanube',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Estratégia de Produto, Onboarding, Design entre Times',
     tagline:
       'Transformando a logística de um produto opcional em parte do onboarding de todo lojista — em quatro semanas.',
     overview:
-      'O Nuvem Envio é a ferramenta de logística dentro da plataforma Tiendanube — é o que os lojistas usam para coletar e enviar produtos aos seus clientes. Por viver dentro da plataforma, só lojistas existentes conseguem acessá-lo. Como design manager da unidade de negócio de Serviços Logísticos, defini as diretrizes da experiência enquanto orientava o product designer sênior da tribo, trabalhando lado a lado com produto e engenharia.',
+      'O Nuvem Envio é a ferramenta de logística dentro da plataforma Tiendanube — é o que os lojistas usam para coletar e enviar produtos aos seus clientes. Por viver dentro da plataforma, só lojistas existentes conseguem acessá-lo. Como Product Design Manager da unidade de negócio de Serviços Logísticos, defini as diretrizes da experiência enquanto orientava o product designer sênior da tribo, trabalhando lado a lado com produto e engenharia.',
     highlights: [
       'Serviços Logísticos — uma unidade de negócio da empresa',
       'Um produto embutido na plataforma principal',

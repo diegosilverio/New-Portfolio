@@ -495,13 +495,13 @@ export const projects: Project[] = [
       'Auto-activating the logistics service inside Tiendanube\'s free-plan onboarding',
     caseLink:
       'https://docs.google.com/presentation/d/142BkEevs0anLP1yLftn_XTJJfN2GilssiZoQBLW1ppU/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Product Strategy, Onboarding, Cross-team Design',
     tagline:
       'Turning logistics from an opt-in product into part of every seller\'s onboarding — in four weeks.',
     overview:
-      'Nuvem Envio is the logistics tool inside the Tiendanube platform — what sellers use to collect and ship products to their customers. Because it lives inside the platform, only existing sellers can reach it. As design manager for the Logistics Services BU, I set the guidelines for the experience while guiding the senior product designer on the tribe, working hand in hand with product and engineering.',
+      'Nuvem Envio is the logistics tool inside the Tiendanube platform — what sellers use to collect and ship products to their customers. Because it lives inside the platform, only existing sellers can reach it. As Product Design Manager for the Logistics Services BU, I set the guidelines for the experience while guiding the senior product designer on the tribe, working hand in hand with product and engineering.',
     highlights: [
       'Logistics Services — a business unit of the company',
       'A product embedded inside the main platform',
