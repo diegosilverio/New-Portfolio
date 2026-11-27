@@ -2,7 +2,7 @@ export const en = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer focused on craft, systems and AI-assisted ways of working, currently at SuperSummary.',
+      'Product designer with 16+ years across LATAM and the US, building the design system, research pipeline and AI tools that help teams ship high-quality products, faster.',
     ogDescription:
       'Crafting products, and the AI tools that scale them.',
     managementTitle: 'Design Leadership — Diego Silverio',
