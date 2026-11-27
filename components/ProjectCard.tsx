@@ -9,9 +9,10 @@ import { useLocale } from './LocaleProvider';
 interface ProjectCardProps {
   project: Project;
   index: number;
+  priority?: boolean;
 }
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project, index, priority = false }: ProjectCardProps) {
   const { lang, t } = useLocale();
   const href = `/${lang}/work/${project.id}`;
 
@@ -38,7 +39,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-            priority={index < 2}
+            priority={priority}
           />
           <div
             aria-hidden="true"

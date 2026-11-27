@@ -34,6 +34,9 @@ export const en = {
     viewCase: 'View case study',
     openCase: (title: string) => `Open ${title} case study`,
   },
+  earlier: {
+    title: 'Earlier work',
+  },
   systems: {
     eyebrow: 'Leadership cases',
     title: 'Systems & AI',
