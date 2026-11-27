@@ -676,13 +676,13 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Nimbus Design System',
     description:
       'O design system de produto da Tiendanube — nascido dentro do redesign de um app mobile',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentação',
     tagline:
       'Um design system nascido dentro do redesign de um app — construído para escalar por todo o ecossistema de produtos da Tiendanube.',
     overview:
-      'O Nimbus é o design system de produto da Tiendanube, construído principalmente para os times internos e para parceiros externos que se integram ao ecossistema. Sou responsável por ele ao lado de um engineering manager, com dois product designers sêniores e um desenvolvedor front-end especializado em design systems. Tratamos o Nimbus como um produto de fato — sabendo quem são nossos usuários, do que precisam, o que priorizar e quais métricas medem nosso impacto.',
+      'O Nimbus é o design system de produto da Tiendanube, construído principalmente para os times internos e para parceiros externos que se integram ao ecossistema. Fui responsável pelo Nimbus ao lado de um engineering manager, com dois product designers sêniores e um desenvolvedor front-end especializado em design systems. Tratávamos o Nimbus como um produto de fato: sabendo quem eram nossos usuários, do que precisavam, o que priorizar e quais métricas mediam nosso impacto.',
     highlights: [
       'Aplicações desktop e mobile usando o design system',
       'Foco em times internos e parceiros',
@@ -692,7 +692,8 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     stats: [
       { value: '13', label: 'Aplicações em Uso' },
       { value: '40+', label: 'Componentes Entregues' },
-      { value: '>90%', label: 'Meta de Cobertura' },
+      { value: '93,4%', label: 'Cobertura (meta ≥90%)' },
+      { value: '20,2%', label: 'Overrides (meta ≤10%)' },
     ],
     challengeTitle: 'Um design system não é um projeto — é um produto.',
     challengeBody:
@@ -703,7 +704,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       'Criar uma base de design e desenvolvimento para outras aplicações e produtos.',
     ],
     processIntro:
-      'Dividimos o trabalho em duas frentes — uma para o redesign do app, outra para o design system. Sem um time dedicado de DS no início, as mesmas pessoas cuidavam de design e desenvolvimento; depois do discovery, o redesign foi quebrado em partes menores, construídas em ciclos. Por ser nosso primeiro design system, fizemos uma pesquisa aprofundada sobre práticas de mercado, estruturas comuns e as tecnologias mais usadas, fazendo benchmark de design systems reconhecidos para definir o que um DS de classe mundial exigiria.',
+      'Dividimos o trabalho em duas frentes — uma para o redesign do app, outra para o design system. Sem um time dedicado de DS no início, as mesmas pessoas cuidavam de design e desenvolvimento; depois do discovery, o redesign foi quebrado em partes menores, construídas em ciclos. Por ser nosso primeiro design system, fizemos uma pesquisa aprofundada sobre práticas de mercado, estruturas comuns e as tecnologias mais usadas, fazendo benchmark de design systems reconhecidos para definir o que o nosso DS exigia.',
     processFlow:
       'Redesign do app: Problema → Discovery → Sessões criativas → Design → Protótipo → Hand-off  ·  DS: Discovery → Exploração → Criação de componentes → Release',
     process: [
@@ -741,28 +742,28 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     },
     outcomeTitle: 'Um produto, não um projeto.',
     outcomeBody:
-      'O redesign não terminou, mas já entregamos mais de 40 componentes atômicos, compostos e de padrões, e 13 aplicações mobile e desktop estão usando o Nimbus — com quatro times adotando-o sem dificuldades. Conforme o uso escalou, justificamos um time dedicado de dois designers e um dev front-end, crucial para o foco e o ritmo. As métricas de Cobertura e Overrides agora nos dão uma leitura precisa da adoção e de onde melhorar.',
+      'Na época deste case, o redesign ainda não tinha terminado, mas já tínhamos entregado mais de 40 componentes atômicos, compostos e de padrões, e 13 aplicações mobile e desktop usavam o Nimbus — com quatro times adotando-o sem dificuldades. Conforme o uso escalou, justificamos um time dedicado de dois designers e um dev front-end, crucial para o foco e o ritmo. As métricas de Cobertura e Overrides nos davam uma leitura precisa da adoção e de onde melhorar.',
     outcomeBullets: [
       '13 aplicações adotando o Nimbus em mobile e desktop',
       '40+ componentes atômicos, compostos e de padrões entregues',
       'Time dedicado formado: 2 product designers + 1 front-end especialista',
-      'Métricas de Cobertura (≥90%) e Overrides (≤10%) acompanhando a adoção real',
+      'Cobertura de 93,4% (meta ≥90%); Overrides de 20,2% (meta ≤10%)',
     ],
     learnings: [
       {
         title: 'Ir mais fundo no que as métricas revelam.',
         body:
-          'Os dados são ricos — mostram quais casos de uso o DS não está atendendo e onde melhorar para aumentar a adoção do Nimbus.',
+          'Os dados eram ricos — mostravam quais casos de uso o DS não atendia e onde melhorar para aumentar a adoção do Nimbus. Os overrides terminaram em 20,2%, o dobro da meta. A cobertura mostrava a adoção; os overrides mostravam onde o sistema não servia aos casos de uso reais.',
       },
       {
         title: 'Entender o impacto do Nimbus nos usuários finais.',
         body:
-          'Estamos coletando feedback dos times sobre como os usuários finais recebem as novas interfaces — um insumo importante para priorizar melhorias.',
+          'Estávamos coletando feedback dos times sobre como os usuários finais recebiam as novas interfaces — um insumo importante para priorizar melhorias.',
       },
       {
         title: 'Elevar a régua de qualidade desde o início.',
         body:
-          'Estamos revisitando os primeiros componentes à medida que aprendemos, aplicando formas mais flexíveis e fáceis de usar para construí-los.',
+          'Estávamos revisitando os primeiros componentes à medida que aprendíamos, aplicando formas mais flexíveis e fáceis de usar para construí-los.',
       },
     ],
   },

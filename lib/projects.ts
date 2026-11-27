@@ -849,13 +849,13 @@ export const projects: Project[] = [
       'Tiendanube\'s product design system — born inside a mobile app redesign',
     caseLink:
       'https://docs.google.com/presentation/d/1uZk1L5bCSSfrwBkLQuHFXBvPAgX5dsBXbgAROyoHHso/edit?usp=drive_link',
-    role: 'Design Manager',
+    role: 'Product Design Manager',
     company: 'Tiendanube',
     scope: 'Design System, Tokens, Documentation',
     tagline:
       'A design system born inside an app redesign — built to scale across Tiendanube\'s product ecosystem.',
     overview:
-      'Nimbus is Tiendanube\'s product design system, built primarily for internal teams and for external partners integrating into the ecosystem. I\'m responsible for it alongside an engineering manager, with two senior product designers and a front-end developer specialised in design systems. We treat Nimbus as a product in its own right — knowing who our users are, what they need, what to prioritise, and which metrics measure our impact.',
+      'Nimbus is Tiendanube\'s product design system, built primarily for internal teams and for external partners integrating into the ecosystem. I was responsible for Nimbus alongside an engineering manager, with two senior product designers and a front-end developer specialised in design systems. We treated Nimbus as a product in its own right: knowing who our users were, what they needed, what to prioritise, and which metrics measured our impact.',
     highlights: [
       'Desktop and mobile applications using the design system',
       'Focused on internal teams and partners',
@@ -865,7 +865,8 @@ export const projects: Project[] = [
     stats: [
       { value: '13', label: 'Applications Using It' },
       { value: '40+', label: 'Components Shipped' },
-      { value: '>90%', label: 'Coverage Goal' },
+      { value: '93.4%', label: 'Coverage (goal ≥90%)' },
+      { value: '20.2%', label: 'Overrides (goal ≤10%)' },
     ],
     challengeTitle: 'A design system isn\'t a project — it\'s a product.',
     challengeBody:
@@ -876,7 +877,7 @@ export const projects: Project[] = [
       'Create a design and dev basis for other applications and products.',
     ],
     processIntro:
-      'We split the work into two tracks — one for the app redesign, one for the design system. With no dedicated DS team at the start, the same people handled both design and dev; after discovery, the redesign was broken into smaller parts built in cycles. As it was our first design system, we did thorough research into market practices, common structures, and the most-used technologies, benchmarking recognised design systems to define what a world-class DS would require.',
+      'We split the work into two tracks — one for the app redesign, one for the design system. With no dedicated DS team at the start, the same people handled both design and dev; after discovery, the redesign was broken into smaller parts built in cycles. As it was our first design system, we did thorough research into market practices, common structures, and the most-used technologies, benchmarking recognised design systems to define what our DS required.',
     processFlow:
       'App redesign: Problem → Discovery → Creative sessions → Design → Prototype → Hand off  ·  DS: Discovery → Exploration → Component craft → Release',
     process: [
@@ -914,29 +915,29 @@ export const projects: Project[] = [
     },
     outcomeTitle: 'A product, not a project.',
     outcomeBody:
-      'The redesign isn\'t finished, but we\'ve already shipped 40+ atomic, composite, and pattern components, and 13 mobile and desktop applications are using Nimbus — four teams adopting it without trouble. As usage scaled, we justified a dedicated team of two designers and a front-end dev, crucial for focus and pace. Coverage and Overrides metrics now give us an accurate read on adoption and where to improve.',
+      'At the time of this case, the redesign was not finished, but we had shipped 40+ atomic, composite, and pattern components, and 13 mobile and desktop applications were using Nimbus — four teams adopted it without trouble. As usage scaled, we justified a dedicated team of two designers and a front-end dev, crucial for focus and pace. Coverage and Overrides metrics gave us an accurate read on adoption and where to improve.',
     outcomeBullets: [
       '13 applications adopting Nimbus across mobile and desktop',
       '40+ atomic, composite, and pattern components shipped',
       'Dedicated team formed: 2 product designers + 1 specialist front-end',
-      'Coverage (≥90%) and Overrides (≤10%) metrics tracking real adoption',
+      'Coverage 93.4% (goal ≥90%); Overrides 20.2% (goal ≤10%)',
     ],
     outcomeImage: '/images/nimbus-design-system/nimbus-ds-delivery.png',
     learnings: [
       {
         title: 'Dig deeper into what the metrics reveal.',
         body:
-          'The data is rich — it shows which use cases the DS isn\'t meeting and where to improve to increase Nimbus adoption.',
+          'The data was rich — it showed which use cases the DS wasn\'t meeting and where to improve to increase Nimbus adoption. Overrides ended at 20.2%, twice the goal. Coverage showed adoption; overrides showed where the system did not fit real use cases.',
       },
       {
         title: 'Understand Nimbus\'s impact on end users.',
         body:
-          'We\'re collecting feedback from teams on how end users receive the new interfaces — important input for prioritising improvements.',
+          'We were collecting feedback from teams on how end users received the new interfaces — important input for prioritising improvements.',
       },
       {
         title: 'Raise the quality bar from the start.',
         body:
-          'We\'re revisiting early components as we learn, applying more flexible, easier-to-use ways of building them.',
+          'We were revisiting early components as we learned, applying more flexible, easier-to-use ways of building them.',
       },
     ],
   },
