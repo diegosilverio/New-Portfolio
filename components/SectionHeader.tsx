@@ -3,22 +3,24 @@
 import { motion } from 'framer-motion';
 
 interface SectionHeaderProps {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
 }
 
 export function SectionHeader({ eyebrow, title }: SectionHeaderProps) {
   return (
     <div className="flex flex-col gap-6">
-      <motion.span
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 0.5 }}
-        className="label-eyebrow"
-      >
-        {eyebrow}
-      </motion.span>
+      {eyebrow && (
+        <motion.span
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.5 }}
+          className="label-eyebrow"
+        >
+          {eyebrow}
+        </motion.span>
+      )}
 
       <motion.h2
         initial={{ opacity: 0, y: 16 }}

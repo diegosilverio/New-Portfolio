@@ -36,8 +36,10 @@ export const pt: Dictionary = {
     viewCase: 'Ver estudo de caso',
     openCase: (title: string) => `Abrir o estudo de caso ${title}`,
   },
+  earlier: {
+    title: 'Trabalhos anteriores',
+  },
   systems: {
-    eyebrow: 'Cases de liderança',
     title: 'Sistemas e IA',
   },
   about: {
