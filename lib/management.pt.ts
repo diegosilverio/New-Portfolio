@@ -5,9 +5,9 @@ export const managementPt: ManagementContent = {
     eyebrow: 'Liderança em Design',
     title: 'Liderança em Design',
     intro:
-      'Como construo os sistemas, as ferramentas e as rotinas que permitem a um time pequeno de design entregar no ritmo de um time maior.',
+      'Como construo os sistemas, as ferramentas e as rotinas que permitem a um time pequeno de design entregar com qualidade e no ritmo de um time maior.',
     yearsDesign: 'Anos de experiência em design',
-    yearsManager: 'Anos como gestor de pessoas',
+    yearsManager: 'Anos liderando times',
     career: 'Carreira',
     careerIntro:
       'Um panorama da minha trajetória em gestão, passando por edtech, e-commerce, siderurgia e banco.',
@@ -33,7 +33,7 @@ export const managementPt: ManagementContent = {
       company: 'SuperSummary',
       period: 'Set/24 – Hoje',
       description:
-        'Startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, marketing e inovação.',
+        'Startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, growth, marketing e inovação.',
     },
     {
       role: 'Product Design Manager',
@@ -62,7 +62,7 @@ export const managementPt: ManagementContent = {
       title: 'Lead Product Designer @ SuperSummary',
       period: 'Set/24 até Hoje',
       paragraphs: [
-        'Atuo como Lead Product Designer na SuperSummary, uma startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, marketing e inovação.',
+        'Atuo como Lead Product Designer na SuperSummary, uma startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, growth, marketing e inovação.',
         'Também sou responsável pela operação de pesquisa, gerenciando todos os processos, do recrutamento e planejamento à orientação para a execução nos squads. Reporto diretamente ao CEO e lidero as definições estratégicas de design da empresa.',
       ],
       stats: [],
