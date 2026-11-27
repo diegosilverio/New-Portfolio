@@ -4,9 +4,9 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam. Atualmente lidero o time de design de produto na SuperSummary.',
+      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido, trabalhando com monetização, design systems e fluxos com IA para produtos de assinatura e fintech.',
     ogDescription:
-      'Mais de 16 anos entre América Latina e EUA criando experiências digitais que as pessoas amam.',
+      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido.',
     managementTitle: 'Gestão de Times de Design — Diego Silverio',
     managementDescription:
       'Minha experiência liderando e desenvolvendo times de design — os cargos, os princípios que me guiam, como encaro a liderança em design e os feedbacks que recebi pelo caminho.',
@@ -23,10 +23,10 @@ export const pt: Dictionary = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Criando',
-    titleAccent: 'experiências',
-    titleAfter: 'digitais que as pessoas amam',
-    body: 'Mais de 16 anos entre América Latina e EUA entregando trabalhos para fintechs, marketplaces e plataformas. Atualmente lidero o design de produto na SuperSummary — com foco em EdTech e IA.',
+    titleBefore: 'Product designer que constrói',
+    titleAccent: 'ferramentas de IA',
+    titleAfter: 'para criar experiências melhores, mais rápido.',
+    body: 'Trabalho com monetização, design systems e fluxos de trabalho com IA para produtos de assinatura e fintech. Hoje estou na SuperSummary, com a mão na massa em experimentos de growth, no design system e nas ferramentas de IA com que meu time desenha.',
     scrollLabel: 'Trabalhos selecionados',
     scrollAria: 'Ir para os trabalhos selecionados',
   },
@@ -35,6 +35,10 @@ export const pt: Dictionary = {
     title: 'Trabalhos Selecionados',
     viewCase: 'Ver estudo de caso',
     openCase: (title: string) => `Abrir o estudo de caso ${title}`,
+  },
+  systems: {
+    eyebrow: 'Cases de liderança',
+    title: 'Sistemas e IA',
   },
   about: {
     eyebrow: 'Trajetória',

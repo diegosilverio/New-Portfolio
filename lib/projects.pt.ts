@@ -111,7 +111,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
   'visual-language': {
     title: 'Nova Linguagem Visual',
     description:
-      'Transformando um novo design system em uma linguagem visual que aumentou a receita',
+      'Uma nova linguagem visual que superou a meta de não perder receita em duas páginas',
     role: 'Lead Product Designer',
     company: 'SuperSummary',
     scope: 'Linguagem Visual, Experimentação, Liderança de Design',
@@ -541,7 +541,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
   'nuvemshop-partners': {
     title: 'Tiendanube Partners',
     description:
-      'Redesign e migração do Admin para Parceiros — desacoplado do core da Tiendanube',
+      'Redesign e migração do Admin para Parceiros, retirado do core da Tiendanube',
     role: 'Design Manager',
     company: 'Tiendanube',
     scope: 'Design de Plataforma, Migração, Pesquisa',

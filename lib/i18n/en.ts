@@ -2,9 +2,9 @@ export const en = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      '16+ years across LATAM & US crafting digital experiences people love. Currently leading product design at SuperSummary.',
+      'Product designer who builds AI tools to craft better experiences, faster, working on monetization, design systems and AI-assisted workflows for subscription and fintech products.',
     ogDescription:
-      '16+ years across LATAM & US crafting digital experiences people love.',
+      'Product designer who builds AI tools to craft better experiences, faster.',
     managementTitle: 'Managing Design Teams — Diego Silverio',
     managementDescription:
       'My experience leading and growing design teams — the roles, the principles that guide me, how I approach design leadership, and the feedback I’ve received along the way.',
@@ -21,10 +21,10 @@ export const en = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Crafting digital',
-    titleAccent: 'experiences',
-    titleAfter: 'people love',
-    body: '16+ years across LATAM & US shipping work for fintechs, marketplaces and platforms. Currently leading product design at SuperSummary — focused on EdTech and AI.',
+    titleBefore: 'Product designer who builds',
+    titleAccent: 'AI tools',
+    titleAfter: 'to craft better experiences, faster.',
+    body: 'I work on monetization, design systems and AI-assisted workflows for subscription and fintech products. Currently at SuperSummary, hands-on across growth experiments, the design system and the AI tools my team designs with.',
     scrollLabel: 'Selected work',
     scrollAria: 'Jump to selected work',
   },
@@ -33,6 +33,10 @@ export const en = {
     title: 'Selected Works',
     viewCase: 'View case study',
     openCase: (title: string) => `Open ${title} case study`,
+  },
+  systems: {
+    eyebrow: 'Leadership cases',
+    title: 'Systems & AI',
   },
   about: {
     eyebrow: 'Background',

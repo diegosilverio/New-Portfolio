@@ -218,7 +218,7 @@ export const projects: Project[] = [
       '/images/visual-language/visual-language-image-3.png',
     ],
     description:
-      'Turning a new design system into a visual language that grew revenue',
+      'A new visual language that beat a no-loss revenue target on two pages',
     role: 'Lead Product Designer',
     company: 'SuperSummary',
     scope: 'Visual Language, Experimentation, Design Leadership',
@@ -677,7 +677,7 @@ export const projects: Project[] = [
       '/images/tiendanube-partners/tiendanube-partners-2.png',
     ],
     description:
-      'Redesign and migration of Admin for Partners — unmerged from the Tiendanube core',
+      'Redesign and migration of Admin for Partners, moved off the Tiendanube core',
     caseLink:
       'https://docs.google.com/presentation/d/1jD1pF3mECR5wJrkO6ivF10AYDYG-MePcmDquao9Q6gY/edit?usp=drive_link',
     role: 'Design Manager',
