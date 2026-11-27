@@ -513,7 +513,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
             'Quatro personas extraídas do Brain, cada uma com dados demográficos, comportamento e necessidades',
         },
         {
-          src: img('customer-brain', 'query'),
+          src: '/images/management/customer-brain/customer-brain-query.png',
           caption: 'Uma consulta real ao Customer Brain',
         },
       ],

@@ -556,7 +556,7 @@ export const managementCases: ManagementCase[] = [
           caption: 'Four personas extracted from the Brain, each with demographics, behavior and needs',
         },
         {
-          src: img('customer-brain', 'query'),
+          src: '/images/management/customer-brain/customer-brain-query.png',
           caption: 'A real query to the Customer Brain',
         },
       ],
