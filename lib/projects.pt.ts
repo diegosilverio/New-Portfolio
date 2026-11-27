@@ -188,7 +188,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       {
         title: 'Passar para os squads',
         description:
-          'Product Innovation assumiu a Homepage e Growth, a Subscribe page. As designers executaram com o meu apoio, mais próximo da júnior na Subscribe page. Os PMs assumiram a meta de receita e cada decisão de rollout.',
+          'Product Innovation assumiu a Homepage e Growth, a Subscribe page. As designers dos squads executaram os redesigns das páginas com o meu apoio, mais próximo da designer júnior na Subscribe page. Os PMs assumiram a meta de receita e cada decisão de rollout.',
       },
     ],
     execution: {
@@ -211,6 +211,15 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       '~+20% de checkouts do plano anual, Subscribe page',
       'Virou o padrão para migrar o restante da plataforma',
     ],
+    ownWork: {
+      position: 'afterOverview',
+      label: 'O que desenhei',
+      body: 'Desenhei as explorações de conceito e defini a linguagem. As designers dos squads executaram os redesigns das páginas, com o meu apoio.',
+      image: {
+        src: '/images/visual-language/visual-language-image-1.png',
+        caption: 'Explorações de conceito: as três direções visuais que desenhei.',
+      },
+    },
     learnings: [
       {
         title: 'Pesquisa de percepção antes dos testes.',

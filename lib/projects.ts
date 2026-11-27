@@ -258,7 +258,6 @@ export const projects: Project[] = [
     year: '2025–26',
     image: '/images/visual-language/visual-language-cover.png',
     caseImages: [
-      '/images/visual-language/visual-language-image-1.png',
       '/images/visual-language/visual-language-image-2.png',
       '/images/visual-language/visual-language-image-3.png',
     ],
@@ -321,7 +320,7 @@ export const projects: Project[] = [
       {
         title: 'Hand off',
         description:
-          'Product Innovation took the Homepage, Growth took the Subscribe page. The designers executed with my support, closer with the junior on the Subscribe page. PMs owned the revenue target and each rollout decision.',
+          'Product Innovation took the Homepage and Growth took the Subscribe page. The squad designers executed the page redesigns with my support, closer with the junior designer on the Subscribe page. PMs owned the revenue target and each rollout decision.',
       },
     ],
     execution: {
@@ -343,6 +342,15 @@ export const projects: Project[] = [
       '~+20% annual plan checkouts, Subscribe page',
       'Became the standard for migrating the rest of the platform',
     ],
+    ownWork: {
+      position: 'afterOverview',
+      label: 'What I drew',
+      body: 'I drew the concept explorations and defined the language. Squad designers executed the page redesigns, with my support.',
+      image: {
+        src: '/images/visual-language/visual-language-image-1.png',
+        caption: 'Concept explorations: the three visual directions I drew.',
+      },
+    },
     outcomeImage: '/images/visual-language/visual-language-delivery.png',
     learnings: [
       {
