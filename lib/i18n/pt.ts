@@ -4,9 +4,9 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido, trabalhando com monetização, design systems e fluxos com IA para produtos de assinatura e fintech.',
+      'Product designer focado em craft, sistemas e formas de trabalhar apoiadas por IA, hoje na SuperSummary.',
     ogDescription:
-      'Product designer que constrói ferramentas de IA para criar experiências melhores, mais rápido.',
+      'Criando produtos, e as ferramentas de IA que os fazem escalar.',
     managementTitle: 'Liderança em Design — Diego Silverio',
     managementDescription:
       'Minha experiência liderando e desenvolvendo times de design — os cargos, os princípios que me guiam, como encaro a liderança em design e os feedbacks que recebi pelo caminho.',
@@ -23,10 +23,10 @@ export const pt: Dictionary = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Product designer que constrói',
+    titleBefore: 'Criando produtos, e as',
     titleAccent: 'ferramentas de IA',
-    titleAfter: 'para criar experiências melhores, mais rápido.',
-    body: 'Product designer focado em craft, sistemas e formas de trabalhar apoiadas por IA. Hoje estou na SuperSummary, com a mão na massa no design system, na pesquisa e nas ferramentas que meu time usa para desenhar e entregar.',
+    titleAfter: 'que os fazem escalar',
+    body: 'Mais de 16 anos desenhando produtos entre a América Latina e os EUA. Hoje, na SuperSummary, construo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam meu time a entregar produtos de alta qualidade, mais rápido.',
     scrollLabel: 'Trabalhos selecionados',
     scrollAria: 'Ir para os trabalhos selecionados',
   },

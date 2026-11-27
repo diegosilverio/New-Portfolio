@@ -2,9 +2,9 @@ export const en = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer who builds AI tools to craft better experiences, faster, working on monetization, design systems and AI-assisted workflows for subscription and fintech products.',
+      'Product designer focused on craft, systems and AI-assisted ways of working, currently at SuperSummary.',
     ogDescription:
-      'Product designer who builds AI tools to craft better experiences, faster.',
+      'Crafting products, and the AI tools that scale them.',
     managementTitle: 'Design Leadership — Diego Silverio',
     managementDescription:
       'My experience leading and growing design teams — the roles, the principles that guide me, how I approach design leadership, and the feedback I’ve received along the way.',
@@ -21,10 +21,10 @@ export const en = {
     languages: { en: 'English', pt: 'Português' },
   },
   hero: {
-    titleBefore: 'Product designer who builds',
+    titleBefore: 'Crafting products, and the',
     titleAccent: 'AI tools',
-    titleAfter: 'to craft better experiences, faster.',
-    body: 'Product designer focused on craft, systems and AI-assisted ways of working. Currently at SuperSummary, hands-on across the design system, research and the tooling my team uses to design and ship.',
+    titleAfter: 'that scale them',
+    body: '16+ years designing products across LATAM and the US. Today at SuperSummary, I build the design system, research pipeline and AI tools that help my team ship high-quality products, faster.',
     scrollLabel: 'Selected work',
     scrollAria: 'Jump to selected work',
   },
