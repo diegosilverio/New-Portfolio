@@ -2,7 +2,7 @@ export const en = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer with 16+ years across LATAM and the US, building the design system, research pipeline and AI tools that help teams ship high-quality products, faster.',
+      'Product designer with 16+ years across LATAM and the US, building the design system, research pipeline and AI tools that help product teams ship faster.',
     ogDescription:
       'Crafting products, and the AI tools that scale them.',
     managementTitle: 'Design Leadership — Diego Silverio',
@@ -22,9 +22,9 @@ export const en = {
   },
   hero: {
     titleBefore: 'Crafting products,\nand the',
-    titleAccent: 'AI Tools',
+    titleAccent: 'AI tools',
     titleAfter: '\nthat scale them',
-    body: '16+ years designing products across LATAM and the US. Today at SuperSummary, I build the design system, research pipeline and AI tools that help me ship high-quality products, faster.',
+    body: '16+ years designing products across LATAM and the US. Today at SuperSummary, I build the design system, research pipeline and AI tools that help product teams ship faster.',
     scrollLabel: 'Selected work',
     scrollAria: 'Jump to selected work',
   },

@@ -4,7 +4,7 @@ export const pt: Dictionary = {
   meta: {
     title: 'Diego Silverio — Lead Product Designer',
     description:
-      'Product designer com mais de 16 anos entre a América Latina e os EUA, construindo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam eu e meu time a entregar experiências de alta qualidade, mais rápido.',
+      'Product designer com mais de 16 anos entre a América Latina e os EUA, construindo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam times de produto a entregar mais rápido.',
     ogDescription:
       'Criando produtos, e as ferramentas de IA que os fazem escalar.',
     managementTitle: 'Liderança em Design — Diego Silverio',
@@ -26,7 +26,7 @@ export const pt: Dictionary = {
     titleBefore: 'Criando produtos, e as',
     titleAccent: 'ferramentas de IA',
     titleAfter: 'que os fazem escalar',
-    body: 'Mais de 16 anos desenhando produtos entre a América Latina e os EUA. Hoje, na SuperSummary, construo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam meu time a entregar produtos de alta qualidade, mais rápido.',
+    body: 'Mais de 16 anos desenhando produtos entre a América Latina e os EUA. Hoje, na SuperSummary, construo o design system, o pipeline de pesquisa e as ferramentas de IA que ajudam times de produto a entregar mais rápido.',
     scrollLabel: 'Trabalhos selecionados',
     scrollAria: 'Ir para os trabalhos selecionados',
   },
