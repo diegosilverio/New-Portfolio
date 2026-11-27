@@ -68,8 +68,6 @@ export const managementCaseLabelsEn = {
 
 export type ManagementCaseLabels = typeof managementCaseLabelsEn;
 
-const img = (id: string, name: string) => `/images/management/${id}/${id}-${name}.svg`;
-
 export const managementCases: ManagementCase[] = [
   {
     id: 'design-ops',
@@ -201,9 +199,7 @@ export const managementCases: ManagementCase[] = [
         },
       ],
       images: [
-        { src: img('design-ops', 'career-ladder'), caption: 'Career Ladder: IC and management tracks, 9 competencies' },
-        { src: img('design-ops', 'skill-map'), caption: 'Skill Map template used to compare candidates against team gaps' },
-        { src: img('design-ops', 'ux-maker'), caption: 'UX Maker building a screen in Figma from DS 2.0 components' },
+        { src: '/images/management/design-ops/design-ops-ux-maker.png', caption: 'UX Maker building a screen in Figma from DS 2.0 components' },
       ],
     },
     outcomes: {
@@ -282,7 +278,7 @@ export const managementCases: ManagementCase[] = [
     ],
     stats: [
       { value: '285', label: 'Interviews conducted since October 2024' },
-      { value: '~15 → 2', label: 'Manual steps per interview' },
+      { value: '16 → 3', label: 'Manual steps per interview' },
       { value: '6', label: 'Functions running interviews, up from design alone' },
     ],
     overview: {
@@ -311,7 +307,7 @@ export const managementCases: ManagementCase[] = [
     approach: {
       title: 'Process first, automation second.',
       diagnosis:
-        'I talked to the CEO, the design team and the PMs, and reviewed the old tools. One interview took about 15 manual steps across recruiting, scheduling, recording, incentives and follow-up.',
+        'I talked to the CEO, the design team and the PMs, and reviewed the old tools. One interview took 16 manual steps across recruiting, scheduling, recording, incentives and follow-up.',
       steps: [
         {
           title: 'Fix the practice before automating it',
@@ -345,7 +341,7 @@ export const managementCases: ManagementCase[] = [
           items: [
             {
               title: 'Automated pipeline',
-              body: 'Recruiting via Sprig, scheduling, recording, transcription, archiving, incentives and weekly summaries run on their own. Per interview, the only manual steps are generating and reviewing the snapshot.',
+              body: 'Recruiting via Sprig, scheduling, recording, transcription, archiving, incentives and weekly summaries run on their own. Per interview, the only manual steps are running the interview, creating the snapshot and adding it to tracking.',
             },
             {
               title: 'Handbooks',
@@ -364,16 +360,8 @@ export const managementCases: ManagementCase[] = [
       ],
       images: [
         {
-          src: img('research-ops', 'pipeline'),
-          caption: 'Automated interview pipeline: ~15 manual steps reduced to 2, both for human review of the AI-generated snapshot',
-        },
-        {
-          src: img('research-ops', 'method-matrix'),
-          caption: 'Which method for which question: interviews, surveys and usability tests',
-        },
-        {
-          src: img('research-ops', 'repository'),
-          caption: 'Six scattered tools consolidated into active sources open to the whole company',
+          src: '/images/management/research-ops/research-ops-pipeline.png',
+          caption: 'Automated interview pipeline: 16 manual steps reduced to 3 (running the interview, creating the snapshot and adding it to tracking)',
         },
       ],
     },
@@ -385,7 +373,7 @@ export const managementCases: ManagementCase[] = [
           before: '~0.5 interviews/week',
           after: '~4.4/week in the first ten months (59 in the first ten weeks)',
         },
-        { area: 'Cost', before: '~15 manual steps per interview', after: '2' },
+        { area: 'Cost', before: '16 manual steps per interview', after: '3' },
         {
           area: 'Documentation',
           before: '4% of interviews with a snapshot',
@@ -410,10 +398,6 @@ export const managementCases: ManagementCase[] = [
       },
       limitation:
         'After the pipeline launched, volume fell to ~1.3 interviews/week, with at least one interview in 41% of weeks. Our reading is that research scopes became more targeted.',
-      image: {
-        src: img('research-ops', 'cadence'),
-        caption: 'Interviews per quarter, Q4 2024 to Q4 2026',
-      },
     },
     learnings: {
       title: 'Automation lowers the cost of research. It doesn’t create the habit.',

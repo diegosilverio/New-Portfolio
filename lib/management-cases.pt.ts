@@ -27,8 +27,6 @@ export const managementCaseLabelsPt: ManagementCaseLabels = {
   readCase: 'Ler o case',
 };
 
-const img = (id: string, name: string) => `/images/management/${id}/${id}-${name}.svg`;
-
 export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
   'design-ops': {
     title: 'Escalando um time de design com IA, não com headcount',
@@ -159,9 +157,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
         },
       ],
       images: [
-        { src: img('design-ops', 'career-ladder'), caption: 'Career Ladder: trilhas de IC e de gestão, 9 competências' },
-        { src: img('design-ops', 'skill-map'), caption: 'Template do Skill Map usado para comparar candidatos com as lacunas do time' },
-        { src: img('design-ops', 'ux-maker'), caption: 'UX Maker construindo uma tela no Figma com componentes do DS 2.0' },
+        { src: '/images/management/design-ops/design-ops-ux-maker.png', caption: 'UX Maker construindo uma tela no Figma com componentes do DS 2.0' },
       ],
     },
     outcomes: {
@@ -239,7 +235,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
     ],
     stats: [
       { value: '285', label: 'Entrevistas realizadas desde outubro de 2024' },
-      { value: '~15 → 2', label: 'Etapas manuais por entrevista' },
+      { value: '16 → 3', label: 'Etapas manuais por entrevista' },
       { value: '6', label: 'Funções conduzindo entrevistas, antes só o design' },
     ],
     overview: {
@@ -268,7 +264,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
     approach: {
       title: 'Primeiro o processo, depois a automação.',
       diagnosis:
-        'Conversei com o CEO, o time de design e os PMs, e revisei as ferramentas antigas. Uma entrevista exigia cerca de 15 etapas manuais, entre recrutamento, agendamento, gravação, incentivo e pós-entrevista.',
+        'Conversei com o CEO, o time de design e os PMs, e revisei as ferramentas antigas. Uma entrevista exigia 16 etapas manuais, entre recrutamento, agendamento, gravação, incentivo e pós-entrevista.',
       steps: [
         {
           title: 'Arrumar a prática antes de automatizá-la',
@@ -302,7 +298,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
           items: [
             {
               title: 'Pipeline automatizado',
-              body: 'Recrutamento via Sprig, agendamento, gravação, transcrição, arquivamento, incentivos e resumos semanais rodam sozinhos. Por entrevista, as únicas etapas manuais são gerar e revisar o snapshot.',
+              body: 'Recrutamento via Sprig, agendamento, gravação, transcrição, arquivamento, incentivos e resumos semanais rodam sozinhos. Por entrevista, as únicas etapas manuais são conduzir a entrevista, criar o snapshot e adicioná-lo ao tracking.',
             },
             {
               title: 'Handbooks',
@@ -321,16 +317,8 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       ],
       images: [
         {
-          src: img('research-ops', 'pipeline'),
-          caption: 'Pipeline automatizado de entrevistas: ~15 etapas manuais reduzidas a 2, ambas de revisão humana do snapshot gerado por IA',
-        },
-        {
-          src: img('research-ops', 'method-matrix'),
-          caption: 'Qual método para qual pergunta: entrevistas, surveys e testes de usabilidade',
-        },
-        {
-          src: img('research-ops', 'repository'),
-          caption: 'Seis ferramentas dispersas consolidadas em fontes ativas abertas a toda a empresa',
+          src: '/images/management/research-ops/research-ops-pipeline.png',
+          caption: 'Pipeline automatizado de entrevistas: 16 etapas manuais reduzidas a 3 (conduzir a entrevista, criar o snapshot e adicioná-lo ao tracking)',
         },
       ],
     },
@@ -342,7 +330,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
           before: '~0,5 entrevista/semana',
           after: '~4,4/semana nos primeiros dez meses (59 nas primeiras dez semanas)',
         },
-        { area: 'Custo', before: '~15 etapas manuais por entrevista', after: '2' },
+        { area: 'Custo', before: '16 etapas manuais por entrevista', after: '3' },
         {
           area: 'Documentação',
           before: '4% das entrevistas com snapshot',
@@ -367,10 +355,6 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       },
       limitation:
         'Depois do pipeline, o volume caiu para ~1,3 entrevista/semana, com pelo menos uma entrevista em 41% das semanas. Nossa leitura é que os escopos de pesquisa ficaram mais direcionados.',
-      image: {
-        src: img('research-ops', 'cadence'),
-        caption: 'Entrevistas por trimestre, do 4º tri de 2024 ao 4º tri de 2026',
-      },
     },
     learnings: {
       title: 'Automação reduz o custo da pesquisa. Não cria o hábito.',
