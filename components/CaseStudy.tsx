@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import type { Project } from '@/lib/projects';
+import type { OwnWork, Project } from '@/lib/projects';
 import { useLocale } from './LocaleProvider';
 
 interface CaseStudyProps {
@@ -45,6 +45,17 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           <MetaItem label={t.caseStudy.scope} value={project.scope} />
         </dl>
 
+        {project.quote && project.quotePosition === 'top' && (
+          <blockquote className="mt-12 flex max-w-[1060px] flex-col gap-4 border-l-2 border-accent pl-6 md:pl-8">
+            <p className="font-serif text-2xl md:text-[32px] leading-snug text-ink">
+              “{project.quote.text}”
+            </p>
+            <cite className="label-eyebrow not-italic !text-muted">
+              {project.quote.author}
+            </cite>
+          </blockquote>
+        )}
+
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -82,7 +93,13 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
               </ul>
             )}
 
-            <div className="flex flex-wrap gap-12 md:gap-20">
+            <div
+              className={
+                project.stats.length > 3
+                  ? 'grid grid-cols-2 gap-x-10 gap-y-10 lg:grid-cols-4'
+                  : 'flex flex-wrap gap-12 md:gap-20'
+              }
+            >
               {project.stats.map((s) => (
                 <div key={s.label} className="flex flex-col gap-2">
                   <span className="font-serif text-[40px] md:text-[48px] leading-none text-accent">
@@ -96,6 +113,10 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
         </div>
         <hr className="mt-20 border-t border-border-soft md:mt-24" />
       </section>
+
+      {project.ownWork?.position === 'afterOverview' && (
+        <OwnWorkSection ownWork={project.ownWork} />
+      )}
 
       {/* Challenge */}
       <section className="container-x pb-20 md:pb-section">
@@ -189,6 +210,10 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           </ol>
         </div>
       </section>
+
+      {project.ownWork?.position === 'beforeExecution' && (
+        <OwnWorkSection ownWork={project.ownWork} />
+      )}
 
       {/* Execution */}
       <section className="container-x py-20 md:py-section">
@@ -303,7 +328,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
                 </li>
               ))}
             </ul>
-            {project.quote && (
+            {project.quote && project.quotePosition !== 'top' && (
               <blockquote className="mt-4 flex flex-col gap-3 border-l-2 border-accent pl-6">
                 <p className="font-serif text-xl md:text-2xl leading-snug text-ink">
                   “{project.quote.text}”
@@ -325,6 +350,32 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           </div>
         </div>
       </section>
+
+      {/* Background (optional) */}
+      {project.background && (
+        <section className="container-x pb-20 md:pb-section">
+          <div className="grid grid-cols-1 gap-10 border-t border-border-soft pt-12 md:grid-cols-[400px_1fr] md:gap-10">
+            <h2 className="label-eyebrow">{project.background.title}</h2>
+            <div className="flex max-w-[840px] flex-col gap-6">
+              <p className="text-lg md:text-xl leading-relaxed text-muted">
+                {project.background.body}
+              </p>
+              <Link
+                href={`/${lang}/work/${project.background.linkSlug}`}
+                className="group inline-flex items-center gap-2 self-start text-base text-accent underline underline-offset-[6px] decoration-1 transition-colors duration-250 hover:text-ink"
+              >
+                {project.background.linkLabel}
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Learnings */}
       <section className="container-x pb-20 md:pb-section">
@@ -404,6 +455,61 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
         </div>
       </section>
     </article>
+  );
+}
+
+// After the overview the next section has no top padding, so this one pads its bottom;
+// before Execution the next section pads its own top, so this one pads its top
+function OwnWorkSection({ ownWork }: { ownWork: OwnWork }) {
+  const spacing =
+    ownWork.position === 'afterOverview' ? 'pb-20 md:pb-section' : 'pt-20 md:pt-section';
+  return (
+    <section className={`container-x ${spacing}`}>
+      <div className="flex flex-col gap-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-[400px_1fr] md:gap-10">
+          <h2 className="label-eyebrow">{ownWork.label}</h2>
+          <div className="flex max-w-[840px] flex-col gap-8">
+            {ownWork.body && (
+              <p className="text-lg md:text-xl leading-relaxed text-ink">{ownWork.body}</p>
+            )}
+            {ownWork.items && (
+              <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {ownWork.items.map((it) => (
+                  <li
+                    key={it.title}
+                    className="flex flex-col gap-2 rounded-card border border-border bg-card p-6"
+                  >
+                    <span className="text-base font-semibold text-ink">{it.title}</span>
+                    {it.body && (
+                      <span className="text-sm md:text-base leading-relaxed text-muted">
+                        {it.body}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+        {ownWork.image && (
+          <figure className="flex flex-col gap-3">
+            <div className="relative w-full overflow-hidden rounded-card bg-border">
+              <Image
+                src={ownWork.image.src}
+                alt={ownWork.image.caption}
+                width={1440}
+                height={900}
+                sizes="(min-width: 1024px) 1200px, 100vw"
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="text-sm leading-relaxed text-muted">
+              {ownWork.image.caption}
+            </figcaption>
+          </figure>
+        )}
+      </div>
+    </section>
   );
 }
 

@@ -35,6 +35,23 @@ export interface Guidelines {
   closingBody?: string;
 }
 
+// A strip that states what the designer personally made, as opposed to what they led
+export interface OwnWork {
+  position: 'afterOverview' | 'beforeExecution';
+  label: string;
+  body?: string;
+  items?: { title: string; body?: string }[];
+  image?: { src: string; caption: string };
+}
+
+// Short pointer to earlier, related work, with a link to that case
+export interface Background {
+  title: string;
+  body: string;
+  linkSlug: string;
+  linkLabel: string;
+}
+
 export interface Project {
   id: string;
   // Hidden cases stay out of the homepage and the next-case navigation,
@@ -86,6 +103,14 @@ export interface Project {
   outcomeBullets: string[];
   outcomeImage?: string;
   quote?: { text: string; author: string };
+  // 'top' shows the quote as a pull quote under the meta band instead of in Results
+  quotePosition?: 'top';
+
+  // What the designer made personally (optional)
+  ownWork?: OwnWork;
+
+  // Earlier related work, shown before Learnings (optional)
+  background?: Background;
 
   // Learnings
   learnings: Learning[];
@@ -98,16 +123,15 @@ export const projects: Project[] = [
     year: '2026',
     image: '/images/legacy-subscriber-migration/legacy-cover.png',
     caseImages: [
-      '/images/legacy-subscriber-migration/legacy-image-1.png',
       '/images/legacy-subscriber-migration/legacy-image-2.png',
     ],
     description:
       'Moving a loyal legacy base to the new Plus plan with an optional, loyalty-priced upgrade',
-    role: 'Lead Product Designer (sole designer)',
+    role: 'Lead Product Designer (sole designer on the migration; also leading Design and the design system)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentation',
     tagline:
-      'Gated new AI tools behind an optional, loyalty-priced upgrade: 60x the upgrade rate, with cancellations flat.',
+      'An optional, loyalty-priced upgrade lifted upsell revenue 8x+ over control with cancellations flat.',
     overview:
       'SuperSummary is a US edtech platform for literature study guides and reading tools. After it launched a new Plus/Essentials plan structure, a large group of legacy subscribers, mostly students and book club members, kept full Plus access while paying Essentials prices. Almost all of them (97.7%) were long-tenured annual subscribers. I was the only designer on the migration, inside the Growth Experimentation squad, while also leading the design team and the design system. I had worked on both initiatives before it: Pricing & Packaging (Q3 2025) and the Upgrade Flow (Q4 2025).',
     highlights: [
@@ -175,11 +199,11 @@ export const projects: Project[] = [
         'Option C — Optional upgrade with one free use per AI tool (chosen)',
       ],
     },
-    outcomeTitle: '60x the upgrade rate, with cancellations flat.',
+    outcomeTitle: '8x+ upsell revenue, with cancellations flat.',
     outcomeBody:
       'In the A/B test (June–July 2026), treatment beat control on revenue without moving cancellations. Leadership approved the rollout to 100% of legacy subscribers in July 2026 with no objections. Only one support message touched the change, and use of the features that stayed free rose about 11%.',
     outcomeBullets: [
-      'Upgrade rate: 5.4% of exposed users, vs. 0.09% in control',
+      'Upgrade rate: 5.4% of exposed users, vs. 0.09% in control (60x)',
       'Upsell revenue: 8x+ control during the test window',
       'Scheduled cancellations: flat (−2.1%, not significant)',
       'Save rate in the cancellation flow: 60.6% vs. 52.2% (+8.4 pp)',
@@ -187,6 +211,27 @@ export const projects: Project[] = [
     quote: {
       text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
       author: 'Growth squad peer',
+    },
+    quotePosition: 'top',
+    ownWork: {
+      position: 'beforeExecution',
+      label: 'What I designed',
+      items: [
+        { title: 'Intro note', body: 'Shown on first use.' },
+        { title: 'Limit and gating banners', body: 'Explaining what Plus unlocks.' },
+        { title: 'Upgrade modal', body: '20% off for life.' },
+        { title: 'Save offer', body: 'A last-resort offer in the cancellation flow.' },
+      ],
+      image: {
+        src: '/images/legacy-subscriber-migration/legacy-image-1.png',
+        caption: 'Upgrade flow: limit banner, upgrade modal, confirmation and welcome.',
+      },
+    },
+    background: {
+      title: 'Background: Pricing & Packaging',
+      body: 'Before the migration, I worked on the plan structure and the upgrade funnel: Pricing & Packaging (Q3 2025), the Upgrade Flow and the Upsell Modals (Q4 2025 to Q1 2026). In those tests, about half of new subscribers chose Plus, net revenue per exposed user rose about 15% in the first release, and upsell revenue rose about 30%.',
+      linkSlug: 'plus-plan',
+      linkLabel: 'See the Plus Plan case',
     },
     outcomeImage: '/images/legacy-subscriber-migration/legacy-delivery.png',
     learnings: [
@@ -892,7 +937,15 @@ export const projects: Project[] = [
 // Fields that carry copy; ids, years, images and links are shared across locales
 export type ProjectTranslation = Omit<
   Project,
-  'id' | 'hidden' | 'year' | 'image' | 'caseImages' | 'link' | 'caseLink' | 'outcomeImage'
+  | 'id'
+  | 'hidden'
+  | 'year'
+  | 'image'
+  | 'caseImages'
+  | 'link'
+  | 'caseLink'
+  | 'outcomeImage'
+  | 'quotePosition'
 >;
 
 // Chronological order, newest first. Ranges like '2021–22' sort by their end year,

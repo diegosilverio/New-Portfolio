@@ -5,11 +5,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     title: 'Migração de Assinantes Legacy',
     description:
       'Levando uma base legacy fiel para o novo plano Plus com um upgrade opcional e preço de fidelidade',
-    role: 'Lead Product Designer (designer único)',
+    role: 'Lead Product Designer (designer único da migração; também liderando Design e o design system)',
     company: 'SuperSummary',
     scope: 'Growth Design, Pricing & Packaging, Experimentação',
     tagline:
-      'Bloqueei as novas ferramentas de IA atrás de um upgrade opcional, com preço de fidelidade: taxa de upgrade 60x maior, com cancelamentos estáveis.',
+      'Um upgrade opcional, com preço de fidelidade, gerou mais de 8x a receita de upsell do controle, com cancelamentos estáveis.',
     overview:
       'A SuperSummary é uma plataforma de edtech americana de guias de estudo de literatura e ferramentas de leitura. Depois do lançamento da nova estrutura de planos Plus/Essentials, um grande grupo de assinantes legacy, em sua maioria estudantes e membros de book clubs, continuou com acesso completo ao Plus pagando preço de Essentials. Quase todos (97,7%) eram assinantes anuais de longa data. Fui o único designer da migração, dentro da squad de Growth Experimentation, enquanto também liderava o time de design e o design system. Participei das duas iniciativas anteriores: Pricing & Packaging (Q3 2025) e o Upgrade Flow (Q4 2025).',
     highlights: [
@@ -77,11 +77,11 @@ export const projectsPt: Record<string, ProjectTranslation> = {
         'Opção C — Upgrade opcional com um uso grátis por ferramenta de IA (escolhida)',
       ],
     },
-    outcomeTitle: 'Taxa de upgrade 60x maior, com cancelamentos estáveis.',
+    outcomeTitle: '8x+ de receita de upsell, com cancelamentos estáveis.',
     outcomeBody:
       'No teste A/B (junho–julho de 2026), o tratamento superou o controle em receita sem mexer nos cancelamentos. A liderança aprovou o rollout para 100% dos assinantes legacy em julho de 2026, sem objeções. Só uma mensagem de suporte mencionou a mudança, e o uso das funcionalidades que continuaram grátis subiu cerca de 11%.',
     outcomeBullets: [
-      'Taxa de upgrade: 5,4% dos usuários expostos, vs. 0,09% no controle',
+      'Taxa de upgrade: 5,4% dos usuários expostos, vs. 0,09% no controle (60x)',
       'Receita de upsell: 8x+ o controle durante a janela do teste',
       'Cancelamentos agendados: estáveis (−2,1%, não significativo)',
       'Retenção no fluxo de cancelamento: 60,6% vs. 52,2% (+8,4 p.p.)',
@@ -89,6 +89,26 @@ export const projectsPt: Record<string, ProjectTranslation> = {
     quote: {
       text: 'Diego\'s most valuable contribution is being the design anchor on our highest-stakes, highest-ambiguity projects — the ones that wouldn\'t ship at the same quality without him.',
       author: 'Colega da squad de Growth',
+    },
+    ownWork: {
+      position: 'beforeExecution',
+      label: 'O que desenhei',
+      items: [
+        { title: 'Nota de introdução', body: 'Exibida no primeiro uso.' },
+        { title: 'Banners de limite e de bloqueio', body: 'Explicando o que o Plus libera.' },
+        { title: 'Modal de upgrade', body: '20% off vitalício.' },
+        { title: 'Oferta de retenção', body: 'Uma oferta de última hora no fluxo de cancelamento.' },
+      ],
+      image: {
+        src: '/images/legacy-subscriber-migration/legacy-image-1.png',
+        caption: 'Fluxo de upgrade: banner de limite, modal de upgrade, confirmação e boas-vindas.',
+      },
+    },
+    background: {
+      title: 'Contexto: Pricing & Packaging',
+      body: 'Antes da migração, trabalhei na estrutura de planos e no funil de upgrade: Pricing & Packaging (Q3 2025), o Upgrade Flow e os Upsell Modals (do Q4 2025 ao Q1 2026). Nesses testes, cerca de metade dos novos assinantes escolheu o Plus, a receita líquida por usuário exposto subiu cerca de 15% na primeira entrega e a receita de upsell subiu cerca de 30%.',
+      linkSlug: 'plus-plan',
+      linkLabel: 'Ver o case do Plano Plus',
     },
     learnings: [
       {
