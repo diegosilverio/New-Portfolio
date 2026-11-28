@@ -284,7 +284,7 @@ export const managementCases: ManagementCase[] = [
     overview: {
       title: 'Research was design’s job, with no researcher.',
       paragraphs: [
-        'SuperSummary is a bootstrapped US edtech company with about 40 people and a B2C subscription for study guides. I lead a team of three product designers, report to the CEO, and work with the Head of Product, PMs and engineering across three squads. There is no dedicated researcher: research is design’s responsibility.',
+        'SuperSummary is a bootstrapped US edtech company with about 40 people and a B2C subscription for study guides. I lead a team of three product designers, report to the Head of Product, and work with PMs and engineering across three squads. There is no dedicated researcher: research is design’s responsibility.',
         'In October 2024, the CEO asked to put the company back in regular contact with users. I designed the research operation, wrote its documentation and built its automations myself. The interviews were run by people across the company.',
       ],
     },

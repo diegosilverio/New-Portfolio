@@ -178,7 +178,7 @@ export const projectsPt: Record<string, ProjectTranslation> = {
       },
       {
         title: 'Alinhar',
-        description: 'O CEO, o Head de Produto e eu escolhemos uma direção.',
+        description: 'O CEO, a Head de Produto e eu escolhemos uma direção.',
       },
       {
         title: 'Aplicar',

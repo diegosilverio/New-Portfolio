@@ -62,7 +62,7 @@ export const managementEn = {
       period: 'May/24 to Today',
       paragraphs: [
         'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across product, growth, marketing, and innovation squads.',
-        "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",
+        "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the Head of Product and lead the company's strategic design definitions.",
       ],
       stats: [] as { value: string; label: string }[],
     },

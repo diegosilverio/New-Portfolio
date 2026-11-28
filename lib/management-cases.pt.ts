@@ -241,7 +241,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
     overview: {
       title: 'Pesquisa era papel do design, sem researcher.',
       paragraphs: [
-        'A SuperSummary é uma edtech americana bootstrapped, com cerca de 40 pessoas e assinatura B2C de guias de estudo. Lidero um time de três product designers, reporto ao CEO e trabalho com o Head de Produto, PMs e engenharia em três squads. Não há researcher dedicado: pesquisa é responsabilidade do design.',
+        'A SuperSummary é uma edtech americana bootstrapped, com cerca de 40 pessoas e assinatura B2C de guias de estudo. Lidero um time de três product designers, reporto à Head de Produto e trabalho com PMs e engenharia em três squads. Não há researcher dedicado: pesquisa é responsabilidade do design.',
         'Em outubro de 2024, o CEO pediu para recolocar a empresa em contato regular com os usuários. Desenhei a operação de pesquisa, escrevi a documentação e construí as automações sozinho. As entrevistas foram conduzidas por pessoas de toda a empresa.',
       ],
     },
@@ -286,7 +286,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       notes: [
         {
           title: 'Resistência',
-          body: 'A resistência real não foi ao pipeline, mas à disponibilidade: alguns PMs não queriam participar. O Head de Produto se alinhou com eles sobre por que a participação importava.',
+          body: 'A resistência real não foi ao pipeline, mas à disponibilidade: alguns PMs não queriam participar. A Head de Produto se alinhou com eles sobre por que a participação importava.',
         },
       ],
     },
@@ -405,7 +405,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
       title: 'Cinco anos de conhecimento sobre usuários, espalhados.',
       paragraphs: [
         'A empresa viu que precisava colocar o usuário no centro das decisões e, por isso, buscou uma forma de concentrar o conhecimento que já tinha. O que sabíamos sobre os book readers estava espalhado em cinco anos de entrevistas, 30 surveys e na memória das pessoas.',
-        'Conduzi o discovery e construí sozinho o Customer Brain: uma base de conhecimento com IA usada hoje por cerca de 10 pessoas, do CEO e do Head de Produto a PMs, designers e engenheiros.',
+        'Conduzi o discovery e construí sozinho o Customer Brain: uma base de conhecimento com IA usada hoje por cerca de 10 pessoas, do CEO e da Head de Produto a PMs, designers e engenheiros.',
       ],
     },
     challenge: {
@@ -506,7 +506,7 @@ export const managementCasesPt: Record<string, Omit<ManagementCase, 'id'>> = {
         { area: 'Discovery', after: 'Ciclos de entrevistas retomados em 2026' },
       ],
       people: [
-        'Cerca de 10 pessoas consultam o Brain, do CEO e do Head de Produto a PMs, designers e engenheiros.',
+        'Cerca de 10 pessoas consultam o Brain, do CEO e da Head de Produto a PMs, designers e engenheiros.',
       ],
       perception: [
         'O Customer Brain virou a referência da empresa sobre como os book readers percebem e usam o produto.',
