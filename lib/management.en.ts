@@ -29,7 +29,7 @@ export const managementEn = {
     {
       role: 'Lead Product Designer',
       company: 'SuperSummary',
-      period: 'Sep/24 – Today',
+      period: 'May/24 – Today',
       description:
         'Edtech startup focused on the American education market. I lead a team of 3 designers across the product, growth, marketing, and innovation squads.',
     },
@@ -59,7 +59,7 @@ export const managementEn = {
   roles: [
     {
       title: 'Lead Product Designer @ SuperSummary',
-      period: 'Sep/24 to Today',
+      period: 'May/24 to Today',
       paragraphs: [
         'I work as Lead Product Designer at SuperSummary, an edtech startup focused on the American education market. I lead a team of 3 designers across product, growth, marketing, and innovation squads.',
         "I'm also responsible for the research operation, managing every process from recruitment and planning to guidance for execution in the squads. I report directly to the CEO and lead the company's strategic design definitions.",

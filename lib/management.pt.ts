@@ -31,7 +31,7 @@ export const managementPt: ManagementContent = {
     {
       role: 'Lead Product Designer',
       company: 'SuperSummary',
-      period: 'Set/24 – Hoje',
+      period: 'Mai/24 – Hoje',
       description:
         'Startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, growth, marketing e inovação.',
     },
@@ -60,7 +60,7 @@ export const managementPt: ManagementContent = {
   roles: [
     {
       title: 'Lead Product Designer @ SuperSummary',
-      period: 'Set/24 até Hoje',
+      period: 'Mai/24 até Hoje',
       paragraphs: [
         'Atuo como Lead Product Designer na SuperSummary, uma startup de edtech focada no mercado educacional americano. Lidero um time de 3 designers nos squads de produto, growth, marketing e inovação.',
         'Também sou responsável pela operação de pesquisa, gerenciando todos os processos, do recrutamento e planejamento à orientação para a execução nos squads. Reporto diretamente ao CEO e lidero as definições estratégicas de design da empresa.',
